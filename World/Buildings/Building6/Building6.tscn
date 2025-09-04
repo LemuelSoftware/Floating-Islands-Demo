@@ -1,10 +1,32 @@
-[gd_scene load_steps=6 format=3 uid="uid://dyo3rhxbeiqd1"]
+[gd_scene load_steps=10 format=3 uid="uid://dyo3rhxbeiqd1"]
 
 [ext_resource type="Script" uid="uid://m6r1s4mbm4rp" path="res://World/Buildings/BuildingParts/Building.cs" id="1_f2tnc"]
 [ext_resource type="PackedScene" uid="uid://do2prels08x6v" path="res://World/Buildings/BuildingParts/Base/Base1/Base1.tscn" id="1_ndyd3"]
 [ext_resource type="PackedScene" uid="uid://ce5gquwemo32c" path="res://World/Lights/Light1/Light1.tscn" id="2_f2tnc"]
 [ext_resource type="PackedScene" uid="uid://cwop3lxwunm76" path="res://World/Buildings/BuildingParts/Floor/Floor1/Floor1.tscn" id="2_fjbit"]
 [ext_resource type="PackedScene" uid="uid://dnuf0tabkow3v" path="res://World/Buildings/BuildingParts/Roof/Roof4/Roof4.tscn" id="3_f2tnc"]
+[ext_resource type="Shader" uid="uid://dhjij062wrql5" path="res://World/Lights/Shader/LightShader1.gdshader" id="4_v3t2o"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o88qx"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_v3t2o")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tcdtp"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_v3t2o")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kgofo"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_v3t2o")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
 
 [node name="Building6" type="Node3D" node_paths=PackedStringArray("lights")]
 script = ExtResource("1_f2tnc")
@@ -16,18 +38,21 @@ lights = [NodePath("Base/Light"), NodePath("Floor1/Light"), NodePath("Floor2/Lig
 
 [node name="Light" parent="Base" instance=ExtResource("2_f2tnc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
+material = SubResource("ShaderMaterial_o88qx")
 
 [node name="Floor1" parent="." instance=ExtResource("2_fjbit")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
 
 [node name="Light" parent="Floor1" instance=ExtResource("2_f2tnc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
+material = SubResource("ShaderMaterial_tcdtp")
 
 [node name="Floor2" parent="." instance=ExtResource("2_fjbit")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32, 0)
 
 [node name="Light" parent="Floor2" instance=ExtResource("2_f2tnc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
+material = SubResource("ShaderMaterial_kgofo")
 
 [node name="Roof" parent="." instance=ExtResource("3_f2tnc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 48, 0)

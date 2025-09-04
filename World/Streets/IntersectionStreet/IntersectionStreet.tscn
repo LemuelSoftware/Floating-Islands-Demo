@@ -1,85 +1,15 @@
-[gd_scene load_steps=13 format=3 uid="uid://vqhcbqvb3a42"]
+[gd_scene load_steps=4 format=3 uid="uid://vqhcbqvb3a42"]
 
 [ext_resource type="Script" uid="uid://bv547t8lbovng" path="res://World/Streets/IntersectionStreet/IntersectionStreet.cs" id="1_am17q"]
-[ext_resource type="PackedScene" uid="uid://cqya0qbbvnnif" path="res://World/Streets/IntersectionStreet/Mesh/IntersectionStreet.glb" id="1_vh2hh"]
-[ext_resource type="Shader" uid="uid://cr6wovrw5bvtv" path="res://World/Shader/FlatShading.gdshader" id="3_o6f2n"]
-[ext_resource type="Texture2D" uid="uid://bcmkuhpjeyvto" path="res://World/Streets/IntersectionStreet/Mesh/IntersectionStreet_Normal Map.png" id="4_16r24"]
-[ext_resource type="Texture2D" uid="uid://c3ldggph0w18r" path="res://World/Streets/IntersectionStreet/Mesh/IntersectionStreet_Base Color.png" id="5_w33vm"]
-[ext_resource type="Texture2D" uid="uid://dghome42kh8tx" path="res://World/Streets/IntersectionStreet/Mesh/IntersectionStreet_Top Normal Map.png" id="6_w33vm"]
-[ext_resource type="Texture2D" uid="uid://b45i2vnjfkskj" path="res://World/Streets/IntersectionStreet/Mesh/IntersectionStreet_Top Base Color.png" id="7_3qkgk"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_3qkgk"]
-render_priority = 0
-shader = ExtResource("3_o6f2n")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("5_w33vm")
-shader_parameter/normal_map = ExtResource("4_16r24")
-shader_parameter/normal_depth = 1.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_d6rt4"]
-render_priority = 0
-shader = ExtResource("3_o6f2n")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("7_3qkgk")
-shader_parameter/normal_map = ExtResource("6_w33vm")
-shader_parameter/normal_depth = 1.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_w33vm"]
-render_priority = 0
-shader = ExtResource("3_o6f2n")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("7_3qkgk")
-shader_parameter/normal_map = ExtResource("6_w33vm")
-shader_parameter/normal_depth = 1.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_10145"]
-render_priority = 0
-shader = ExtResource("3_o6f2n")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("7_3qkgk")
-shader_parameter/normal_map = ExtResource("6_w33vm")
-shader_parameter/normal_depth = 100.0
+[ext_resource type="PackedScene" uid="uid://dw8ujdtpsc5qd" path="res://World/Streets/IntersectionStreet/Mesh/IntersectionStreet.blend" id="2_vh2hh"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vh2hh"]
 data = PackedVector3Array(-8, 8, 6.3999, -6.56, 8, 6.3999, -8, 8, 8, -8, 8, 8, -6.56, 8, 6.3999, -6.56, 8, 8, -6.56, 8, 8, -6.56, 7.7999, 8, -8, 8, 8, -8, 8, 8, -6.56, 7.7999, 8, -8, 7.7999, 8, -8, 7.7999, 8, -6.56, 7.7999, 8, -8, 0, 8, -8, 0, 8, -6.56, 7.7999, 8, -6.56, 0, 8, -6.56, 0, 8, -6.56, 7.7999, 8, 6.3999, 0, 8, 6.3999, 0, 8, -6.56, 7.7999, 8, 8, 0, 8, 8, 0, 8, -6.56, 7.7999, 8, 8, 7.7999, 8, 8, 7.7999, 8, -6.56, 7.7999, 8, 6.3999, 7.7999, 8, 6.3999, 8, 8, 8, 7.7999, 8, 6.3999, 7.7999, 8, 8, 8, 8, 8, 7.7999, 8, 6.3999, 8, 8, -8, 8, -6.56, -8, 7.7999, -6.56, -8, 8, -8, -8, 8, -8, -8, 7.7999, -6.56, -8, 7.7999, -8, -8, 7.7999, -8, -8, 7.7999, -6.56, -8, 0, -8, -8, 0, -8, -8, 7.7999, -6.56, -8, 0, -6.56, -8, 0, -6.56, -8, 7.7999, -6.56, -8, 0, 6.3999, -8, 0, 6.3999, -8, 7.7999, -6.56, -8, 0, 8, -8, 0, 8, -8, 7.7999, -6.56, -8, 7.7999, 8, -8, 7.7999, 8, -8, 7.7999, -6.56, -8, 7.7999, 6.3999, -8, 8, 6.3999, -8, 7.7999, 8, -8, 7.7999, 6.3999, -8, 8, 8, -8, 7.7999, 8, -8, 8, 6.3999, 8, 8, 6.3999, 8, 7.7999, 6.3999, 8, 8, 8, 8, 8, 8, 8, 7.7999, 6.3999, 8, 7.7999, 8, 8, 7.7999, 8, 8, 7.7999, 6.3999, 8, 0, 8, 8, 0, 8, 8, 7.7999, 6.3999, 8, 0, 6.3999, 8, 0, 6.3999, 8, 7.7999, 6.3999, 8, 0, -6.56, 8, 0, -6.56, 8, 7.7999, 6.3999, 8, 0, -8, 8, 0, -8, 8, 7.7999, 6.3999, 8, 7.7999, -8, 8, 7.7999, -8, 8, 7.7999, 6.3999, 8, 7.7999, -6.56, 8, 8, -6.56, 8, 7.7999, -8, 8, 7.7999, -6.56, 8, 8, -8, 8, 7.7999, -8, 8, 8, -6.56, 6.3999, 8, -8, 6.3999, 7.7999, -8, 8, 8, -8, 8, 8, -8, 6.3999, 7.7999, -8, 8, 7.7999, -8, 8, 7.7999, -8, 6.3999, 7.7999, -8, 8, 0, -8, 8, 0, -8, 6.3999, 7.7999, -8, 6.3999, 0, -8, 6.3999, 0, -8, 6.3999, 7.7999, -8, -6.56, 0, -8, -6.56, 0, -8, 6.3999, 7.7999, -8, -8, 0, -8, -8, 0, -8, 6.3999, 7.7999, -8, -8, 7.7999, -8, -8, 7.7999, -8, 6.3999, 7.7999, -8, -6.56, 7.7999, -8, -6.56, 8, -8, -8, 7.7999, -8, -6.56, 7.7999, -8, -8, 8, -8, -8, 7.7999, -8, -6.56, 8, -8, 8, 0, 8, 8, 0, 6.3999, 6.3999, 0, 8, 6.3999, 0, 8, 8, 0, 6.3999, -6.56, 0, 8, -6.56, 0, 8, 8, 0, 6.3999, -8, 0, 8, -8, 0, 8, 8, 0, 6.3999, -8, 0, 6.3999, -8, 0, 6.3999, 8, 0, 6.3999, -8, 0, -6.56, -8, 0, -6.56, 8, 0, 6.3999, -8, 0, -8, -8, 0, -8, 8, 0, 6.3999, -6.56, 0, -8, -6.56, 0, -8, 8, 0, 6.3999, 6.3999, 0, -8, 6.3999, 0, -8, 8, 0, 6.3999, 8, 0, -8, 8, 0, -8, 8, 0, 6.3999, 8, 0, -6.56, -8, 8, -8, -6.56, 8, -8, -8, 8, -6.56, -8, 8, -6.56, -6.56, 8, -8, -6.56, 8, -6.56, 6.3999, 8, -8, 8, 8, -8, 6.3999, 8, -6.56, 6.3999, 8, -6.56, 8, 8, -8, 8, 8, -6.56, 6.3999, 8, 6.3999, 8, 8, 6.3999, 6.3999, 8, 8, 6.3999, 8, 8, 8, 8, 6.3999, 8, 8, 8, 6.3999, 7.7999, -6.56, 8, 7.7999, -6.56, 6.3999, 7.7999, -8, 6.3999, 7.7999, -8, 8, 7.7999, -6.56, -6.56, 7.7999, -8, -6.56, 7.7999, -8, 8, 7.7999, -6.56, -6.56, 7.7999, -6.56, -6.56, 7.7999, -6.56, 8, 7.7999, -6.56, -8, 7.7999, -6.56, -8, 7.7999, -6.56, 8, 7.7999, -6.56, -8, 7.7999, 6.3999, -8, 7.7999, 6.3999, 8, 7.7999, -6.56, -6.56, 7.7999, 6.3999, -6.56, 7.7999, 6.3999, 8, 7.7999, -6.56, -6.56, 7.7999, 8, -6.56, 7.7999, 8, 8, 7.7999, -6.56, 6.3999, 7.7999, 8, 6.3999, 7.7999, 8, 8, 7.7999, -6.56, 6.3999, 7.7999, 6.3999, 6.3999, 7.7999, 6.3999, 8, 7.7999, -6.56, 8, 7.7999, 6.3999, 6.3999, 8, 6.3999, 6.3999, 8, 8, 6.3999, 7.7999, 6.3999, 6.3999, 7.7999, 6.3999, 6.3999, 8, 8, 6.3999, 7.7999, 8, 8, 7.7999, 6.3999, 8, 8, 6.3999, 6.3999, 7.7999, 6.3999, 6.3999, 7.7999, 6.3999, 8, 8, 6.3999, 6.3999, 8, 6.3999, -6.56, 8, 6.3999, -8, 8, 6.3999, -6.56, 7.7999, 6.3999, -6.56, 7.7999, 6.3999, -8, 8, 6.3999, -8, 7.7999, 6.3999, -6.56, 7.7999, 8, -6.56, 8, 8, -6.56, 7.7999, 6.3999, -6.56, 7.7999, 6.3999, -6.56, 8, 8, -6.56, 8, 6.3999, 6.3999, 8, -6.56, 8, 8, -6.56, 6.3999, 7.7999, -6.56, 6.3999, 7.7999, -6.56, 8, 8, -6.56, 8, 7.7999, -6.56, 6.3999, 7.7999, -8, 6.3999, 8, -8, 6.3999, 7.7999, -6.56, 6.3999, 7.7999, -6.56, 6.3999, 8, -8, 6.3999, 8, -6.56, -8, 7.7999, -6.56, -8, 8, -6.56, -6.56, 7.7999, -6.56, -6.56, 7.7999, -6.56, -8, 8, -6.56, -6.56, 8, -6.56, -6.56, 8, -6.56, -6.56, 8, -8, -6.56, 7.7999, -6.56, -6.56, 7.7999, -6.56, -6.56, 8, -8, -6.56, 7.7999, -8)
 
-[node name="IntersectionStreet" type="StaticBody3D" node_paths=PackedStringArray("meshList")]
+[node name="IntersectionStreet" type="StaticBody3D"]
 script = ExtResource("1_am17q")
-meshList = [NodePath("IntersectionStreet/Cube"), NodePath("IntersectionStreet/Cube_004"), NodePath("IntersectionStreet/Cube_005"), NodePath("IntersectionStreet/Cube_003"), NodePath("IntersectionStreet/Cube_001"), NodePath("IntersectionStreet/Cube_002"), NodePath("IntersectionStreet/Cube_006"), NodePath("IntersectionStreet/Cube_007"), NodePath("IntersectionStreet/Cube_008"), NodePath("IntersectionStreet/Cube_009")]
 
-[node name="IntersectionStreet" parent="." instance=ExtResource("1_vh2hh")]
-
-[node name="Cube" parent="IntersectionStreet" index="0"]
-surface_material_override/0 = SubResource("ShaderMaterial_3qkgk")
-
-[node name="Cube_004" parent="IntersectionStreet" index="1"]
-surface_material_override/0 = SubResource("ShaderMaterial_d6rt4")
-
-[node name="Cube_005" parent="IntersectionStreet" index="2"]
-surface_material_override/0 = SubResource("ShaderMaterial_d6rt4")
-
-[node name="Cube_003" parent="IntersectionStreet" index="3"]
-surface_material_override/0 = SubResource("ShaderMaterial_d6rt4")
-
-[node name="Cube_001" parent="IntersectionStreet" index="4"]
-surface_material_override/0 = SubResource("ShaderMaterial_d6rt4")
-
-[node name="Cube_002" parent="IntersectionStreet" index="5"]
-surface_material_override/0 = SubResource("ShaderMaterial_w33vm")
-
-[node name="Cube_006" parent="IntersectionStreet" index="6"]
-surface_material_override/0 = SubResource("ShaderMaterial_w33vm")
-
-[node name="Cube_007" parent="IntersectionStreet" index="7"]
-surface_material_override/0 = SubResource("ShaderMaterial_w33vm")
-
-[node name="Cube_008" parent="IntersectionStreet" index="8"]
-surface_material_override/0 = SubResource("ShaderMaterial_w33vm")
-
-[node name="Cube_009" parent="IntersectionStreet" index="9"]
-surface_material_override/0 = SubResource("ShaderMaterial_10145")
+[node name="IntersectionStreet" parent="." instance=ExtResource("2_vh2hh")]
 
 [node name="CollisionShape" type="CollisionShape3D" parent="."]
 shape = SubResource("ConcavePolygonShape3D_vh2hh")
-
-[editable path="IntersectionStreet"]

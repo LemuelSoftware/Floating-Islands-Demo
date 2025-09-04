@@ -1,29 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://cnlxff5tsksvt"]
+[gd_scene load_steps=8 format=3 uid="uid://cnlxff5tsksvt"]
 
 [ext_resource type="Script" uid="uid://ctt1wc6tcv7pc" path="res://World/Buildings/BuildingParts/Floor/Floor3/Floor3.cs" id="1_iom4d"]
-[ext_resource type="PackedScene" uid="uid://c3cfqrkgvcdsw" path="res://World/Buildings/BuildingParts/Floor/Floor3/Mesh/Floor3.glb" id="2_wi67g"]
-[ext_resource type="Shader" uid="uid://cr6wovrw5bvtv" path="res://World/Shader/FlatShading.gdshader" id="3_lt23e"]
+[ext_resource type="PackedScene" uid="uid://boqrwxhgwnmpn" path="res://World/Buildings/BuildingParts/Floor/Floor3/Mesh/Floor3.blend" id="2_wuv8m"]
 [ext_resource type="Material" uid="uid://vhbyl0nqbt4q" path="res://World/Buildings/BuildingParts/Roof/Shader/ElectricityEffectShaderMaterial1.tres" id="3_wuv8m"]
-[ext_resource type="Texture2D" uid="uid://cpks0adx4iqj5" path="res://World/Buildings/BuildingParts/Floor/Floor3/Mesh/Floor3_Normal Map.png" id="4_7egx7"]
 [ext_resource type="Material" uid="uid://d2888w0f50cqj" path="res://World/Buildings/BuildingParts/Roof/Shader/ElectricityParticleMaterial.tres" id="4_hvmkk"]
 [ext_resource type="SphereMesh" uid="uid://5k7v7phc4weg" path="res://World/Buildings/BuildingParts/Roof/Shader/ElectricArc.tres" id="5_7egx7"]
-[ext_resource type="Texture2D" uid="uid://30uc2pb2l13j" path="res://World/Buildings/BuildingParts/Floor/Floor3/Mesh/Floor3_Generator Base Color.png" id="5_wu6na"]
-[ext_resource type="Texture2D" uid="uid://bssnu6qdq0yeu" path="res://World/Buildings/BuildingParts/Floor/Floor3/Mesh/Floor3_Base Color.png" id="6_wu6na"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_hvmkk"]
-render_priority = 0
-shader = ExtResource("3_lt23e")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("5_wu6na")
-shader_parameter/normal_depth = 4.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_rd44m"]
-render_priority = 0
-shader = ExtResource("3_lt23e")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("6_wu6na")
-shader_parameter/normal_map = ExtResource("4_7egx7")
-shader_parameter/normal_depth = 4.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_wuv8m"]
 material = ExtResource("3_wuv8m")
@@ -32,18 +13,11 @@ height = 1.8
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iom4d"]
 
-[node name="Floor3" type="StaticBody3D" node_paths=PackedStringArray("generator", "meshList")]
+[node name="Floor3" type="StaticBody3D" node_paths=PackedStringArray("generator")]
 script = ExtResource("1_iom4d")
 generator = NodePath("Floor3/Icosphere")
-meshList = [NodePath("Floor3/Icosphere"), NodePath("Floor3/Cube")]
 
-[node name="Floor3" parent="." instance=ExtResource("2_wi67g")]
-
-[node name="Icosphere" parent="Floor3" index="0"]
-surface_material_override/0 = SubResource("ShaderMaterial_hvmkk")
-
-[node name="Cube" parent="Floor3" index="1"]
-surface_material_override/0 = SubResource("ShaderMaterial_rd44m")
+[node name="Floor3" parent="." instance=ExtResource("2_wuv8m")]
 
 [node name="EffectMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0, 8, 0)

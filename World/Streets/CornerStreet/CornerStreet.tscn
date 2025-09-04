@@ -1,73 +1,16 @@
-[gd_scene load_steps=14 format=3 uid="uid://bl8l0ly28xaed"]
+[gd_scene load_steps=5 format=3 uid="uid://bl8l0ly28xaed"]
 
 [ext_resource type="Script" uid="uid://cqwendn3hr2w0" path="res://World/Streets/CornerStreet/CornerStreet.cs" id="1_8ff0l"]
-[ext_resource type="PackedScene" uid="uid://dncc41kikuun0" path="res://World/Streets/CornerStreet/Mesh/CornerStreet.glb" id="2_7ov2a"]
-[ext_resource type="Shader" uid="uid://cr6wovrw5bvtv" path="res://World/Shader/FlatShading.gdshader" id="2_lgn68"]
+[ext_resource type="PackedScene" uid="uid://ba7uscn63fbfc" path="res://World/Streets/CornerStreet/Mesh/CornerStreet.blend" id="2_7ov2a"]
 [ext_resource type="PackedScene" uid="uid://b6iodn6sg6h2g" path="res://World/Lights/Light3/Light3.tscn" id="2_p22w0"]
-[ext_resource type="Texture2D" uid="uid://qaudp3b26qou" path="res://World/Streets/CornerStreet/Mesh/CornerStreet_Normal Map.png" id="3_8ff0l"]
-[ext_resource type="Texture2D" uid="uid://bd30g4k2x60eb" path="res://World/Streets/CornerStreet/Mesh/CornerStreet_Base Color.png" id="4_roux2"]
-[ext_resource type="Texture2D" uid="uid://dqoqf6vteylb5" path="res://World/Streets/CornerStreet/Mesh/CornerStreet_Top Normal Map.png" id="6_8fqwj"]
-[ext_resource type="Texture2D" uid="uid://ctud05qxhrykp" path="res://World/Streets/CornerStreet/Mesh/CornerStreet_Top Base Color.png" id="7_u1ht4"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_lgn68"]
-render_priority = 0
-shader = ExtResource("2_lgn68")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("4_roux2")
-shader_parameter/normal_map = ExtResource("3_8ff0l")
-shader_parameter/normal_depth = 4.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ff0l"]
-render_priority = 0
-shader = ExtResource("2_lgn68")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("7_u1ht4")
-shader_parameter/normal_map = ExtResource("6_8fqwj")
-shader_parameter/normal_depth = 100.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_roux2"]
-render_priority = 0
-shader = ExtResource("2_lgn68")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("4_roux2")
-shader_parameter/normal_map = ExtResource("3_8ff0l")
-shader_parameter/normal_depth = 4.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_8fqwj"]
-render_priority = 0
-shader = ExtResource("2_lgn68")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("7_u1ht4")
-shader_parameter/normal_map = ExtResource("6_8fqwj")
-shader_parameter/normal_depth = 100.0
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_itur2"]
 data = PackedVector3Array(-8, 8, 8, -8, 0, 8, -8, 8, -8, -8, 8, -8, -8, 0, 8, -8, 0, -8, -8, 8, -8, -8, 0, -8, 8, 8, -8, 8, 8, -8, -8, 0, -8, 8, 0, -8, 8, 8, -8, 8, 0, -8, 8, 8, 8, 8, 8, 8, 8, 0, -8, 8, 0, 8, 8, 8, 8, 8, 0, 8, -8, 8, 8, -8, 8, 8, 8, 0, 8, -8, 0, 8, 8, 0, -8, -8, 0, -8, 8, 0, 8, 8, 0, 8, -8, 0, -8, -8, 0, 8, -8, 8, -8, 8, 8, -8, -8, 8, 8, -8, 8, 8, 8, 8, -8, 8, 8, 8, -2, 8.2, 8, -2, 8, 8, -2, 8.2, 6, -2, 8.2, 6, -2, 8, 8, -2, 8, 6, -2, 8.2, 6, -2, 8, 6, 8, 8.2, 6, 8, 8.2, 6, -2, 8, 6, 8, 8, 6, 8, 8.2, 6, 8, 8, 6, 8, 8.2, 8, 8, 8.2, 8, 8, 8, 6, 8, 8, 8, 8, 8.2, 8, 8, 8, 8, -2, 8.2, 8, -2, 8.2, 8, 8, 8, 8, -2, 8, 8, 8, 8, 6, -2, 8, 6, 8, 8, 8, 8, 8, 8, -2, 8, 6, -2, 8, 8, -2, 8.2, 6, 8, 8.2, 6, -2, 8.2, 8, -2, 8.2, 8, 8, 8.2, 6, 8, 8.2, 8, -2, 8.2, -6, -2, 8, -6, -2, 8.2, -8, -2, 8.2, -8, -2, 8, -6, -2, 8, -8, -2, 8.2, -8, -2, 8, -8, 8, 8.2, -8, 8, 8.2, -8, -2, 8, -8, 8, 8, -8, 8, 8.2, -8, 8, 8, -8, 8, 8.2, -6, 8, 8.2, -6, 8, 8, -8, 8, 8, -6, 8, 8.2, -6, 8, 8, -6, -2, 8.2, -6, -2, 8.2, -6, 8, 8, -6, -2, 8, -6, 8, 8, -8, -2, 8, -8, 8, 8, -6, 8, 8, -6, -2, 8, -8, -2, 8, -6, -2, 8.2, -8, 8, 8.2, -8, -2, 8.2, -6, -2, 8.2, -6, 8, 8.2, -8, 8, 8.2, -6, -8, 8, -8, -8, 8.2, 8, -8, 8, 8, -8, 8.2, -8, -8, 8.2, 8, -8, 8, -8, -2, 8, -8, -8, 8.2, -8, -8, 8, -8, -2, 8.2, -8, -8, 8.2, -8, -2, 8, -8, -2, 8.2, 5.9985, -2, 8, 8, -2, 8.2, 8, -2, 8, 5.9985, -2, 8, 8, -2, 8.2, 5.9985, -2, 8, -5.9987, -2, 8.2, -8, -2, 8, -8, -2, 8.2, -5.9987, -2, 8.2, -8, -2, 8, -5.9987, -8, 8, 8, -2, 8.2, 8, -2, 8, 8, -8, 8.2, 8, -2, 8.2, 8, -8, 8, 8, -8, 8, -8, -8, 8, 8, -6, 8, -0.0001, -5.8751, 8, 1.268, -6, 8, -0.0001, -8, 8, 8, -5.5052, 8, 2.4872, -5.8751, 8, 1.268, -8, 8, 8, -5.8751, 8, -1.2682, -8, 8, -8, -6, 8, -0.0001, -4.9046, 8, 3.611, -5.5052, 8, 2.4872, -8, 8, 8, -5.5052, 8, -2.4875, -8, 8, -8, -5.8751, 8, -1.2682, -4.0962, 8, 4.5961, -4.9046, 8, 3.611, -8, 8, 8, -4.9046, 8, -3.6113, -8, 8, -8, -5.5052, 8, -2.4875, -8, 8, 8, -2, 8, 8, -4.0962, 8, 4.5961, -2, 8, 8, -3.1113, 8, 5.4045, -4.0962, 8, 4.5961, -2, 8, 8, -2, 8, 5.9985, -3.1113, 8, 5.4045, -4.0962, 8, -4.5964, -8, 8, -8, -4.9046, 8, -3.6113, -2, 8, -8, -8, 8, -8, -4.0962, 8, -4.5964, -3.1113, 8, -5.4047, -2, 8, -8, -4.0962, 8, -4.5964, -2, 8, -5.9987, -2, 8, -8, -3.1113, 8, -5.4047, -8, 8.2, 8, -8, 8.2, -8, -6, 8.2, -0.0001, -5.8751, 8.2, -1.2682, -6, 8.2, -0.0001, -8, 8.2, -8, -5.5052, 8.2, -2.4875, -5.8751, 8.2, -1.2682, -8, 8.2, -8, -5.8751, 8.2, 1.268, -8, 8.2, 8, -6, 8.2, -0.0001, -4.9046, 8.2, -3.6113, -5.5052, 8.2, -2.4875, -8, 8.2, -8, -5.5052, 8.2, 2.4872, -8, 8.2, 8, -5.8751, 8.2, 1.268, -4.0962, 8.2, -4.5964, -4.9046, 8.2, -3.6113, -8, 8.2, -8, -4.9046, 8.2, 3.611, -8, 8.2, 8, -5.5052, 8.2, 2.4872, -8, 8.2, -8, -2, 8.2, -8, -4.0962, 8.2, -4.5964, -2, 8.2, -8, -3.1113, 8.2, -5.4047, -4.0962, 8.2, -4.5964, -2, 8.2, -5.9987, -3.1113, 8.2, -5.4047, -2, 8.2, -8, -4.0962, 8.2, 4.5961, -8, 8.2, 8, -4.9046, 8.2, 3.611, -2, 8.2, 8, -8, 8.2, 8, -4.0962, 8.2, 4.5961, -3.1113, 8.2, 5.4045, -2, 8.2, 8, -4.0962, 8.2, 4.5961, -2, 8.2, 5.9985, -2, 8.2, 8, -3.1113, 8.2, 5.4045, -2, 8.2, 5.9985, -3.1113, 8, 5.4045, -2, 8, 5.9985, -3.1113, 8.2, 5.4045, -3.1113, 8, 5.4045, -2, 8.2, 5.9985, -3.1113, 8.2, 5.4045, -4.0962, 8, 4.5961, -3.1113, 8, 5.4045, -4.0962, 8.2, 4.5961, -4.0962, 8, 4.5961, -3.1113, 8.2, 5.4045, -4.0962, 8.2, 4.5961, -4.9046, 8, 3.611, -4.0962, 8, 4.5961, -4.9046, 8.2, 3.611, -4.9046, 8, 3.611, -4.0962, 8.2, 4.5961, -4.9046, 8.2, 3.611, -5.5052, 8, 2.4872, -4.9046, 8, 3.611, -5.5052, 8.2, 2.4872, -5.5052, 8, 2.4872, -4.9046, 8.2, 3.611, -5.8751, 8.2, 1.268, -5.5052, 8, 2.4872, -5.5052, 8.2, 2.4872, -5.8751, 8, 1.268, -5.5052, 8, 2.4872, -5.8751, 8.2, 1.268, -6, 8.2, -0.0001, -5.8751, 8, 1.268, -5.8751, 8.2, 1.268, -6, 8, -0.0001, -5.8751, 8, 1.268, -6, 8.2, -0.0001, -5.8751, 8.2, -1.2682, -6, 8, -0.0001, -6, 8.2, -0.0001, -5.8751, 8, -1.2682, -6, 8, -0.0001, -5.8751, 8.2, -1.2682, -5.5052, 8.2, -2.4875, -5.8751, 8, -1.2682, -5.8751, 8.2, -1.2682, -5.5052, 8, -2.4875, -5.8751, 8, -1.2682, -5.5052, 8.2, -2.4875, -4.9046, 8.2, -3.6113, -5.5052, 8, -2.4875, -5.5052, 8.2, -2.4875, -4.9046, 8, -3.6113, -5.5052, 8, -2.4875, -4.9046, 8.2, -3.6113, -4.0962, 8.2, -4.5964, -4.9046, 8, -3.6113, -4.9046, 8.2, -3.6113, -4.0962, 8, -4.5964, -4.9046, 8, -3.6113, -4.0962, 8.2, -4.5964, -3.1113, 8.2, -5.4047, -4.0962, 8, -4.5964, -4.0962, 8.2, -4.5964, -3.1113, 8, -5.4047, -4.0962, 8, -4.5964, -3.1113, 8.2, -5.4047, -3.1113, 8, -5.4047, -2, 8.2, -5.9987, -2, 8, -5.9987, -3.1113, 8.2, -5.4047, -2, 8.2, -5.9987, -3.1113, 8, -5.4047)
 
-[node name="CornerStreet" type="StaticBody3D" node_paths=PackedStringArray("meshList")]
+[node name="CornerStreet" type="StaticBody3D"]
 script = ExtResource("1_8ff0l")
-meshList = [NodePath("CornerStreet/Cube"), NodePath("CornerStreet/Cube_001"), NodePath("CornerStreet/Cube_002"), NodePath("CornerStreet/Cube_003"), NodePath("CornerStreet/Cube_004"), NodePath("CornerStreet/Cube_005")]
 
 [node name="CornerStreet" parent="." instance=ExtResource("2_7ov2a")]
-
-[node name="Cube" parent="CornerStreet" index="0"]
-surface_material_override/0 = SubResource("ShaderMaterial_lgn68")
-
-[node name="Cube_001" parent="CornerStreet" index="1"]
-surface_material_override/0 = SubResource("ShaderMaterial_8ff0l")
-
-[node name="Cube_002" parent="CornerStreet" index="2"]
-surface_material_override/0 = SubResource("ShaderMaterial_8ff0l")
-
-[node name="Cube_003" parent="CornerStreet" index="3"]
-surface_material_override/0 = SubResource("ShaderMaterial_8ff0l")
-
-[node name="Cube_004" parent="CornerStreet" index="4"]
-transform = Transform3D(1, 0, 0, 0, 0.05, 0, 0, 0, 0.2, 2, 8, -0.00297928)
-surface_material_override/0 = SubResource("ShaderMaterial_roux2")
-
-[node name="Cube_005" parent="CornerStreet" index="5"]
-surface_material_override/0 = SubResource("ShaderMaterial_8fqwj")
 
 [node name="CollisionShape" type="CollisionShape3D" parent="."]
 shape = SubResource("ConcavePolygonShape3D_itur2")
@@ -83,5 +26,3 @@ transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -7, 8, -7)
 
 [node name="Light6" parent="." instance=ExtResource("2_p22w0")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -7, 8, 7)
-
-[editable path="CornerStreet"]

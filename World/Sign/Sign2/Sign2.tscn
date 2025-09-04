@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://jedkyyw77rwy"]
 
-[ext_resource type="ArrayMesh" uid="uid://ctedb8b4svkpb" path="res://World/Sign/Sign2/Mesh/Sign2.obj" id="1_66xku"]
 [ext_resource type="Script" uid="uid://dq5owqqthxl1w" path="res://World/Sign/Sign.cs" id="1_ks6fv"]
 [ext_resource type="Material" uid="uid://c01x7g2d7ke0w" path="res://World/Sign/Shader/SignShaderMaterial.tres" id="2_gk22o"]
+[ext_resource type="PackedScene" uid="uid://dlv8dh2c55vbo" path="res://World/Sign/Sign2/Mesh/Sign2.blend" id="3_gk22o"]
 [ext_resource type="PackedScene" uid="uid://8e785bhoeqrx" path="res://World/Sign/SignParts/Base/SignBase.tscn" id="3_ks6fv"]
 [ext_resource type="Shader" uid="uid://cp8kdxkv6shf2" path="res://World/Lights/Shader/Cone.gdshader" id="5_72b7o"]
 
@@ -21,19 +21,17 @@ shader_parameter/color = Color(0.5, 1, 1, 0.313726)
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 script = ExtResource("1_ks6fv")
 material = ExtResource("2_gk22o")
-sign = NodePath("Sign")
-signMesh = NodePath("Sign/SignMesh")
+sign = NodePath("Sign2")
+signMesh = NodePath("Sign2/Text")
 signBase = NodePath("SignBase")
 
-[node name="Sign" type="Node3D" parent="."]
-unique_name_in_owner = true
-
-[node name="SignMesh" type="MeshInstance3D" parent="Sign"]
-unique_name_in_owner = true
+[node name="Sign2" parent="." instance=ExtResource("3_gk22o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
-material_override = ExtResource("2_gk22o")
-mesh = ExtResource("1_66xku")
-skeleton = NodePath("../..")
+
+[node name="Text" parent="Sign2" index="0"]
+surface_material_override/0 = ExtResource("2_gk22o")
 
 [node name="SignBase" parent="." instance=ExtResource("3_ks6fv")]
 material = SubResource("ShaderMaterial_hkqg1")
+
+[editable path="Sign2"]

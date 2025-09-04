@@ -11,7 +11,7 @@ public partial class Light2 : Light
 	[Export] ShaderMaterial coneMaterial;
 	[Export] MeshInstance3D coneMesh;
 
-	private StaticBody3D light;
+	private MeshInstance3D light;
 	private Timer timer;
 	private MeshInstance3D glow;
 	private MeshInstance3D cone;
@@ -24,7 +24,7 @@ public partial class Light2 : Light
 	{
 		base._Ready();
 
-		light = GetNode<StaticBody3D>("%Light");
+		light = GetNode<MeshInstance3D>("Light2/Cylinder_001");
 		timer = GetNode<Timer>("%Timer");
 		glow = GetNode<MeshInstance3D>("%Glow");
 		cone = GetNode<MeshInstance3D>("%Cone");

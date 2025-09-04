@@ -8,8 +8,6 @@ public partial class Vehicle : PathFollow3D
 	[Export] float frontLightPower = 0.8f;
 	[Export] float rearLightPower = 0.6f;
 
-	[Export] MeshInstance3D[] meshList;
-
 	[ExportGroup("Front Light")]
 	[Export] ShaderMaterial frontLightShaderMaterial;
 	[Export] ShaderMaterial frontConeShaderMaterial;
@@ -44,7 +42,6 @@ public partial class Vehicle : PathFollow3D
 		base._Ready();
 
 		Global.Instance.CarLightsEnabled += enableLights;
-		Global.Instance.FlatShadingEnabled += OnFlatShadingEnabled;
 
 		SetMeshMaterial(frontLeftLightMesh, frontLightShaderMaterial);
 		SetMeshMaterial(frontRightLightMesh, frontLightShaderMaterial);
@@ -70,43 +67,6 @@ public partial class Vehicle : PathFollow3D
 	public void StopCar(bool flag)
 	{
 		stop = flag;
-	}
-
-	public void OnFlatShadingEnabled(bool enabled)
-	{
-		if (meshList == null)
-			return;
-
-		foreach (MeshInstance3D m in meshList)
-		{
-			if (m == null)
-				return;
-
-			ShaderMaterial mat;
-
-			if (m.GetSurfaceOverrideMaterialCount() > 1)
-			{
-				for (int i = 0; i < m.GetSurfaceOverrideMaterialCount(); i++)
-				{
-					mat = (ShaderMaterial)m.GetSurfaceOverrideMaterial(i);
-
-					if (mat == null)
-						return;
-
-					mat.SetShaderParameter("enable", enabled);
-					m.SetSurfaceOverrideMaterial(i, mat);
-				}
-				return;
-			}
-
-			mat = (ShaderMaterial)m.GetSurfaceOverrideMaterial(0);
-
-			if (mat == null)
-				return;
-
-			mat.SetShaderParameter("enable", enabled);
-			m.SetSurfaceOverrideMaterial(0, mat);
-		}
 	}
 
 	public void enableLights(bool flag)
@@ -158,6 +118,5 @@ public partial class Vehicle : PathFollow3D
 		base._ExitTree();
 
 		Global.Instance.CarLightsEnabled -= enableLights;
-		Global.Instance.FlatShadingEnabled -= OnFlatShadingEnabled;
 	}
 }

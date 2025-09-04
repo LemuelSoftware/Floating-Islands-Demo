@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ce5gquwemo32c"]
+[gd_scene load_steps=6 format=3 uid="uid://ce5gquwemo32c"]
 
 [ext_resource type="Script" uid="uid://dd2spohacmbge" path="res://World/Lights/Light1/Light1.cs" id="1_7kjj4"]
-[ext_resource type="ArrayMesh" uid="uid://d2ldavvfqtjml" path="res://World/Lights/Light1/Mesh/Light1.obj" id="1_wlo4l"]
 [ext_resource type="Shader" uid="uid://dhjij062wrql5" path="res://World/Lights/Shader/LightShader1.gdshader" id="2_7kjj4"]
-[ext_resource type="Shader" uid="uid://cr6wovrw5bvtv" path="res://World/Shader/FlatShading.gdshader" id="4_xg356"]
+[ext_resource type="PackedScene" uid="uid://bbk68jugokrej" path="res://World/Lights/Light1/Mesh/Light1.blend" id="3_7kjj4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xg356"]
 resource_local_to_scene = true
@@ -12,25 +11,17 @@ shader = ExtResource("2_7kjj4")
 shader_parameter/glow_color = Color(0.5, 1, 1, 1)
 shader_parameter/glow_power = 1.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_rre15"]
-render_priority = 0
-shader = ExtResource("4_xg356")
-shader_parameter/enable = true
-shader_parameter/normal_depth = 1.0
-
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wlo4l"]
 data = PackedVector3Array(-8.2, 0.1, 8.2, -8.2, -0.1, 8.2, -8.2, 0.1, -8.2, -8.2, 0.1, -8.2, -8.2, -0.1, 8.2, -8.2, -0.1, -8.2, -8.2, 0.1, -8.2, -8.2, -0.1, -8.2, 8.2, 0.1, -8.2, 8.2, 0.1, -8.2, -8.2, -0.1, -8.2, 8.2, -0.1, -8.2, 8.2, 0.1, -8.2, 8.2, -0.1, -8.2, 8.2, 0.1, 8.2, 8.2, 0.1, 8.2, 8.2, -0.1, -8.2, 8.2, -0.1, 8.2, 8.2, 0.1, 8.2, 8.2, -0.1, 8.2, -8.2, 0.1, 8.2, -8.2, 0.1, 8.2, 8.2, -0.1, 8.2, -8.2, -0.1, 8.2, 8.1172, 0.1, -8.1174, 8.1172, 0.1, 8.1172, 8.1172, -0.1, -8.1174, 8.1172, -0.1, -8.1174, 8.1172, 0.1, 8.1172, 8.1172, -0.1, 8.1172, 8.1172, 0.1, 8.1172, -8.1174, 0.1, 8.1172, 8.1172, -0.1, 8.1172, 8.1172, -0.1, 8.1172, -8.1174, 0.1, 8.1172, -8.1174, -0.1, 8.1172, -8.1174, -0.1, 8.1172, -8.1174, -0.1, -8.1174, -8.2, -0.1, 8.2, -8.2, -0.1, 8.2, -8.1174, -0.1, -8.1174, -8.2, -0.1, -8.2, 8.2, -0.1, 8.2, -8.1174, -0.1, 8.1172, -8.2, -0.1, 8.2, -8.1174, -0.1, -8.1174, 8.1172, -0.1, -8.1174, -8.2, -0.1, -8.2, 8.1172, -0.1, 8.1172, -8.1174, -0.1, 8.1172, 8.2, -0.1, 8.2, -8.2, -0.1, -8.2, 8.1172, -0.1, -8.1174, 8.2, -0.1, -8.2, 8.1172, -0.1, -8.1174, 8.1172, -0.1, 8.1172, 8.2, -0.1, -8.2, 8.2, -0.1, -8.2, 8.1172, -0.1, 8.1172, 8.2, -0.1, 8.2, -8.1174, 0.1, -8.1174, -8.1174, 0.1, 8.1172, -8.2, 0.1, -8.2, -8.2, 0.1, -8.2, -8.1174, 0.1, 8.1172, -8.2, 0.1, 8.2, 8.2, 0.1, -8.2, -8.1174, 0.1, -8.1174, -8.2, 0.1, -8.2, -8.1174, 0.1, 8.1172, 8.1172, 0.1, 8.1172, -8.2, 0.1, 8.2, 8.1172, 0.1, -8.1174, -8.1174, 0.1, -8.1174, 8.2, 0.1, -8.2, -8.2, 0.1, 8.2, 8.1172, 0.1, 8.1172, 8.2, 0.1, 8.2, 8.1172, 0.1, 8.1172, 8.1172, 0.1, -8.1174, 8.2, 0.1, 8.2, 8.2, 0.1, 8.2, 8.1172, 0.1, -8.1174, 8.2, 0.1, -8.2, -8.1174, 0.1, -8.1174, 8.1172, 0.1, -8.1174, -8.1174, -0.1, -8.1174, -8.1174, -0.1, -8.1174, 8.1172, 0.1, -8.1174, 8.1172, -0.1, -8.1174, -8.1174, 0.1, 8.1172, -8.1174, 0.1, -8.1174, -8.1174, -0.1, 8.1172, -8.1174, -0.1, 8.1172, -8.1174, 0.1, -8.1174, -8.1174, -0.1, -8.1174)
 
-[node name="Light1" type="StaticBody3D" node_paths=PackedStringArray("mesh", "shadingMeshList")]
+[node name="Light1" type="StaticBody3D" node_paths=PackedStringArray("mesh")]
 script = ExtResource("1_7kjj4")
 material = SubResource("ShaderMaterial_xg356")
-mesh = NodePath("Mesh")
-shadingMeshList = [NodePath("Mesh")]
+mesh = NodePath("Light1/Cube")
 
-[node name="Mesh" type="MeshInstance3D" parent="."]
-unique_name_in_owner = true
-mesh = ExtResource("1_wlo4l")
-surface_material_override/0 = SubResource("ShaderMaterial_rre15")
+[node name="Light1" parent="." instance=ExtResource("3_7kjj4")]
 
 [node name="CollisionShape" type="CollisionShape3D" parent="."]
 shape = SubResource("ConcavePolygonShape3D_wlo4l")
+
+[editable path="Light1"]

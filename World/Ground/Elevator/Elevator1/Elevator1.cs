@@ -21,7 +21,6 @@ public partial class Elevator1 : PathFollow3D
 		timer.WaitTime = delay;
 
 		timer.Timeout += OnTimerTimeout;
-		Global.Instance.FlatShadingEnabled += OnFlatShadingEnabled;
 	}
 
 	public void UpdateProgress()
@@ -39,20 +38,6 @@ public partial class Elevator1 : PathFollow3D
 		}
 	}
 
-	public void OnFlatShadingEnabled(bool enabled)
-	{
-		if (mesh == null)
-			return;
-		
-		ShaderMaterial mat = (ShaderMaterial)mesh.GetSurfaceOverrideMaterial(0);
-
-		if (mat == null)
-			return;
-
-		mat.SetShaderParameter("enable", enabled);
-		mesh.SetSurfaceOverrideMaterial(0, mat);
-	}
-
 	private void OnTimerTimeout()
 	{
 		if (ProgressRatio >= 1.0f)
@@ -67,6 +52,5 @@ public partial class Elevator1 : PathFollow3D
 		base._ExitTree();
 
 		timer.Timeout -= OnTimerTimeout;
-		Global.Instance.FlatShadingEnabled -= OnFlatShadingEnabled;
 	}
 }

@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://d0smqq4on8ktf" path="res://World/Ground/Grass/Shader/GrassShaderMaterial.tres" id="1_sfd44"]
 [ext_resource type="PlaneMesh" uid="uid://c4ccmxltioc1h" path="res://World/Ground/Grass/Mesh/GrassPlane.tres" id="2_case5"]
-[ext_resource type="PackedScene" uid="uid://d0qswv6wtvi7j" path="res://World/Ground/Grass/Mesh/Grass1.glb" id="2_ftgpu"]
+[ext_resource type="PackedScene" uid="uid://brway2lccgu2w" path="res://World/Ground/Grass/Mesh/Grass1.blend" id="3_ftgpu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ehud"]
 
@@ -53,7 +53,7 @@ multimesh = SubResource("MultiMesh_gmmuk")
 transform = Transform3D(6.62493, 0, 0, 0, 6.79592, 0, 0, 0, 6.17664, 0, 0, 0)
 mesh = ExtResource("2_case5")
 
-[node name="Grass1" parent="." instance=ExtResource("2_ftgpu")]
+[node name="Grass1" parent="." instance=ExtResource("3_ftgpu")]
 visible = false
 
 [editable path="Grass1"]

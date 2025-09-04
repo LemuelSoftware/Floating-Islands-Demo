@@ -68,62 +68,50 @@ shader_parameter/glow_power = 1.0
 script = ExtResource("1_0nkp1")
 glowColor = Color(0.941176, 0.847059, 0.768627, 1)
 glowPower = 10.0
-lights = []
+lights = [NodePath("Floor1/Light"), NodePath("Floor2/Light"), NodePath("Roof2/Light1"), NodePath("Roof2/Light2"), NodePath("Roof2/Light3"), NodePath("Roof2/Light4"), NodePath("Roof2/Light5")]
 
-[node name="Base" parent="." node_paths=PackedStringArray("meshList") instance=ExtResource("1_tqbv2")]
-meshList = []
+[node name="Base" parent="." instance=ExtResource("1_tqbv2")]
 
-[node name="Light" parent="Base" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+[node name="Light" parent="Base" instance=ExtResource("2_0vot1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
 material = SubResource("ShaderMaterial_8q6ph")
-shadingMeshList = []
 
-[node name="Floor1" parent="." node_paths=PackedStringArray("meshList") instance=ExtResource("2_ald4b")]
+[node name="Floor1" parent="." instance=ExtResource("2_ald4b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
-meshList = []
 
-[node name="Light" parent="Floor1" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+[node name="Light" parent="Floor1" instance=ExtResource("2_0vot1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
 material = SubResource("ShaderMaterial_0ejjg")
-shadingMeshList = []
 
-[node name="Floor2" parent="." node_paths=PackedStringArray("meshList") instance=ExtResource("2_ald4b")]
+[node name="Floor2" parent="." instance=ExtResource("2_ald4b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32, 0)
-meshList = []
 
-[node name="Light" parent="Floor2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+[node name="Light" parent="Floor2" instance=ExtResource("2_0vot1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
 material = SubResource("ShaderMaterial_24qii")
-shadingMeshList = []
 
-[node name="Roof2" parent="." node_paths=PackedStringArray("meshList") instance=ExtResource("3_u2ta8")]
+[node name="Roof2" parent="." instance=ExtResource("3_u2ta8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 48, 0)
-meshList = []
 
-[node name="Light1" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+[node name="Light1" parent="Roof2" instance=ExtResource("2_0vot1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 0)
 material = SubResource("ShaderMaterial_owmkd")
-shadingMeshList = []
 
-[node name="Light2" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+[node name="Light2" parent="Roof2" instance=ExtResource("2_0vot1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9, 24)
 material = SubResource("ShaderMaterial_okoff")
-shadingMeshList = []
 
-[node name="Light3" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+[node name="Light3" parent="Roof2" instance=ExtResource("2_0vot1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9, -24)
 material = SubResource("ShaderMaterial_hj8up")
-shadingMeshList = []
 
-[node name="Light4" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+[node name="Light4" parent="Roof2" instance=ExtResource("2_0vot1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 2.9, 0)
 material = SubResource("ShaderMaterial_ip5e5")
-shadingMeshList = []
 
-[node name="Light5" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+[node name="Light5" parent="Roof2" instance=ExtResource("2_0vot1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 2.9, 0)
 material = SubResource("ShaderMaterial_2eaut")
-shadingMeshList = []
 
 [node name="Sign" parent="." instance=ExtResource("4_jw7s3")]
 unique_name_in_owner = true

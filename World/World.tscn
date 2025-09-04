@@ -909,21 +909,17 @@ transform = Transform3D(7.36487, 0, 6.76452, 0, 10, 0, -6.76452, 0, 7.36487, -25
 [node name="Foundation" type="Node3D" parent="Platforms/Platform1"]
 transform = Transform3D(0.147219, 0, -0.135375, 0, 0.2, 0, 0.135375, 0, 0.147219, 0, 0, 0)
 
-[node name="Foundation1" parent="Platforms/Platform1/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation1" parent="Platforms/Platform1/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.7, 3)
-meshList = []
 
-[node name="RampStreet" parent="Platforms/Platform1/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet" parent="Platforms/Platform1/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-4.3714e-08, 0, -1, 0, 1, 0, 1, 0, -4.3714e-08, 26, 0.7, 19)
-meshList = []
 
-[node name="Light3" parent="Platforms/Platform1/Foundation/RampStreet" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light3" parent="Platforms/Platform1/Foundation/RampStreet" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, -2.91038e-11, 0, 0.4, 0, 2.91038e-11, 0, 0.4, -2, 6.7, 7)
-shadingMeshList = []
 
-[node name="Light4" parent="Platforms/Platform1/Foundation/RampStreet" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light4" parent="Platforms/Platform1/Foundation/RampStreet" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, -2.91038e-11, 0, 0.4, 0, 2.91038e-11, 0, 0.4, -2, 6.7, -7)
-shadingMeshList = []
 
 [node name="Buildings" type="Node3D" parent="Platforms/Platform1"]
 transform = Transform3D(0.736097, 0, -0.676876, 0, 1, 0, 0.676876, 0, 0.736097, 0, 0, 0)
@@ -1082,21 +1078,17 @@ transform = Transform3D(0.800681, 0.592567, 0.0881765, -0.373498, 0.378663, 0.84
 [node name="Lights" type="Node3D" parent="Platforms/Platform1"]
 transform = Transform3D(0.19997, 0, 0.00349048, 0, 0.2, 0, -0.00349048, 0, 0.19997, 0, 0, 0)
 
-[node name="Light3" parent="Platforms/Platform1/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light3" parent="Platforms/Platform1/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.311584, 5.5295, 44.1715)
-shadingMeshList = []
 
-[node name="Light4" parent="Platforms/Platform1/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light4" parent="Platforms/Platform1/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 7.22422, 5.44286, 43.7437)
-shadingMeshList = []
 
-[node name="Light5" parent="Platforms/Platform1/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light5" parent="Platforms/Platform1/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -54.8773, 0.937012, 21.7558)
-shadingMeshList = []
 
-[node name="Light6" parent="Platforms/Platform1/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light6" parent="Platforms/Platform1/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -51.3448, 1.36774, 27.1328)
-shadingMeshList = []
 
 [node name="Platform2" parent="Platforms" instance=ExtResource("3_eue43")]
 transform = Transform3D(9.52757, 0, 3.03734, 0, 10, 0, -3.03734, 0, 9.52757, -467.063, 196.733, 240.309)
@@ -1104,130 +1096,99 @@ transform = Transform3D(9.52757, 0, 3.03734, 0, 10, 0, -3.03734, 0, 9.52757, -46
 [node name="Foundation" type="Node3D" parent="Platforms/Platform2"]
 transform = Transform3D(0.190532, 0, -0.0608066, 0, 0.2, 0, 0.0608066, 0, 0.190532, 0, -0.399998, 0)
 
-[node name="IntersectionStreet" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet" parent="Platforms/Platform2/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 8.73115e-11, 0, 1, 0, -8.73115e-11, 0, 1, -2, 0, 42)
-meshList = []
 
-[node name="IntersectionStreet2" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet2" parent="Platforms/Platform2/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 1.74623e-10, 0, 1, 0, -1.74623e-10, 0, 1, -34, 0, 42)
-meshList = []
 
-[node name="StraightStreet" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet" parent="Platforms/Platform2/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(-1, 0, -8.76607e-08, 0, 1, 0, 8.76607e-08, 0, -1, -18, 0, 42)
-meshList = []
 
-[node name="StraightStreet4" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet4" parent="Platforms/Platform2/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(1.31462e-07, 0, -1, 0, 1, 0, 1, 0, 1.31462e-07, -2.00502, 0, 25.995)
-meshList = []
 
-[node name="StraightStreet3" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet3" parent="Platforms/Platform2/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(1.31462e-07, 0, -1, 0, 1, 0, 1, 0, 1.31462e-07, -2, 0, 58)
 visible = false
-meshList = []
 
-[node name="Foundation1" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation1" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, 14, 0, 58)
-meshList = []
 
-[node name="Foundation3" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation3" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, 13.9899, 0, 26)
-meshList = []
 
-[node name="Foundation5" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation5" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, 14, 0, -6)
-meshList = []
 
-[node name="Foundation6" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation6" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, -18, 0, -5.98994)
-meshList = []
 
-[node name="Foundation4" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation4" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, -18, 0, 26)
-meshList = []
 
-[node name="Foundation2" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation2" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, -18, 0, 58)
-meshList = []
 
-[node name="Foundation7" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation7" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, -50, 0, 58)
-meshList = []
 
-[node name="Foundation8" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation8" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, -50, 0, 26)
-meshList = []
 
-[node name="Foundation9" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation9" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, -50, 0, -6)
-meshList = []
 
-[node name="RampStreet" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet" parent="Platforms/Platform2/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, 14, 0, 42)
-meshList = []
 
-[node name="IntersectionStreet3" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet3" parent="Platforms/Platform2/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 2.03727e-10, 0, 1, 0, -2.03727e-10, 0, 1, -2, 0, 10)
-meshList = []
 
-[node name="IntersectionStreet4" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet4" parent="Platforms/Platform2/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 2.91038e-10, 0, 1, 0, -2.91038e-10, 0, 1, -34, 0, 10)
-meshList = []
 
-[node name="StraightStreet2" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet2" parent="Platforms/Platform2/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(-1, 0, -8.77772e-08, 0, 1, 0, 8.77772e-08, 0, -1, -18, 0, 10)
-meshList = []
 
-[node name="StraightStreet5" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet5" parent="Platforms/Platform2/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -34.0006, 0, 26)
-meshList = []
 
-[node name="RampStreet3" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet3" parent="Platforms/Platform2/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-4.4005e-08, 0, 1, 0, 1, 0, -1, 0, -4.4005e-08, -34, 0, -5.8)
-meshList = []
 
-[node name="RampStreet5" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet5" parent="Platforms/Platform2/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(1.31637e-07, 0, -1, 0, 1, 0, 1, 0, 1.31637e-07, -28.001, 4, -62.5)
-meshList = []
 
-[node name="Light3" parent="Platforms/Platform2/Foundation/RampStreet5" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light3" parent="Platforms/Platform2/Foundation/RampStreet5" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 7.27596e-11, 0, 0.4, 0, -7.27596e-11, 0, 0.4, 7.5022, 4, 6.99774)
-shadingMeshList = []
 
-[node name="Light4" parent="Platforms/Platform2/Foundation/RampStreet5" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light4" parent="Platforms/Platform2/Foundation/RampStreet5" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 8.73115e-11, 0, 0.4, 0, -8.73115e-11, 0, 0.4, 7.4978, 4, -7.00226)
-shadingMeshList = []
 
-[node name="RampStreet6" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet6" parent="Platforms/Platform2/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(1.31724e-07, 0, -1, 0, 1, 0, 1, 0, 1.31724e-07, -28, 0, -46.5)
-meshList = []
 
-[node name="RampStreet4" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet4" parent="Platforms/Platform2/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-4.40632e-08, 0, 1, 0, 1, 0, -1, 0, -4.40632e-08, -1.99997, 0, -5.81007)
-meshList = []
 
-[node name="CornerStreet" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("16_oef3u")]
+[node name="CornerStreet" parent="Platforms/Platform2/Foundation" instance=ExtResource("16_oef3u")]
 transform = Transform3D(-4.38013e-08, 0, 1, 0, 1, 0, -1, 0, -4.38013e-08, -2, 0, 58)
-meshList = []
 
-[node name="CornerStreet2" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("16_oef3u")]
+[node name="CornerStreet2" parent="Platforms/Platform2/Foundation" instance=ExtResource("16_oef3u")]
 transform = Transform3D(-4.38304e-08, 0, 1, 0, 1, 0, -1, 0, -4.38304e-08, -34, 0, 58)
-meshList = []
 
-[node name="CornerStreet4" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("16_oef3u")]
+[node name="CornerStreet4" parent="Platforms/Platform2/Foundation" instance=ExtResource("16_oef3u")]
 transform = Transform3D(1, 0, 2.61934e-10, 0, 1, 0, -2.61934e-10, 0, 1, -50, 0, 10)
-meshList = []
 
-[node name="CornerStreet5" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("16_oef3u")]
+[node name="CornerStreet5" parent="Platforms/Platform2/Foundation" instance=ExtResource("16_oef3u")]
 transform = Transform3D(-1, 0, 8.71369e-08, 0, 1, 0, -8.71369e-08, 0, -1, 14, 0, 10)
-meshList = []
 
-[node name="Foundation10" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation10" parent="Platforms/Platform2/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 2.03727e-10, 0, 1, 0, -2.03727e-10, 0, 1, -28, 4, -78.5)
-meshList = []
 
-[node name="RampStreet7" parent="Platforms/Platform2/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet7" parent="Platforms/Platform2/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-1, 0, 8.73988e-08, 0, 1, 0, -8.73988e-08, 0, -1, -50, 0, 42)
-meshList = []
 
 [node name="Buildings" type="Node3D" parent="Platforms/Platform2"]
 transform = Transform3D(0.952661, 0, -0.304033, 0, 1, 0, 0.304033, 0, 0.952661, 0, 1.2, 0)
@@ -1274,93 +1235,71 @@ lights = []
 
 [node name="Trees" type="Node3D" parent="Platforms/Platform2"]
 
-[node name="Tree1" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree1" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.2, 0, -1.49012e-08, 0, 0.2, 0, 1.49012e-08, 0, 0.2, 8.28141, 0.652798, -2.10969)
-meshList = []
 
-[node name="Tree15" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree15" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.2, 0, -1.49012e-08, 0, 0.2, 0, 1.49012e-08, 0, 0.2, 2.40782, 1.03132, -5.84253)
-meshList = []
 
-[node name="Tree22" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree22" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.115332, 0, 0.163397, 0, 0.2, 0, -0.163397, 0, 0.115332, -2.91921, 0.997803, -6.74518)
-meshList = []
 
-[node name="Tree16" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree16" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.0921669, 0, 0.177497, 0, 0.2, 0, -0.177497, 0, -0.0921669, 3.41811, 0.849571, -9.24995)
-meshList = []
 
-[node name="Tree17" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree17" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.199998, 0, 0.000830814, 0, 0.2, 0, -0.000830814, 0, -0.199998, 0.454628, 0.794418, -10.916)
-meshList = []
 
-[node name="Tree18" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree18" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.186564, 0, 0.0720678, 0, 0.2, 0, -0.0720678, 0, -0.186564, -4.86342, 0.908792, -10.7761)
-meshList = []
 
-[node name="Tree19" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree19" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.163878, 0, 0.114647, 0, 0.2, 0, -0.114647, 0, 0.163878, -7.71397, 1.00643, -10.3223)
-meshList = []
 
-[node name="Tree2" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree2" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0808751, 0, 0.182919, 0, 0.2, 0, -0.182919, 0, 0.0808751, 7.37395, 0.652802, 0.0205269)
-meshList = []
 
-[node name="Tree3" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree3" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.17807, 0, 0.0910562, 0, 0.2, 0, -0.0910562, 0, -0.17807, 8.92028, 0.934753, 1.77878)
-meshList = []
 
-[node name="Tree4" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree4" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.182418, 0, -0.0819973, 0, 0.2, 0, 0.0819973, 0, -0.182418, 7.18247, 0.923355, 5.70321)
-meshList = []
 
-[node name="Tree7" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree7" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.182418, 0, -0.0819973, 0, 0.2, 0, 0.0819973, 0, -0.182418, 5.05283, 0.709, 7.05041)
-meshList = []
 
-[node name="Tree8" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree8" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.182418, 0, -0.0819973, 0, 0.2, 0, 0.0819973, 0, -0.182418, 6.41578, 0.506294, 9.68904)
-meshList = []
 
-[node name="Tree5" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree5" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.125823, 0, -0.155462, 0, 0.2, 0, 0.155462, 0, 0.125823, 5.56647, 0.81822, 3.62174)
-meshList = []
 
-[node name="Tree6" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree6" parent="Platforms/Platform2/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.17145, 0, 0.102981, 0, 0.2, 0, -0.102981, 0, 0.17145, 8.11216, 0.992218, 3.82257)
-meshList = []
 
-[node name="Tree9" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree9" parent="Platforms/Platform2/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -1.49012e-08, 0, 0.2, 0, 1.49012e-08, 0, 0.2, 7.05191, 0.604786, 8.17395)
-meshList = []
 
-[node name="Tree10" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree10" parent="Platforms/Platform2/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.10313, 0, 0.17136, 0, 0.2, 0, -0.17136, 0, 0.10313, 5.22749, 0.815138, 5.36457)
-meshList = []
 
-[node name="Tree11" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree11" parent="Platforms/Platform2/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.10313, 0, 0.17136, 0, 0.2, 0, -0.17136, 0, 0.10313, 6.74622, 0.798662, 1.86588)
-meshList = []
 
-[node name="Tree12" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree12" parent="Platforms/Platform2/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.10313, 0, 0.17136, 0, 0.2, 0, -0.17136, 0, 0.10313, 8.08289, 0.57933, -4.78154)
-meshList = []
 
-[node name="Tree13" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree13" parent="Platforms/Platform2/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.10313, 0, 0.17136, 0, 0.2, 0, -0.17136, 0, 0.10313, 5.39797, 0.935312, -5.08189)
-meshList = []
 
-[node name="Tree14" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree14" parent="Platforms/Platform2/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.10313, 0, 0.17136, 0, 0.2, 0, -0.17136, 0, 0.10313, 4.60487, 1.03507, -7.92715)
-meshList = []
 
-[node name="Tree20" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree20" parent="Platforms/Platform2/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.10313, 0, 0.17136, 0, 0.2, 0, -0.17136, 0, 0.10313, 0.760529, 0.943619, -8.18331)
-meshList = []
 
-[node name="Tree21" parent="Platforms/Platform2/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree21" parent="Platforms/Platform2/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(-0.160607, 0, 0.119186, 0, 0.2, 0, -0.119186, 0, -0.160607, -6.15768, 0.90827, -12.7598)
-meshList = []
 
 [node name="Rocks" type="Node3D" parent="Platforms/Platform2"]
 
@@ -1412,21 +1351,17 @@ transform = Transform3D(0.859507, 0.136128, 0.492663, 0.166145, 0.837127, -0.521
 [node name="Lights" type="Node3D" parent="Platforms/Platform2"]
 transform = Transform3D(0.190532, 0, -0.0608066, 0, 0.2, 0, 0.0608066, 0, 0.190532, 0, 0, 0)
 
-[node name="Light3" parent="Platforms/Platform2/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light3" parent="Platforms/Platform2/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 1.45519e-11, 0, 0.4, 0, -1.45519e-11, 0, 0.4, -82.0581, 4.07929, 34.8519)
-shadingMeshList = []
 
-[node name="Light4" parent="Platforms/Platform2/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light4" parent="Platforms/Platform2/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 1.45519e-11, 0, 0.4, 0, -1.45519e-11, 0, 0.4, -82.1382, 3.33057, 41.6233)
-shadingMeshList = []
 
-[node name="Light5" parent="Platforms/Platform2/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light5" parent="Platforms/Platform2/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 2.91038e-11, 0, 0.4, 0, -2.91038e-11, 0, 0.4, 42.4703, 2.18836, 47.9222)
-shadingMeshList = []
 
-[node name="Light6" parent="Platforms/Platform2/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light6" parent="Platforms/Platform2/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 4.36557e-11, 0, 0.4, 0, -4.36557e-11, 0, 0.4, 41.2769, 1.79266, 53.4897)
-shadingMeshList = []
 
 [node name="Platform3" parent="Platforms" instance=ExtResource("4_cf1t6")]
 transform = Transform3D(9.99999, 0, 0.0174518, 0, 10, 0, -0.0174518, 0, 9.99999, -525.479, 131.979, -242.402)
@@ -1434,33 +1369,26 @@ transform = Transform3D(9.99999, 0, 0.0174518, 0, 10, 0, -0.0174518, 0, 9.99999,
 [node name="Foundation" type="Node3D" parent="Platforms/Platform3"]
 transform = Transform3D(0.2, 0, -0.000349066, 0, 0.2, 0, 0.000349066, 0, 0.2, 0, -1.05, 0)
 
-[node name="Foundation1" parent="Platforms/Platform3/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation1" parent="Platforms/Platform3/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, 55)
-meshList = []
 
-[node name="Foundation2" parent="Platforms/Platform3/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation2" parent="Platforms/Platform3/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 4.26326e-14, 0, 1, 0, -4.26326e-14, 0, 1, 14, 0, 71)
-meshList = []
 
-[node name="CornerStreet90" parent="Platforms/Platform3/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("28_puw6q")]
+[node name="CornerStreet90" parent="Platforms/Platform3/Foundation" instance=ExtResource("28_puw6q")]
 transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 30, 0, 71)
-meshList = []
 
-[node name="CornerStreet91" parent="Platforms/Platform3/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("28_puw6q")]
+[node name="CornerStreet91" parent="Platforms/Platform3/Foundation" instance=ExtResource("28_puw6q")]
 transform = Transform3D(-1, 0, 8.74227e-08, 0, 1, 0, -8.74227e-08, 0, -1, 30, 0, 55)
-meshList = []
 
-[node name="StraightStreet" parent="Platforms/Platform3/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet" parent="Platforms/Platform3/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(1, 0, 4.26326e-14, 0, 1, 0, -4.26326e-14, 0, 1, 14, 0, 55)
-meshList = []
 
-[node name="RampStreet" parent="Platforms/Platform3/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet" parent="Platforms/Platform3/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 0, 55)
-meshList = []
 
-[node name="RampStreet2" parent="Platforms/Platform3/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet2" parent="Platforms/Platform3/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(1, 0, -4.26326e-14, 0, 1, 0, 4.26326e-14, 0, 1, 46, 0, 71)
-meshList = []
 
 [node name="Buildings" type="Node3D" parent="Platforms/Platform3"]
 transform = Transform3D(0.999998, 0, -0.00174533, 0, 1, 0, 0.00174533, 0, 0.999998, 0, 0.0392818, 0)
@@ -1476,245 +1404,185 @@ lights = []
 [node name="Trees" type="Node3D" parent="Platforms/Platform3"]
 transform = Transform3D(0.999999, 0, -0.00174533, 0, 1, 0, 0.00174533, 0, 0.999999, 0, -0.0990295, 0)
 
-[node name="Tree1" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree1" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.2, 0, -3.55271e-15, 0, 0.2, 0, 3.55271e-15, 0, 0.2, -12.2717, 0, -1.90423)
-meshList = []
 
-[node name="Tree2" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree2" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.0370853, 0, 0.196532, 0, 0.2, 0, -0.196532, 0, -0.0370853, -13.8781, 0, -3.57666)
-meshList = []
 
-[node name="Tree3" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree3" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0973952, 0, -0.174683, 0, 0.2, 0, 0.174683, 0, 0.0973952, -15.6736, 0, -3.87647)
-meshList = []
 
-[node name="Tree5" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree5" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.173878, 0, 0.0988249, 0, 0.2, 0, -0.0988249, 0, 0.173878, -12.867, 0, -0.0149269)
-meshList = []
 
-[node name="Tree6" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree6" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.180349, 0, -0.086455, 0, 0.2, 0, 0.086455, 0, 0.180349, -14.9214, 0, 0.376453)
-meshList = []
 
-[node name="Tree7" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree7" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.178068, 0, -0.0910593, 0, 0.2, 0, 0.0910593, 0, 0.178068, -16.0015, 0, -1.62568)
-meshList = []
 
-[node name="Tree8" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree8" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.111844, 0, -0.165804, 0, 0.2, 0, 0.165804, 0, -0.111844, -17.2683, 0, -3.14246)
-meshList = []
 
-[node name="Tree9" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree9" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.189968, 0, -0.0625467, 0, 0.2, 0, 0.0625467, 0, -0.189968, -17.4933, 0, -1.3421)
-meshList = []
 
-[node name="Tree10" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree10" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0844605, 0, -0.181291, 0, 0.2, 0, 0.181291, 0, 0.0844605, -16.5161, 0, 0.766617)
-meshList = []
 
-[node name="Tree11" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree11" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0844605, 0, -0.181291, 0, 0.2, 0, 0.181291, 0, 0.0844605, -11.185, 0, 0.155376)
-meshList = []
 
-[node name="Tree12" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree12" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0844605, 0, -0.181291, 0, 0.2, 0, 0.181291, 0, 0.0844605, -10.2877, 0, 1.6674)
-meshList = []
 
-[node name="Tree15" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree15" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.181538, 0, 0.0839286, 0, 0.2, 0, -0.0839286, 0, 0.181538, -15.3387, 0, 2.92242)
-meshList = []
 
-[node name="Tree16" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree16" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.181538, 0, 0.0839286, 0, 0.2, 0, -0.0839286, 0, 0.181538, -9.12399, 0, 4.27446)
-meshList = []
 
-[node name="Tree17" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree17" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.181538, 0, 0.0839286, 0, 0.2, 0, -0.0839286, 0, 0.181538, -10.7047, 0, 6.8989)
-meshList = []
 
-[node name="Tree18" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree18" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.181538, 0, 0.0839286, 0, 0.2, 0, -0.0839286, 0, 0.181538, -5.67519, 0, 7.5425)
-meshList = []
 
-[node name="Tree19" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree19" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.198281, 0, 0.0261676, 0, 0.2, 0, -0.0261676, 0, -0.198281, -9.6667, 0, 11.0219)
-meshList = []
 
-[node name="Tree28" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree28" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.198281, 0, 0.0261676, 0, 0.2, 0, -0.0261676, 0, -0.198281, -7.08334, 0, 12.2491)
-meshList = []
 
-[node name="Tree29" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree29" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.198281, 0, 0.0261676, 0, 0.2, 0, -0.0261676, 0, -0.198281, -4.54683, 0, 9.22515)
-meshList = []
 
-[node name="Tree20" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree20" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.181538, 0, 0.0839286, 0, 0.2, 0, -0.0839286, 0, 0.181538, -5.43093, 0, 11.0156)
-meshList = []
 
-[node name="Tree31" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree31" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.181538, 0, 0.0839286, 0, 0.2, 0, -0.0839286, 0, 0.181538, -3.89589, 0.013341, 13.667)
-meshList = []
 
-[node name="Tree30" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree30" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.181538, 0, 0.0839286, 0, 0.2, 0, -0.0839286, 0, 0.181538, -12.5471, 0, 7.3458)
-meshList = []
 
-[node name="Tree21" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree21" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.199216, 0, -0.017692, 0, 0.2, 0, 0.017692, 0, 0.199216, -7.57357, 0, 8.40926)
-meshList = []
 
-[node name="Tree22" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree22" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0138469, 0, 0.19952, 0, 0.2, 0, -0.19952, 0, 0.0138469, -13.7182, 0, 5.12268)
-meshList = []
 
-[node name="Tree23" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree23" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0500625, 0, -0.193633, 0, 0.2, 0, 0.193633, 0, 0.0500625, -11.7663, 0, 4.33408)
-meshList = []
 
-[node name="Tree24" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree24" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0500625, 0, -0.193633, 0, 0.2, 0, 0.193633, 0, 0.0500625, -8.58621, 0, 6.55779)
-meshList = []
 
-[node name="Tree25" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree25" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0500625, 0, -0.193633, 0, 0.2, 0, 0.193633, 0, 0.0500625, -11.4482, 0, 9.16671)
-meshList = []
 
-[node name="Tree26" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree26" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(-0.10823, 0, -0.168186, 0, 0.2, 0, 0.168186, 0, -0.10823, -9.4385, 0, 8.95647)
-meshList = []
 
-[node name="Tree27" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree27" parent="Platforms/Platform3/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0516358, 0, -0.19322, 0, 0.2, 0, 0.19322, 0, 0.0516358, -7.63403, 0, 10.3734)
-meshList = []
 
-[node name="Tree36" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree36" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -3.55271e-15, 0, 0.2, 0, 3.55271e-15, 0, 0.2, -9.80753, 0.263095, 5.26971)
-meshList = []
 
-[node name="Tree45" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree45" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -3.55271e-15, 0, 0.2, 0, 3.55271e-15, 0, 0.2, -13.3164, 0.263095, 2.49663)
-meshList = []
 
-[node name="Tree46" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree46" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -3.55271e-15, 0, 0.2, 0, 3.55271e-15, 0, 0.2, -13.9806, 0.263095, -2.01865)
-meshList = []
 
-[node name="Tree37" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree37" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -7.10543e-15, 0, 0.2, 0, 7.10543e-15, 0, 0.2, -2.54607, 0.263095, 11.4525)
-meshList = []
 
-[node name="Tree65" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree65" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -1.06581e-14, 0, 0.2, 0, 1.06581e-14, 0, 0.2, -1.28213, 0.263095, 13.8119)
-meshList = []
 
-[node name="Tree38" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree38" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -1.77636e-14, 0, 0.2, 0, 1.77636e-14, 0, 0.2, -5.55964, 0.159234, 14.0585)
-meshList = []
 
-[node name="Tree39" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree39" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -1.77636e-14, 0, 0.2, 0, 1.77636e-14, 0, 0.2, -11.2707, 0.263095, 11.3524)
-meshList = []
 
-[node name="Tree40" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree40" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -2.13163e-14, 0, 0.2, 0, 2.13163e-14, 0, 0.2, -8.6178, 0.263095, 12.7088)
-meshList = []
 
-[node name="Tree41" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree41" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -3.19744e-14, 0, 0.2, 0, 3.19744e-14, 0, 0.2, -11.1108, 0.291281, 14.0421)
-meshList = []
 
-[node name="Tree43" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree43" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -3.19744e-14, 0, 0.2, 0, 3.19744e-14, 0, 0.2, -12.9632, 0.291281, 12.5065)
-meshList = []
 
-[node name="Tree44" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree44" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -3.19744e-14, 0, 0.2, 0, 3.19744e-14, 0, 0.2, -13.4058, 0.291281, 9.18757)
-meshList = []
 
-[node name="Tree42" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree42" parent="Platforms/Platform3/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.2, 0, -3.55271e-14, 0, 0.2, 0, 3.55271e-14, 0, 0.2, -7.86932, 0.14693, 15.3511)
-meshList = []
 
-[node name="Tree4" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree4" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.23874, 0, -0.181667, 0, 0.3, 0, 0.181667, 0, 0.23874, -9.84208, 0.493345, -6.00641)
-meshList = []
 
-[node name="Tree14" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree14" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.3, 0, -7.10543e-15, 0, 0.3, 0, 7.10543e-15, 0, 0.3, -8.84682, 0.493345, -5.91076)
-meshList = []
 
-[node name="Tree47" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree47" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.0891475, 0, -0.286448, 0, 0.3, 0, 0.286448, 0, 0.0891475, -7.77274, 0.493345, -5.23183)
-meshList = []
 
-[node name="Tree48" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree48" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.00452374, 0, 0.299966, 0, 0.3, 0, -0.299966, 0, 0.00452374, -7.68336, 0.493345, -3.89783)
-meshList = []
 
-[node name="Tree49" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree49" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.3, 0, -1.77636e-14, 0, 0.3, 0, 1.77636e-14, 0, 0.3, -8.58917, 0.548846, -4.45405)
-meshList = []
 
-[node name="Tree50" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree50" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.3, 0, -1.77636e-14, 0, 0.3, 0, 1.77636e-14, 0, 0.3, -9.61065, 0.519224, -4.80447)
-meshList = []
 
-[node name="Tree51" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree51" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.0579826, 0, -0.294343, 0, 0.3, 0, 0.294343, 0, 0.0579826, -10.7875, 0.493345, -6.3894)
-meshList = []
 
-[node name="Tree52" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree52" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.25253, 0, -0.161953, 0, 0.3, 0, 0.161953, 0, 0.25253, -10.6333, 0.5031, -5.25215)
-meshList = []
 
-[node name="Tree53" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree53" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.218098, 0, 0.205993, 0, 0.3, 0, -0.205993, 0, 0.218098, -11.7428, 0.5031, -6.41906)
-meshList = []
 
-[node name="Tree54" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree54" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.0900919, 0, 0.286153, 0, 0.3, 0, -0.286153, 0, 0.0900919, -8.16585, 0.660797, -2.63261)
-meshList = []
 
-[node name="Tree55" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree55" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0183355, 0, 0.299439, 0, 0.3, 0, -0.299439, 0, -0.0183355, -8.8843, 0.452765, -3.55775)
-meshList = []
 
-[node name="Tree56" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree56" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.293763, 0, 0.0608567, 0, 0.3, 0, -0.0608567, 0, 0.293763, -9.96374, 0.5047, -3.48559)
-meshList = []
 
-[node name="Tree57" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree57" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.254364, 0, 0.159056, 0, 0.3, 0, -0.159056, 0, 0.254364, -11.3285, 0.398995, -4.00438)
-meshList = []
 
-[node name="Tree58" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree58" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.214737, 0, 0.209495, 0, 0.3, 0, -0.209495, 0, 0.214737, -10.7097, 0.41496, -2.53674)
-meshList = []
 
-[node name="Tree59" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree59" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.153811, 0, 0.25757, 0, 0.3, 0, -0.25757, 0, -0.153811, -9.37848, 0.420939, -1.72977)
-meshList = []
 
-[node name="Tree60" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree60" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.267297, 0, 0.136206, 0, 0.3, 0, -0.136206, 0, 0.267297, -10.7171, 0.366944, -1.31734)
-meshList = []
 
-[node name="Tree61" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree61" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.3, 0, -1.77636e-14, 0, 0.3, 0, 1.77636e-14, 0, 0.3, -12.7781, 0.344584, -3.78618)
-meshList = []
 
-[node name="Tree62" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree62" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.3, 0, -1.77636e-14, 0, 0.3, 0, 1.77636e-14, 0, 0.3, -13.1898, 0.344584, -1.25301)
-meshList = []
 
-[node name="Tree63" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree63" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.3, 0, -1.77636e-14, 0, 0.3, 0, 1.77636e-14, 0, 0.3, -12.4304, 0.344584, 1.26712)
-meshList = []
 
-[node name="Tree64" parent="Platforms/Platform3/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree64" parent="Platforms/Platform3/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.216347, 0, 0.207832, 0, 0.3, 0, -0.207832, 0, 0.216347, -11.5537, 0.344584, 2.58655)
-meshList = []
 
 [node name="Rocks" type="Node3D" parent="Platforms/Platform3"]
 
@@ -1771,21 +1639,17 @@ transform = Transform3D(0.999999, -0.000667542, 0.000132715, 0.000667541, 0.9239
 [node name="Lights" type="Node3D" parent="Platforms/Platform3"]
 transform = Transform3D(0.2, 0, -0.000349066, 0, 0.2, 0, 0.000349066, 0, 0.2, 11.2371, 0, 16.1504)
 
-[node name="Light3" parent="Platforms/Platform3/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light3" parent="Platforms/Platform3/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.10585, 0.706253, -0.317589)
-shadingMeshList = []
 
-[node name="Light4" parent="Platforms/Platform3/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light4" parent="Platforms/Platform3/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -81.0613, 0.381035, 2.19885)
-shadingMeshList = []
 
-[node name="Light5" parent="Platforms/Platform3/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light5" parent="Platforms/Platform3/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -73.2664, 0.868423, 1.30071)
-shadingMeshList = []
 
-[node name="Light6" parent="Platforms/Platform3/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light6" parent="Platforms/Platform3/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 4.65619e-11, 0, 0.4, 0, -4.65619e-11, 0, 0.4, 3.1053, 0.70253, -6.19298)
-shadingMeshList = []
 
 [node name="Platform4" parent="Platforms" instance=ExtResource("5_4sj48")]
 transform = Transform3D(9.99823, 0, 0.18831, 0, 10, 0, -0.18831, 0, 9.99823, -7.03995, 294.546, 40.9555)
@@ -1793,209 +1657,158 @@ transform = Transform3D(9.99823, 0, 0.18831, 0, 10, 0, -0.18831, 0, 9.99823, -7.
 [node name="Foundation" type="Node3D" parent="Platforms/Platform4"]
 transform = Transform3D(0.199963, 0, -0.00383949, 0, 0.2, 0, 0.00383949, 0, 0.199963, 0, -0.5, 0)
 
-[node name="Foundation1" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation1" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 3.8126e-09, 0, 1, 0, -3.8126e-09, 0, 1, -11, 0, 30)
-meshList = []
 
-[node name="Foundation2" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation2" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 3.89991e-09, 0, 1, 0, -3.89991e-09, 0, 1, -43, 0, 30)
-meshList = []
 
-[node name="Foundation3" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation3" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 3.95812e-09, 0, 1, 0, -3.95812e-09, 0, 1, -43, 0, -2)
-meshList = []
 
-[node name="Foundation6" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation6" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 3.95812e-09, 0, 1, 0, -3.95812e-09, 0, 1, 21, 4, -34)
-meshList = []
 
-[node name="Foundation7" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation7" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 3.95812e-09, 0, 1, 0, -3.95812e-09, 0, 1, -43.0059, 4, -50)
-meshList = []
 
-[node name="Foundation14" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation14" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 3.95812e-09, 0, 1, 0, -3.95812e-09, 0, 1, -43.0059, -4, -50)
-meshList = []
 
-[node name="Foundation9" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation9" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 3.95812e-09, 0, 1, 0, -3.95812e-09, 0, 1, -11, 4, -66)
-meshList = []
 
-[node name="CornerStreet" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("16_oef3u")]
+[node name="CornerStreet" parent="Platforms/Platform4/Foundation" instance=ExtResource("16_oef3u")]
 transform = Transform3D(-4.38013e-08, 0, 1, 0, 1, 0, -1, 0, -4.38013e-08, -27, 0, 30)
-meshList = []
 
-[node name="IntersectionStreet" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet" parent="Platforms/Platform4/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, -27, 0, 14)
-meshList = []
 
-[node name="RampStreet" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-1, 0, 8.73406e-08, 0, 1, 0, -8.73406e-08, 0, -1, -43, 0, 14)
-meshList = []
 
-[node name="StraightStreet" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet" parent="Platforms/Platform4/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -27, 0, -2)
-meshList = []
 
-[node name="IntersectionStreet2" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet2" parent="Platforms/Platform4/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 5.82077e-11, 0, 1, 0, -5.82077e-11, 0, 1, -27, 0, -18)
-meshList = []
 
-[node name="IntersectionStreet5" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet5" parent="Platforms/Platform4/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 5.82077e-11, 0, 1, 0, -5.82077e-11, 0, 1, 5, 0, -18)
-meshList = []
 
-[node name="RampStreet2" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet2" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-1, 0, 8.73115e-08, 0, 1, 0, -8.73115e-08, 0, -1, -43, 0, -18)
-meshList = []
 
-[node name="RampStreet3" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet3" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-4.35975e-08, 0, -1, 0, 1, 0, 1, 0, -4.35975e-08, -27, 4, -34)
-meshList = []
 
-[node name="RampStreet4" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet4" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-4.35975e-08, 0, -1, 0, 1, 0, 1, 0, -4.35975e-08, 5, 4, -34)
-meshList = []
 
-[node name="StraightStreet6" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet6" parent="Platforms/Platform4/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(-4.37722e-08, 0, 1, 0, 1, 0, -1, 0, -4.37722e-08, 5, 0, -2)
-meshList = []
 
-[node name="StraightStreet8" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet8" parent="Platforms/Platform4/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(-1, 0, -8.74861e-08, 0, 1, 0, 8.74861e-08, 0, -1, 37, -4, -18)
-meshList = []
 
-[node name="StraightStreet3" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet3" parent="Platforms/Platform4/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -18)
-meshList = []
 
-[node name="StraightStreet5" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet5" parent="Platforms/Platform4/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -50)
-meshList = []
 
-[node name="StraightStreet7" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet7" parent="Platforms/Platform4/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 4, -50)
-meshList = []
 
-[node name="StraightStreet4" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet4" parent="Platforms/Platform4/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(1, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 1, -11, 0, 14)
-meshList = []
 
-[node name="Foundation4" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation4" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 8.73115e-11, 0, 1, 0, -8.73115e-11, 0, 1, -11, 0, -2)
-meshList = []
 
-[node name="Foundation5" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation5" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 1.45519e-10, 0, 1, 0, -1.45519e-10, 0, 1, 21, 4, -66)
-meshList = []
 
-[node name="Foundation10" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation10" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 1.45519e-10, 0, 1, 0, -1.45519e-10, 0, 1, 53, 4, -66)
-meshList = []
 
-[node name="Foundation12" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation12" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 1.45519e-10, 0, 1, 0, -1.45519e-10, 0, 1, 85, 4, -34)
-meshList = []
 
-[node name="Foundation11" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation11" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 1.45519e-10, 0, 1, 0, -1.45519e-10, 0, 1, 53, 4, -34)
-meshList = []
 
-[node name="Foundation15" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation15" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 1.45519e-10, 0, 1, 0, -1.45519e-10, 0, 1, 69, -8, -18)
-meshList = []
 
-[node name="Foundation8" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation8" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(1, 0, 1.45519e-10, 0, 1, 0, -1.45519e-10, 0, 1, -11, 4, -34)
-meshList = []
 
-[node name="CornerStreet90" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("28_puw6q")]
+[node name="CornerStreet90" parent="Platforms/Platform4/Foundation" instance=ExtResource("28_puw6q")]
 transform = Transform3D(-4.37431e-08, 0, 1, 0, 1, 0, -1, 0, -4.37431e-08, 5, 0, 14)
-meshList = []
 
-[node name="CornerStreet91" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("28_puw6q")]
+[node name="CornerStreet91" parent="Platforms/Platform4/Foundation" instance=ExtResource("28_puw6q")]
 transform = Transform3D(-4.3714e-08, 0, -1, 0, 1, 0, 1, 0, -4.3714e-08, -27, 4, -50)
-meshList = []
 
-[node name="IntersectionStreet3" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet3" parent="Platforms/Platform4/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 4, -50.0004)
-meshList = []
 
-[node name="StraightStreet9" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("12_f4rq3")]
+[node name="StraightStreet9" parent="Platforms/Platform4/Foundation" instance=ExtResource("12_f4rq3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53, 4, -50)
-meshList = []
 
-[node name="IntersectionStreet4" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet4" parent="Platforms/Platform4/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 4, -50)
-meshList = []
 
-[node name="IntersectionStreet6" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("13_pnyxe")]
+[node name="IntersectionStreet6" parent="Platforms/Platform4/Foundation" instance=ExtResource("13_pnyxe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69, 4, -50)
-meshList = []
 
-[node name="CornerStreet2" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("16_oef3u")]
+[node name="CornerStreet2" parent="Platforms/Platform4/Foundation" instance=ExtResource("16_oef3u")]
 transform = Transform3D(1.31142e-07, 0, -1, 0, 1, 0, 1, 0, 1.31142e-07, 5, 4, -66)
-meshList = []
 
-[node name="CornerStreet3" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("16_oef3u")]
+[node name="CornerStreet3" parent="Platforms/Platform4/Foundation" instance=ExtResource("16_oef3u")]
 transform = Transform3D(1.31142e-07, 0, -1, 0, 1, 0, 1, 0, 1.31142e-07, 69, 4, -66)
-meshList = []
 
-[node name="CornerStreet5" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("16_oef3u")]
+[node name="CornerStreet5" parent="Platforms/Platform4/Foundation" instance=ExtResource("16_oef3u")]
 transform = Transform3D(-2.1857e-07, 0, 1, 0, 1, 0, -1, 0, -2.1857e-07, 37, 4, -34)
-meshList = []
 
-[node name="CornerStreet4" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("16_oef3u")]
+[node name="CornerStreet4" parent="Platforms/Platform4/Foundation" instance=ExtResource("16_oef3u")]
 transform = Transform3D(-1, 0, -8.74279e-08, 0, 1, 0, 8.74279e-08, 0, -1, 85, 4, -50)
-meshList = []
 
-[node name="RampStreet6" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet6" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(-4.3714e-08, 0, 1, 0, 1, 0, -1, 0, -4.3714e-08, 37, 4, -66)
-meshList = []
 
-[node name="RampStreet7" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet7" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(1.31142e-07, 0, -1, 0, 1, 0, 1, 0, 1.31142e-07, 69, 4, -34)
-meshList = []
 
-[node name="RampStreet8" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet8" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(1.31142e-07, 0, -1, 0, 1, 0, 1, 0, 1.31142e-07, 85.001, 0, -2)
-meshList = []
 
-[node name="RampStreet12" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet12" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(1.31142e-07, 0, -1, 0, 1, 0, 1, 0, 1.31142e-07, 85, -4, 14)
-meshList = []
 
-[node name="RampStreet10" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet10" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(1, 0, 1.74856e-07, 0, 1, 0, -1.74856e-07, 0, 1, 21, 0, -18)
-meshList = []
 
-[node name="RampStreet13" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet13" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(3.05998e-07, 0, -1, 0, 1, 0, 1, 0, 3.05998e-07, 53, -4, -2)
-meshList = []
 
-[node name="RampStreet14" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet14" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(3.05998e-07, 0, -1, 0, 1, 0, 1, 0, 3.05998e-07, 53, -8, 14)
-meshList = []
 
-[node name="CornerStreet92" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("28_puw6q")]
+[node name="CornerStreet92" parent="Platforms/Platform4/Foundation" instance=ExtResource("28_puw6q")]
 transform = Transform3D(-1, 0, 8.74279e-08, 0, 1, 0, -8.74279e-08, 0, -1, 85, 0, -18)
-meshList = []
 
-[node name="CornerStreet94" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("28_puw6q")]
+[node name="CornerStreet94" parent="Platforms/Platform4/Foundation" instance=ExtResource("28_puw6q")]
 transform = Transform3D(1, 0, -1.74856e-07, 0, 1, 0, 1.74856e-07, 0, 1, 69, 0, -18)
-meshList = []
 
-[node name="CornerStreet93" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("28_puw6q")]
+[node name="CornerStreet93" parent="Platforms/Platform4/Foundation" instance=ExtResource("28_puw6q")]
 transform = Transform3D(-1, 0, 8.74279e-08, 0, 1, 0, -8.74279e-08, 0, -1, 53, -4, -18)
-meshList = []
 
-[node name="Foundation13" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("14_ncvay")]
+[node name="Foundation13" parent="Platforms/Platform4/Foundation" instance=ExtResource("14_ncvay")]
 transform = Transform3D(0.866026, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866026, 47, 4.2, 90)
-meshList = []
 
-[node name="RampStreet9" parent="Platforms/Platform4/Foundation" node_paths=PackedStringArray("meshList") instance=ExtResource("15_fopkg")]
+[node name="RampStreet9" parent="Platforms/Platform4/Foundation" instance=ExtResource("15_fopkg")]
 transform = Transform3D(0.5, 0, 0.866026, 0, 1, 0, -0.866026, 0, 0.5, 55, 4.2, 76.14)
-meshList = []
 
 [node name="Buildings" type="Node3D" parent="Platforms/Platform4"]
 transform = Transform3D(0.999816, 0, -0.0191974, 0, 1, 0, 0.0191974, 0, 0.999816, 0, 1.1, 0)
@@ -2012,17 +1825,15 @@ lights = []
 transform = Transform3D(-0.199999, 0, -7.3309e-05, 0, 0.2, 0, 7.3309e-05, 0, -0.199999, -2.2, 0, -0.4)
 lights = []
 
-[node name="Light" parent="Platforms/Platform4/Buildings/Building3" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("22_r2cft")]
+[node name="Light" parent="Platforms/Platform4/Buildings/Building3" instance=ExtResource("22_r2cft")]
 transform = Transform3D(0.5, 0, 1.33227e-15, 0, 0.5, 0, -1.33227e-15, 0, 0.5, -2.4, 48, 0)
 coneMaterial = null
 material = null
-shadingMeshList = []
 
-[node name="Light2" parent="Platforms/Platform4/Buildings/Building3" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("22_r2cft")]
+[node name="Light2" parent="Platforms/Platform4/Buildings/Building3" instance=ExtResource("22_r2cft")]
 transform = Transform3D(-0.5, 0, 4.37114e-08, 0, 0.5, 0, -4.37114e-08, 0, -0.5, 2.4, 48, 0)
 coneMaterial = null
 material = null
-shadingMeshList = []
 
 [node name="Building4" parent="Platforms/Platform4/Buildings" node_paths=PackedStringArray("lights") instance=ExtResource("9_lcvgy")]
 transform = Transform3D(0.199999, 0, 7.32915e-05, 0, 0.2, 0, -7.32915e-05, 0, 0.199999, -8.6, 0, -0.4)
@@ -2067,41 +1878,32 @@ lights = []
 [node name="Trees" type="Node3D" parent="Platforms/Platform4"]
 transform = Transform3D(1, 0, -1.86265e-09, 0, 1, 0, 1.86265e-09, 0, 1, 0, -0.343088, 0)
 
-[node name="Tree1" parent="Platforms/Platform4/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree1" parent="Platforms/Platform4/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.160332, 0, -0.119556, 0, 0.2, 0, 0.119556, 0, 0.160332, 12.8268, 0.683966, 9.29778)
-meshList = []
 
-[node name="Tree6" parent="Platforms/Platform4/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree6" parent="Platforms/Platform4/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0481777, 0, 0.194111, 0, 0.2, 0, -0.194111, 0, 0.0481777, 18.2284, 0.656446, 7.21976)
-meshList = []
 
-[node name="Tree4" parent="Platforms/Platform4/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree4" parent="Platforms/Platform4/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.0406258, 0, -0.19583, 0, 0.2, 0, 0.19583, 0, 0.0406258, 19.1867, 0.92009, 5.50576)
-meshList = []
 
-[node name="Tree5" parent="Platforms/Platform4/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree5" parent="Platforms/Platform4/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.199935, 0, 0.00507489, 0, 0.2, 0, -0.00507489, 0, 0.199935, 15.3526, 0.418518, 4.89653)
-meshList = []
 
-[node name="Tree2" parent="Platforms/Platform4/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("14_3ql1f")]
+[node name="Tree2" parent="Platforms/Platform4/Trees" instance=ExtResource("14_3ql1f")]
 transform = Transform3D(0.19994, 0, -0.00488643, 0, 0.2, 0, 0.00488643, 0, 0.19994, 19.3166, 0.762701, -1.77193)
-meshList = []
 
-[node name="Tree8" parent="Platforms/Platform4/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree8" parent="Platforms/Platform4/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.25502, 0, 0.158002, 0, 0.3, 0, -0.158002, 0, 0.25502, 16.8002, 0.850748, 12.3429)
-meshList = []
 
-[node name="Tree9" parent="Platforms/Platform4/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree9" parent="Platforms/Platform4/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.3, 0.000285125, 7.20145e-06, -0.000285125, 0.299617, 0.0151386, 7.1968e-06, -0.0151386, 0.299618, 5.01867, 1.85608, 18.2333)
-meshList = []
 
-[node name="Tree11" parent="Platforms/Platform4/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree11" parent="Platforms/Platform4/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(-0.26047, 0.00183586, 0.148835, 0.0140347, 0.298943, 0.0208741, -0.148183, 0.0250865, -0.259639, 14.0035, 1.45741, 16.8735)
-meshList = []
 
-[node name="Tree10" parent="Platforms/Platform4/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("15_eucu0")]
+[node name="Tree10" parent="Platforms/Platform4/Trees" instance=ExtResource("15_eucu0")]
 transform = Transform3D(0.102553, -0.0249058, 0.280825, -0.000502583, 0.29881, 0.0266844, -0.281926, -0.00959236, 0.102105, 19.8665, 0.442745, 2.30269)
-meshList = []
 
 [node name="Rock" type="Node3D" parent="Platforms/Platform4"]
 
@@ -2267,29 +2069,23 @@ transform = Transform3D(0.325657, -0.331105, -0.885616, 0.731045, 0.68219, 0.013
 [node name="Lights" type="Node3D" parent="Platforms/Platform4"]
 transform = Transform3D(0.199963, 0, -0.00383949, 0, 0.2, 0, 0.00383949, 0, 0.199963, 0, 0, 0)
 
-[node name="Light3" parent="Platforms/Platform4/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light3" parent="Platforms/Platform4/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, -9.31323e-10, 0, 0.4, 0, 9.31323e-10, 0, 0.4, 6.40582, 4.4706, -95.1956)
-shadingMeshList = []
 
-[node name="Light4" parent="Platforms/Platform4/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light4" parent="Platforms/Platform4/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, -9.31323e-10, 0, 0.4, 0, 9.31323e-10, 0, 0.4, 1.07374, 5.05602, -91.7355)
-shadingMeshList = []
 
-[node name="Light5" parent="Platforms/Platform4/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light5" parent="Platforms/Platform4/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, -7.27596e-11, 0, 0.4, 0, 7.27596e-11, 0, 0.4, -58.2914, -1.66626, 41.1892)
-shadingMeshList = []
 
-[node name="Light6" parent="Platforms/Platform4/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light6" parent="Platforms/Platform4/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, -7.27596e-11, 0, 0.4, 0, 7.27596e-11, 0, 0.4, -52.7908, -0.648926, 41.0681)
-shadingMeshList = []
 
-[node name="Light7" parent="Platforms/Platform4/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light7" parent="Platforms/Platform4/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, -1.45519e-10, 0, 0.4, 0, 1.45519e-10, 0, 0.4, 29.4159, 6.00073, 104.273)
-shadingMeshList = []
 
-[node name="Light8" parent="Platforms/Platform4/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light8" parent="Platforms/Platform4/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, -1.74623e-10, 0, 0.4, 0, 1.74623e-10, 0, 0.4, 20.1015, 4.47012, 103.052)
-shadingMeshList = []
 
 [node name="Water" type="Node3D" parent="Platforms/Platform4"]
 transform = Transform3D(0.999816, 0, -0.0191974, 0, 1, 0, 0.0191974, 0, 0.999816, 0.0321686, 0.00726509, -0.00979757)
@@ -2326,253 +2122,191 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.7137, 1.04511, 8.69679)
 [node name="Trees" type="Node3D" parent="Platforms/Platform5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.220399, 0)
 
-[node name="Tree2" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree2" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -6.79652, 1.06276, 0)
-meshList = []
 
-[node name="Tree3" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree3" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -7.8129, 1.06276, 0.0447216)
-meshList = []
 
-[node name="Tree4" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree4" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.115215, 0, -0.163479, 0, 0.2, 0, 0.163479, 0, 0.115215, -8.90274, 1.06276, -0.207394)
-meshList = []
 
-[node name="Tree5" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree5" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.115215, 0, -0.163479, 0, 0.2, 0, 0.163479, 0, 0.115215, -7.26621, 1.06276, 0.815235)
-meshList = []
 
-[node name="Tree6" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree6" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.1864, 0, -0.0724909, 0, 0.2, 0, 0.0724909, 0, 0.1864, -8.43548, 1.06276, 0.872763)
-meshList = []
 
-[node name="Tree7" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree7" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.1864, 0, -0.0724909, 0, 0.2, 0, 0.0724909, 0, 0.1864, -9.55216, 1.06276, 0.810169)
-meshList = []
 
-[node name="Tree8" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree8" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.12497, 0, -0.156149, 0, 0.2, 0, 0.156149, 0, 0.12497, -10.6073, 1.06276, 0.988861)
-meshList = []
 
-[node name="Tree9" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree9" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.12497, 0, -0.156149, 0, 0.2, 0, 0.156149, 0, 0.12497, -10.1006, 1.06276, 1.46091)
-meshList = []
 
-[node name="Tree10" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree10" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0401404, 0, -0.195931, 0, 0.2, 0, 0.195931, 0, -0.0401404, -8.93049, 1.06276, 1.79122)
-meshList = []
 
-[node name="Tree11" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree11" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0401404, 0, -0.195931, 0, 0.2, 0, 0.195931, 0, -0.0401404, -7.81352, 1.06276, 1.72086)
-meshList = []
 
-[node name="Tree12" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree12" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0401404, 0, -0.195931, 0, 0.2, 0, 0.195931, 0, -0.0401404, -9.71486, 1.06276, 2.23647)
-meshList = []
 
-[node name="Tree13" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree13" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0401404, 0, -0.195931, 0, 0.2, 0, 0.195931, 0, -0.0401404, -8.91486, 1.06276, 2.63647)
-meshList = []
 
-[node name="Tree14" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree14" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.0779052, 0, -0.184203, 0, 0.2, 0, 0.184203, 0, 0.0779052, -8.0272, 1.06276, 2.53518)
-meshList = []
 
-[node name="Tree15" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree15" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.0779052, 0, -0.184203, 0, 0.2, 0, 0.184203, 0, 0.0779052, -10.676, 1.06276, 2.08594)
-meshList = []
 
-[node name="Tree16" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree16" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.0779052, 0, -0.184203, 0, 0.2, 0, 0.184203, 0, 0.0779052, -11.3791, 1.06276, 2.63044)
-meshList = []
 
-[node name="Tree17" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree17" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.197007, 0, 0.0344718, 0, 0.2, 0, -0.0344718, 0, 0.197007, -10.2339, 1.06276, 3.08762)
-meshList = []
 
-[node name="Tree19" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree19" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.184655, 0, -0.0768269, 0, 0.2, 0, 0.0768269, 0, 0.184655, -8.11147, 1.06276, 3.5183)
-meshList = []
 
-[node name="Tree20" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree20" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.184655, 0, -0.0768269, 0, 0.2, 0, 0.0768269, 0, 0.184655, -7.55569, 1.06276, 4.43417)
-meshList = []
 
-[node name="Tree21" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree21" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0325619, 0, 0.197332, 0, 0.2, 0, -0.197332, 0, -0.0325619, -8.16678, 1.06276, 5.15866)
-meshList = []
 
-[node name="Tree23" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree23" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0325619, 0, 0.197332, 0, 0.2, 0, -0.197332, 0, -0.0325619, -8.77444, 1.06276, 4.35298)
-meshList = []
 
-[node name="Tree24" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree24" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.100984, 0, 0.172633, 0, 0.2, 0, -0.172633, 0, 0.100984, -10.007, 1.06276, 4.17889)
-meshList = []
 
-[node name="Tree25" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree25" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.121156, 0, 0.159126, 0, 0.2, 0, -0.159126, 0, -0.121156, -11.2654, 1.06276, 3.79523)
-meshList = []
 
-[node name="Tree26" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree26" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0776414, 0, 0.184314, 0, 0.2, 0, -0.184314, 0, -0.0776414, -12.3388, 1.06276, 4.38353)
-meshList = []
 
-[node name="Tree27" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree27" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.0738002, 0, 0.185886, 0, 0.2, 0, -0.185886, 0, 0.0738002, -11.2876, 1.06276, 4.81742)
-meshList = []
 
-[node name="Tree28" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree28" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.194276, 0, -0.0475067, 0, 0.2, 0, 0.0475067, 0, 0.194276, -10.2375, 1.06276, 4.989)
-meshList = []
 
-[node name="Tree29" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree29" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.194276, 0, -0.0475067, 0, 0.2, 0, 0.0475067, 0, 0.194276, -9.31339, 1.06276, 5.18788)
-meshList = []
 
-[node name="Tree30" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree30" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.191062, 0, 0.0591216, 0, 0.2, 0, -0.0591216, 0, 0.191062, -8.85193, 1.06276, 5.97485)
-meshList = []
 
-[node name="Tree31" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree31" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.171189, 0, -0.103414, 0, 0.2, 0, 0.103414, 0, 0.171189, -7.71853, 1.06276, 6.15404)
-meshList = []
 
-[node name="Tree32" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree32" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.199923, 0, -0.00555648, 0, 0.2, 0, 0.00555648, 0, 0.199923, -10.4575, 1.06276, 6.11482)
-meshList = []
 
-[node name="Tree33" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree33" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.199923, 0, -0.00555648, 0, 0.2, 0, 0.00555648, 0, 0.199923, -11.7858, 1.06276, 5.85315)
-meshList = []
 
-[node name="Tree34" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree34" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.180616, 0, -0.0858943, 0, 0.2, 0, 0.0858943, 0, 0.180616, -12.7791, 1.06276, 6.19462)
-meshList = []
 
-[node name="Tree35" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree35" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.198549, 0, 0.0240446, 0, 0.2, 0, -0.0240446, 0, 0.198549, -11.8576, 1.06276, 6.90268)
-meshList = []
 
-[node name="Tree36" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree36" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.0822902, 0, 0.182286, 0, 0.2, 0, -0.182286, 0, 0.0822902, -10.5044, 1.06276, 7.06884)
-meshList = []
 
-[node name="Tree37" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree37" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.151659, 0, 0.130383, 0, 0.2, 0, -0.130383, 0, -0.151659, -9.6495, 1.06276, 6.74849)
-meshList = []
 
-[node name="Tree38" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree38" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0308248, 0, 0.19761, 0, 0.2, 0, -0.19761, 0, -0.0308248, -8.59415, 1.06276, 6.91525)
-meshList = []
 
-[node name="Tree39" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree39" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.163766, 0, 0.114807, 0, 0.2, 0, -0.114807, 0, 0.163766, -7.53807, 1.06276, 7.28897)
-meshList = []
 
-[node name="Tree40" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree40" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.0346197, 0, 0.196981, 0, 0.2, 0, -0.196981, 0, 0.0346197, -9.50257, 1.06276, 7.72638)
-meshList = []
 
-[node name="Tree41" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree41" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.120254, 0, 0.159809, 0, 0.2, 0, -0.159809, 0, -0.120254, -8.41558, 1.06276, 7.96374)
-meshList = []
 
-[node name="Tree42" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree42" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.027845, 0, 0.198052, 0, 0.2, 0, -0.198052, 0, 0.027845, -7.15429, 1.06276, 8.22131)
-meshList = []
 
-[node name="Tree43" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree43" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.130502, 0, 0.151556, 0, 0.2, 0, -0.151556, 0, -0.130502, -11.2663, 1.06276, 7.76712)
-meshList = []
 
-[node name="Tree44" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree44" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.130502, 0, 0.151556, 0, 0.2, 0, -0.151556, 0, -0.130502, -10.4833, 1.06276, 8.2782)
-meshList = []
 
-[node name="Tree45" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree45" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.199043, 0, -0.0195444, 0, 0.2, 0, 0.0195444, 0, -0.199043, -10.4833, 1.06276, 8.2782)
-meshList = []
 
-[node name="Tree46" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree46" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.199043, 0, -0.0195444, 0, 0.2, 0, 0.0195444, 0, -0.199043, -12.8838, 1.06276, 7.2027)
-meshList = []
 
-[node name="Tree47" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree47" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.112197, 0, -0.165565, 0, 0.2, 0, 0.165565, 0, -0.112197, -12.311, 1.06276, 7.72001)
-meshList = []
 
-[node name="Tree48" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree48" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.112197, 0, -0.165565, 0, 0.2, 0, 0.165565, 0, -0.112197, -9.22043, 1.06276, 8.83517)
-meshList = []
 
-[node name="Tree49" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree49" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.033894, 0, -0.197107, 0, 0.2, 0, 0.197107, 0, 0.033894, -8.11269, 1.06276, 9.08838)
-meshList = []
 
-[node name="Tree50" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree50" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.118847, 0, -0.160859, 0, 0.2, 0, 0.160859, 0, -0.118847, -6.96901, 1.06276, 9.16315)
-meshList = []
 
-[node name="Tree51" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree51" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0028762, 0, -0.199979, 0, 0.2, 0, 0.199979, 0, -0.0028762, -9.16055, 1.06276, 9.74279)
-meshList = []
 
-[node name="Tree52" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree52" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.0028762, 0, -0.199979, 0, 0.2, 0, 0.199979, 0, -0.0028762, -10.3672, 1.06276, 9.54683)
-meshList = []
 
-[node name="Tree53" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree53" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.165944, 0, -0.111636, 0, 0.2, 0, 0.111636, 0, 0.165944, -11.2362, 1.06276, 8.9974)
-meshList = []
 
-[node name="Tree54" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree54" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.195917, 0, 0.0402088, 0, 0.2, 0, -0.0402088, 0, 0.195917, -12.3257, 1.06276, 8.59389)
-meshList = []
 
-[node name="Tree55" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree55" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.195917, 0, 0.0402088, 0, 0.2, 0, -0.0402088, 0, 0.195917, -7.85522, 1.03221, 10.0253)
-meshList = []
 
-[node name="Tree56" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree56" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.195917, 0, 0.0402088, 0, 0.2, 0, -0.0402088, 0, 0.195917, -6.7061, 1.06289, 10.1159)
-meshList = []
 
-[node name="Tree57" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree57" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.10771, 0, 0.168519, 0, 0.2, 0, -0.168519, 0, 0.10771, -7.48988, 0.87933, 11.3428)
-meshList = []
 
-[node name="Tree58" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree58" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.138894, 0, -0.143904, 0, 0.2, 0, 0.143904, 0, 0.138894, -6.20403, 0.853683, 11.2279)
-meshList = []
 
-[node name="Tree61" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree61" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.191798, 0, -0.0566893, 0, 0.2, 0, 0.0566893, 0, 0.191798, -6.71401, 0.731561, 12.266)
-meshList = []
 
-[node name="Tree62" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree62" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.191798, 0, -0.0566893, 0, 0.2, 0, 0.0566893, 0, 0.191798, -3.61187, 0.372818, 13.6074)
-meshList = []
 
-[node name="Tree63" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree63" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.191688, 0.00677058, -0.0566568, -0.00649291, 0.199885, 0.0019191, 0.0566893, 0, 0.191798, -4.67124, 0.531344, 12.9009)
-meshList = []
 
-[node name="Tree59" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree59" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.10771, 0, 0.168519, 0, 0.2, 0, -0.168519, 0, 0.10771, -5.46598, 0.67743, 12.2088)
-meshList = []
 
-[node name="Tree60" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree60" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(-0.065249, 0, 0.189057, 0, 0.2, 0, -0.189057, 0, -0.065249, -4.45952, 0.712907, 11.6493)
-meshList = []
 
-[node name="Tree22" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree22" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.192173, 0.00136135, 0.0553879, -0.0013081, 0.199995, -0.000377019, -0.0553891, 0, 0.192177, -7.08638, 1.06276, 5.44237)
-meshList = []
 
-[node name="Tree18" parent="Platforms/Platform5/Trees" node_paths=PackedStringArray("meshList") instance=ExtResource("16_c4j8x")]
+[node name="Tree18" parent="Platforms/Platform5/Trees" instance=ExtResource("16_c4j8x")]
 transform = Transform3D(0.197007, 0, 0.0344718, 0, 0.2, 0, -0.0344718, 0, 0.197007, -9.13579, 1.06276, 3.53245)
-meshList = []
 
 [node name="Rocks" type="Node3D" parent="Platforms/Platform5"]
 
@@ -2714,19 +2448,16 @@ transform = Transform3D(0.827198, 0, 0.56191, 0.442858, 0.61551, -0.651939, -0.3
 [node name="Lights" type="Node3D" parent="Platforms/Platform5"]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
-[node name="Light2" parent="Platforms/Platform5/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("22_r2cft")]
+[node name="Light2" parent="Platforms/Platform5/Lights" instance=ExtResource("22_r2cft")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 49.8934, 37.331, -6.6085)
 coneMaterial = null
 material = null
-shadingMeshList = []
 
-[node name="Light3" parent="Platforms/Platform5/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light3" parent="Platforms/Platform5/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -5.14321, -0.20779, 70.8214)
-shadingMeshList = []
 
-[node name="Light4" parent="Platforms/Platform5/Lights" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("16_x4ddk")]
+[node name="Light4" parent="Platforms/Platform5/Lights" instance=ExtResource("16_x4ddk")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 3.32998, -0.645002, 70.2464)
-shadingMeshList = []
 
 [node name="Water" type="Node3D" parent="Platforms/Platform5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.36, 0)
@@ -2808,32 +2539,26 @@ progress = 244.595
 [node name="Drones" type="Node3D" parent="."]
 unique_name_in_owner = true
 
-[node name="Drone1" parent="Drones" node_paths=PackedStringArray("meshList") instance=ExtResource("9_4sj48")]
+[node name="Drone1" parent="Drones" instance=ExtResource("9_4sj48")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 110.281, 455.054, 178.532)
-meshList = []
 
-[node name="Drone2" parent="Drones" node_paths=PackedStringArray("meshList") instance=ExtResource("10_s53j1")]
+[node name="Drone2" parent="Drones" instance=ExtResource("10_s53j1")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.5072, 460.587, -392.53)
 rotateSpeed = 0.4
-meshList = []
 
-[node name="Drone3" parent="Drones" node_paths=PackedStringArray("meshList") instance=ExtResource("10_s53j1")]
+[node name="Drone3" parent="Drones" instance=ExtResource("10_s53j1")]
 transform = Transform3D(1.41421, 0, -1.41421, 0, 2, 0, 1.41421, 0, 1.41421, -303.592, 460.587, 50.6724)
 rotateSpeed = 0.4
-meshList = []
 
-[node name="Drone4" parent="Drones" node_paths=PackedStringArray("meshList") instance=ExtResource("9_4sj48")]
+[node name="Drone4" parent="Drones" instance=ExtResource("9_4sj48")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -492.305, 252.827, -275.487)
-meshList = []
 
-[node name="Drone5" parent="Drones" node_paths=PackedStringArray("meshList") instance=ExtResource("10_s53j1")]
+[node name="Drone5" parent="Drones" instance=ExtResource("10_s53j1")]
 transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, -229.28, -16.8766, 363.686)
 rotateSpeed = 0.4
-meshList = []
 
-[node name="Drone6" parent="Drones" node_paths=PackedStringArray("meshList") instance=ExtResource("9_4sj48")]
+[node name="Drone6" parent="Drones" instance=ExtResource("9_4sj48")]
 transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -569.143, 359.219, 87.5848)
-meshList = []
 
 [node name="CarPaths" type="Node3D" parent="."]
 unique_name_in_owner = true
@@ -2842,28 +2567,25 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 252.298, 0)
 curve = SubResource("Curve3D_nn5t2")
 
-[node name="Car1" parent="CarPaths/Path1" node_paths=PackedStringArray("meshList") instance=ExtResource("27_nn5t2")]
+[node name="Car1" parent="CarPaths/Path1" instance=ExtResource("27_nn5t2")]
 transform = Transform3D(0.256226, -0.225135, -0.723645, 0.034185, 0.766541, -0.226376, 0.757086, 0.0415819, 0.25513, -254.694, 15.3354, 303.714)
 progress = 217.275
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_av6d6")
 frontConeShaderMaterial = SubResource("ShaderMaterial_wctm7")
 RearLightShaderMaterial = SubResource("ShaderMaterial_kjs7f")
 RearConeShaderMaterial = SubResource("ShaderMaterial_n2x1q")
 
-[node name="Car2" parent="CarPaths/Path1" node_paths=PackedStringArray("meshList") instance=ExtResource("27_nn5t2")]
+[node name="Car2" parent="CarPaths/Path1" instance=ExtResource("27_nn5t2")]
 transform = Transform3D(0.305201, -0.227941, -0.703488, 0.0635879, 0.766318, -0.220711, 0.736756, 0.028285, 0.310469, -33.8187, 89.5967, 212.616)
 progress = 467.526
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_a1hf2")
 frontConeShaderMaterial = SubResource("ShaderMaterial_tlaif")
 RearLightShaderMaterial = SubResource("ShaderMaterial_nhqk8")
 RearConeShaderMaterial = SubResource("ShaderMaterial_2vwbb")
 
-[node name="Car3" parent="CarPaths/Path1" node_paths=PackedStringArray("meshList") instance=ExtResource("27_nn5t2")]
+[node name="Car3" parent="CarPaths/Path1" instance=ExtResource("27_nn5t2")]
 transform = Transform3D(-0.455952, -0.247849, 0.608834, 0.0243996, 0.734065, 0.317101, -0.656897, 0.199298, -0.410813, -290.489, 36.0482, -58.4541)
 progress = 1451.5
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_0o30o")
 frontConeShaderMaterial = SubResource("ShaderMaterial_5ruiw")
 RearLightShaderMaterial = SubResource("ShaderMaterial_8btqf")
@@ -2886,7 +2608,7 @@ transform = Transform3D(0.376204, -0.300751, -0.876366, 0.0746005, 0.952612, -0.
 progress = 419.235
 
 [node name="FloatingStreetLight5" parent="CarPaths/Path1" instance=ExtResource("31_l3g6b")]
-transform = Transform3D(-0.0627117, 0.0236989, 0.997748, 0.148921, 0.988745, -0.0141242, -0.986816, 0.147706, -0.0655379, -87.857, 99.932, -135.505)
+transform = Transform3D(-0.0627116, 0.0236989, 0.997748, 0.14892, 0.988745, -0.0141242, -0.986814, 0.147706, -0.0655379, -87.857, 99.932, -135.505)
 progress = 1219.59
 
 [node name="FloatingStreetLight6" parent="CarPaths/Path1" instance=ExtResource("31_l3g6b")]
@@ -2898,53 +2620,48 @@ transform = Transform3D(-0.803235, -0.0116976, 0.595543, -0.014562, 0.999891, -6
 progress = 1629.3
 
 [node name="FloatingStreetLight8" parent="CarPaths/Path1" instance=ExtResource("31_l3g6b")]
-transform = Transform3D(-0.815351, -0.0113914, 0.578851, -0.0139704, 0.999899, -8.32453e-07, -0.578794, -0.00808748, -0.81543, -421.261, 1.01818e-05, 65.5527)
+transform = Transform3D(-0.815351, -0.0113914, 0.578851, -0.0139704, 0.999899, -8.32452e-07, -0.578794, -0.00808748, -0.81543, -421.261, 1.01818e-05, 65.5527)
 progress = 1638.83
 
 [node name="Path2" type="Path3D" parent="CarPaths"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 318.71, 0)
 curve = SubResource("Curve3D_nn5t2")
 
-[node name="Car1" parent="CarPaths/Path2" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car1" parent="CarPaths/Path2" instance=ExtResource("28_16wen")]
 transform = Transform3D(0.296213, -0.0282947, -0.401817, 0.0517283, 0.497307, 0.00311456, 0.399476, -0.0434158, 0.297545, 99.4734, 105.034, 136.383)
 progress = 623.326
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_wcrkr")
 frontConeShaderMaterial = SubResource("ShaderMaterial_a747u")
 RearLightShaderMaterial = SubResource("ShaderMaterial_n3rdf")
 RearConeShaderMaterial = SubResource("ShaderMaterial_78gid")
 
-[node name="Car2" parent="CarPaths/Path2" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car2" parent="CarPaths/Path2" instance=ExtResource("28_16wen")]
 transform = Transform3D(0.327958, 0.0118483, 0.37723, 0.0474419, 0.494495, -0.0567766, -0.374422, 0.0730339, 0.323223, 188.933, 100.808, -105.093)
 progress = 935.084
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_vvuwe")
 frontConeShaderMaterial = SubResource("ShaderMaterial_mug7b")
 RearLightShaderMaterial = SubResource("ShaderMaterial_6ci4h")
 RearConeShaderMaterial = SubResource("ShaderMaterial_oigpj")
 
-[node name="Car3" parent="CarPaths/Path2" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car3" parent="CarPaths/Path2" instance=ExtResource("28_16wen")]
 transform = Transform3D(-0.141397, -0.082507, 0.47244, 0.0666561, 0.484384, 0.104542, -0.474935, 0.0925461, -0.125982, -149.584, 96.9958, -127.464)
 progress = 1282.29
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_ewx41")
 frontConeShaderMaterial = SubResource("ShaderMaterial_phlbn")
 RearLightShaderMaterial = SubResource("ShaderMaterial_127ly")
 RearConeShaderMaterial = SubResource("ShaderMaterial_ivi5y")
 
-[node name="Car4" parent="CarPaths/Path2" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car4" parent="CarPaths/Path2" instance=ExtResource("28_16wen")]
 transform = Transform3D(0.00537322, 0.00305081, -0.499962, -0.00828772, 0.499923, 0.0029615, 0.499902, 0.00825528, 0.00542297, -387.296, -3.31899, 324.285)
 progress = 80.2262
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_tkg8n")
 frontConeShaderMaterial = SubResource("ShaderMaterial_fjkai")
 RearLightShaderMaterial = SubResource("ShaderMaterial_8y404")
 RearConeShaderMaterial = SubResource("ShaderMaterial_4vxyv")
 
-[node name="Car5" parent="CarPaths/Path2" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car5" parent="CarPaths/Path2" instance=ExtResource("28_16wen")]
 transform = Transform3D(0.18184, -0.152796, -0.439986, 0.0322096, 0.475323, -0.151756, 0.464647, 0.0268471, 0.182709, -154.942, 48.7305, 264.712)
 progress = 329.48
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_cnslq")
 frontConeShaderMaterial = SubResource("ShaderMaterial_m41xt")
 RearLightShaderMaterial = SubResource("ShaderMaterial_1ypje")
@@ -2967,7 +2684,7 @@ transform = Transform3D(0.376204, -0.300751, -0.876366, 0.0746005, 0.952612, -0.
 progress = 419.235
 
 [node name="FloatingStreetLight5" parent="CarPaths/Path2" instance=ExtResource("31_l3g6b")]
-transform = Transform3D(-0.0627117, 0.0236989, 0.997748, 0.148921, 0.988745, -0.0141242, -0.986816, 0.147706, -0.0655379, -87.857, 99.932, -135.505)
+transform = Transform3D(-0.0627116, 0.0236989, 0.997748, 0.14892, 0.988745, -0.0141242, -0.986814, 0.147706, -0.0655379, -87.857, 99.932, -135.505)
 progress = 1219.59
 
 [node name="FloatingStreetLight6" parent="CarPaths/Path2" instance=ExtResource("31_l3g6b")]
@@ -2979,107 +2696,97 @@ transform = Transform3D(-0.803235, -0.0116976, 0.595543, -0.014562, 0.999891, -6
 progress = 1629.3
 
 [node name="FloatingStreetLight8" parent="CarPaths/Path2" instance=ExtResource("31_l3g6b")]
-transform = Transform3D(-0.815351, -0.0113914, 0.578851, -0.0139704, 0.999899, -8.32453e-07, -0.578794, -0.00808748, -0.81543, -421.261, 1.01818e-05, 65.5527)
+transform = Transform3D(-0.815351, -0.0113914, 0.578851, -0.0139704, 0.999899, -8.32452e-07, -0.578794, -0.00808748, -0.81543, -421.261, 1.01818e-05, 65.5527)
 progress = 1638.83
 
 [node name="Path3" type="Path3D" parent="CarPaths"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 330.584, 0)
 curve = SubResource("Curve3D_16wen")
 
-[node name="Car1" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car1" parent="CarPaths/Path3" instance=ExtResource("28_16wen")]
 transform = Transform3D(-0.334294, 0, -0.371817, 0, 0.5, 0, 0.371817, 0, -0.334294, -632.622, 0, 432.269)
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_5fcsg")
 frontConeShaderMaterial = SubResource("ShaderMaterial_i346n")
 RearLightShaderMaterial = SubResource("ShaderMaterial_ofbs2")
 RearConeShaderMaterial = SubResource("ShaderMaterial_yc3nq")
 
-[node name="Car2" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car2" parent="CarPaths/Path3" instance=ExtResource("28_16wen")]
 transform = Transform3D(-0.27048, 0, -0.420523, 0, 0.5, 0, 0.420523, 0, -0.27048, -588.808, 0, 465.728)
 progress = 55.188
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_qlad2")
 frontConeShaderMaterial = SubResource("ShaderMaterial_q2bq1")
 RearLightShaderMaterial = SubResource("ShaderMaterial_1aqvb")
 RearConeShaderMaterial = SubResource("ShaderMaterial_krepd")
 
-[node name="Car3" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car3" parent="CarPaths/Path3" instance=ExtResource("28_16wen")]
 transform = Transform3D(0.0385883, 0, -0.498504, 0, 0.5, 0, 0.498504, 0, 0.0385883, -323.607, 0, 523.59)
 progress = 331.522
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_isco4")
 frontConeShaderMaterial = SubResource("ShaderMaterial_0g0ys")
 RearLightShaderMaterial = SubResource("ShaderMaterial_7n6jc")
 RearConeShaderMaterial = SubResource("ShaderMaterial_cqje8")
 
-[node name="Car4" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car4" parent="CarPaths/Path3" instance=ExtResource("28_16wen")]
 transform = Transform3D(0.117579, 0, -0.485977, 0, 0.5, 0, 0.485977, 0, 0.117579, -214.77, 0, 505.948)
 progress = 441.898
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_oo4aw")
 frontConeShaderMaterial = SubResource("ShaderMaterial_ahbkh")
 RearLightShaderMaterial = SubResource("ShaderMaterial_7v4ur")
 RearConeShaderMaterial = SubResource("ShaderMaterial_rr0e2")
 
-[node name="Car5" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car5" parent="CarPaths/Path3" instance=ExtResource("28_16wen")]
 transform = Transform3D(0.445986, 0, -0.226044, 0, 0.5, 0, 0.226044, 0, 0.445986, 251.589, 0, 200.657)
 progress = 1013.09
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_ew2ok")
 frontConeShaderMaterial = SubResource("ShaderMaterial_4hh5k")
 RearLightShaderMaterial = SubResource("ShaderMaterial_0m37l")
 RearConeShaderMaterial = SubResource("ShaderMaterial_n7f4r")
 
-[node name="Car6" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("27_nn5t2")]
+[node name="Car6" parent="CarPaths/Path3" instance=ExtResource("27_nn5t2")]
 transform = Transform3D(0.787945, 0, 0.138357, 0, 0.8, 0, -0.138357, 0, 0.787945, 281.851, 0, -69.3224)
 progress = 1289.43
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_d8q68")
 frontConeShaderMaterial = SubResource("ShaderMaterial_3shia")
 RearLightShaderMaterial = SubResource("ShaderMaterial_jtemk")
 RearConeShaderMaterial = SubResource("ShaderMaterial_wigbm")
 
-[node name="Car7" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("27_nn5t2")]
+[node name="Car7" parent="CarPaths/Path3" instance=ExtResource("27_nn5t2")]
 transform = Transform3D(0.357699, 0, -0.715578, 0, 0.8, 0, 0.715578, 0, 0.357699, -25.1624, 0, 435.725)
 progress = 644.517
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_lmhru")
 frontConeShaderMaterial = SubResource("ShaderMaterial_c2pi3")
 RearLightShaderMaterial = SubResource("ShaderMaterial_prwhv")
 RearConeShaderMaterial = SubResource("ShaderMaterial_jnhps")
 
-[node name="Car8" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("27_nn5t2")]
+[node name="Car8" parent="CarPaths/Path3" instance=ExtResource("27_nn5t2")]
 transform = Transform3D(-0.689535, 0, 0.405637, 0, 0.8, 0, -0.405637, 0, -0.689535, -728.207, 0, -335.62)
 progress = 2615.52
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_ms4x6")
 frontConeShaderMaterial = SubResource("ShaderMaterial_ne6y5")
 RearLightShaderMaterial = SubResource("ShaderMaterial_3w2xf")
 RearConeShaderMaterial = SubResource("ShaderMaterial_mnocn")
 
-[node name="Car9" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("27_nn5t2")]
+[node name="Car9" parent="CarPaths/Path3" instance=ExtResource("27_nn5t2")]
 transform = Transform3D(-0.463967, 0, -0.651716, 0, 0.8, 0, 0.651716, 0, -0.463967, -602.132, 0, 456.708)
 progress = 39.0972
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_lapsf")
 frontConeShaderMaterial = SubResource("ShaderMaterial_ay8mm")
 RearLightShaderMaterial = SubResource("ShaderMaterial_smwsm")
 RearConeShaderMaterial = SubResource("ShaderMaterial_crp86")
 
-[node name="Car10" parent="CarPaths/Path3" node_paths=PackedStringArray("meshList") instance=ExtResource("28_16wen")]
+[node name="Car10" parent="CarPaths/Path3" instance=ExtResource("28_16wen")]
 transform = Transform3D(-0.498676, 0, 0.0362905, 0, 0.5, 0, -0.0362905, 0, -0.498676, -803.343, 0, -74.5768)
 progress = 2889.49
 speed = 32.0
-meshList = []
 frontLightShaderMaterial = SubResource("ShaderMaterial_jll2n")
 frontConeShaderMaterial = SubResource("ShaderMaterial_dp8ap")
 RearLightShaderMaterial = SubResource("ShaderMaterial_ievqv")

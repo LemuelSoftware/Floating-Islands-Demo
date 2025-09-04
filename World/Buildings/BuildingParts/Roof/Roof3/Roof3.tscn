@@ -1,28 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://c8lmabjs58tf8"]
+[gd_scene load_steps=8 format=3 uid="uid://c8lmabjs58tf8"]
 
 [ext_resource type="Script" uid="uid://di7dqdjheqdle" path="res://World/Buildings/BuildingParts/Roof/Roof3/Roof3.cs" id="1_ib0wd"]
-[ext_resource type="PackedScene" uid="uid://btxv4d5ch1fld" path="res://World/Buildings/BuildingParts/Roof/Roof3/Mesh/Roof3.glb" id="2_0wv0y"]
-[ext_resource type="Shader" uid="uid://cr6wovrw5bvtv" path="res://World/Shader/FlatShading.gdshader" id="3_0wv0y"]
+[ext_resource type="PackedScene" uid="uid://ceqxkeqiqxpcx" path="res://World/Buildings/BuildingParts/Roof/Roof3/Mesh/Roof3.blend" id="2_65c2l"]
 [ext_resource type="Material" uid="uid://vhbyl0nqbt4q" path="res://World/Buildings/BuildingParts/Roof/Shader/ElectricityEffectShaderMaterial1.tres" id="3_uhldg"]
 [ext_resource type="Material" uid="uid://d2888w0f50cqj" path="res://World/Buildings/BuildingParts/Roof/Shader/ElectricityParticleMaterial.tres" id="4_0rcbf"]
-[ext_resource type="Texture2D" uid="uid://bhsv283s3q14f" path="res://World/Buildings/BuildingParts/Roof/Roof3/Mesh/Roof3_Normal Map.png" id="4_mqxpd"]
-[ext_resource type="Texture2D" uid="uid://dny1ytr2ieqcn" path="res://World/Buildings/BuildingParts/Roof/Roof3/Mesh/Roof3_Base Color.png" id="5_j4708"]
-[ext_resource type="Texture2D" uid="uid://dq476g0tcle1g" path="res://World/Buildings/BuildingParts/Roof/Roof3/Mesh/Roof3_Generator Base Color.png" id="6_u2ugn"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_uhldg"]
-render_priority = 0
-shader = ExtResource("3_0wv0y")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("5_j4708")
-shader_parameter/normal_map = ExtResource("4_mqxpd")
-shader_parameter/normal_depth = 4.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_0jj5t"]
-render_priority = 0
-shader = ExtResource("3_0wv0y")
-shader_parameter/enable = true
-shader_parameter/tex = ExtResource("6_u2ugn")
-shader_parameter/normal_depth = 4.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_goune"]
 
@@ -38,18 +19,11 @@ height = 4.5
 radial_segments = 8
 rings = 8
 
-[node name="Roof3" type="StaticBody3D" node_paths=PackedStringArray("generator", "meshList")]
+[node name="Roof3" type="StaticBody3D" node_paths=PackedStringArray("generator")]
 script = ExtResource("1_ib0wd")
 generator = NodePath("Roof3/Icosphere")
-meshList = [NodePath("Roof3/Cube"), NodePath("Roof3/Icosphere")]
 
-[node name="Roof3" parent="." instance=ExtResource("2_0wv0y")]
-
-[node name="Cube" parent="Roof3" index="0"]
-surface_material_override/0 = SubResource("ShaderMaterial_uhldg")
-
-[node name="Icosphere" parent="Roof3" index="1"]
-surface_material_override/0 = SubResource("ShaderMaterial_0jj5t")
+[node name="Roof3" parent="." instance=ExtResource("2_65c2l")]
 
 [node name="CollisionShape" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 0)

@@ -154,7 +154,7 @@ operator = 2
 
 [resource]
 code = "shader_type spatial;
-render_mode blend_mix, depth_draw_opaque, cull_disabled, diffuse_toon, specular_toon, vertex_lighting, fog_disabled;
+render_mode blend_mix, depth_draw_opaque, cull_disabled, diffuse_toon, specular_toon, fog_disabled;
 
 uniform vec2 WaveHeightRate = vec2(0.100000, 0.100000);
 uniform sampler2D tex_vtx_4;
@@ -346,7 +346,6 @@ void fragment() {
 modes/cull = 2
 modes/diffuse = 3
 modes/specular = 1
-flags/vertex_lighting = true
 flags/fog_disabled = true
 nodes/vertex/2/node = SubResource("VisualShaderNodeInput_toug3")
 nodes/vertex/2/position = Vector2(-860, 300)
