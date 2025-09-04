@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://ehfncsgn8ec2"]
+
+[ext_resource type="Script" uid="uid://c162lqe4yt21a" path="res://World/Ground/Water/Water/Water.cs" id="1_l4bb1"]
+[ext_resource type="Material" uid="uid://h64uy4vdm4h5" path="res://World/Ground/Water/Water/Shader/WaterShaderMaterial.tres" id="1_x013q"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_x013q"]
+resource_local_to_scene = true
+material = ExtResource("1_x013q")
+size = Vector2(10, 10)
+subdivide_width = 20
+subdivide_depth = 20
+
+[node name="Water" type="MeshInstance3D"]
+mesh = SubResource("PlaneMesh_x013q")
+script = ExtResource("1_l4bb1")

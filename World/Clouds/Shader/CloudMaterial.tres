@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://cv4vlmqtgcb81"]
+
+[ext_resource type="Shader" uid="uid://bksivr3ou4ruy" path="res://World/Ground/Water/WaterEffects/Stylized/Shader/SmokeEffectStylizedShader.gdshader" id="1_ady8b"]
+[ext_resource type="Gradient" uid="uid://ch8jqxnujnije" path="res://World/Ground/Water/WaterEffects/Stylized/Shader/SmokeEffectStylizedGradient.tres" id="2_k446g"]
+[ext_resource type="Texture2D" uid="uid://cb1dx7vml0kfl" path="res://World/Ground/Water/WaterEffects/Stylized/Texture/PerlinNoiseTiledInv.png" id="3_omk5y"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_a3m8x"]
+gradient = ExtResource("2_k446g")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ady8b")
+shader_parameter/texture_scale = Vector2(0.5, 0.5)
+shader_parameter/disolver_texture = ExtResource("3_omk5y")
+shader_parameter/light_attenuation = 1.0
+shader_parameter/shadow_roundness = 1.4
+shader_parameter/color_1d_gradient = SubResource("GradientTexture1D_a3m8x")

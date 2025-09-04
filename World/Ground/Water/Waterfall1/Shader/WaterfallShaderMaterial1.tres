@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dlb7lsu25tjse"]
+
+[ext_resource type="Shader" uid="uid://cbum7djre0jii" path="res://World/Ground/Water/Waterfall1/Shader/WaterfallShader1.tres" id="1_f3vyh"]
+[ext_resource type="Texture2D" uid="uid://crosdejvuc2gc" path="res://World/Ground/Water/Waterfall1/Texture/waterfall.png" id="2_gil2v"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_f3vyh")
+shader_parameter/WaveHeightRate = Vector2(0.1, 0.1)
+shader_parameter/WaveHeight = 0.2
+shader_parameter/Color = Color(0.333333, 0.619608, 1, 1)
+shader_parameter/WaveSpeed = Vector2(0, 0.4)
+shader_parameter/NoiseTexture = ExtResource("2_gil2v")
+shader_parameter/ShoreWaveSpeed = 0.5
+shader_parameter/UnderWaterProximityFade = 4.0
+shader_parameter/ShoreWaveCount = 4.0
+shader_parameter/ShoreWaveDropOff = 24.0
+shader_parameter/SeeThroughWater = 0.8

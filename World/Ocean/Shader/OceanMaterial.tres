@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://csposw3brjf7m"]
+
+[ext_resource type="Shader" uid="uid://vhfdisb7xdmr" path="res://World/Ocean/Shader/Ocean.gdshader" id="1_j61rj"]
+[ext_resource type="Texture2D" uid="uid://cny2rcviny68q" path="res://World/Ocean/Mesh/OceanNoiseTexture1.tres" id="2_8blob"]
+[ext_resource type="Texture2D" uid="uid://dilxh5u62rh2p" path="res://World/Ocean/Mesh/OceanNoiseTexture2.tres" id="3_flefk"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_j61rj")
+shader_parameter/direction_1 = Vector2(-0.02, -0.001)
+shader_parameter/direction_2 = Vector2(-0.001, -0.02)
+shader_parameter/alpha = 0.1
+shader_parameter/noise_texture_1 = ExtResource("2_8blob")
+shader_parameter/noise_texture_2 = ExtResource("3_flefk")

@@ -1,0 +1,172 @@
+[gd_scene load_steps=17 format=3 uid="uid://d3ta7gwcsb1ec"]
+
+[ext_resource type="Script" uid="uid://d2fjjtivsj7v4" path="res://World/Vehicle/Vehicle.cs" id="1_5k4km"]
+[ext_resource type="PackedScene" uid="uid://bheeldq5ltju1" path="res://World/Drones/DroneEngine/Engine1/Engine1.tscn" id="2_3e4ec"]
+[ext_resource type="Material" uid="uid://caxdtmcmjy1gk" path="res://World/Vehicle/Shader/VehicleFrontLightGlowShader.tres" id="2_j8lrk"]
+[ext_resource type="ArrayMesh" uid="uid://cs6awmc702bnd" path="res://World/Vehicle/Car2/Mesh/FrontLightGlass2.obj" id="5_jm0o8"]
+[ext_resource type="PackedScene" uid="uid://iqi5c22ygp7q" path="res://World/Vehicle/Car2/Mesh/Car2.glb" id="6_6v4m3"]
+[ext_resource type="Texture2D" uid="uid://c6wwpqs88ribo" path="res://World/Vehicle/Car2/Mesh/Car2_endesga x64.png" id="7_6v4m3"]
+[ext_resource type="Material" uid="uid://srpdpfgytliq" path="res://World/Vehicle/Shader/VehicleFrontLightConeShader.tres" id="7_k5yfx"]
+[ext_resource type="Material" uid="uid://cebtk6hagi7gg" path="res://World/Vehicle/Shader/VehicleRearLightGlowShader.tres" id="8_mvgst"]
+[ext_resource type="ArrayMesh" uid="uid://b5yny3rdwlamx" path="res://World/Vehicle/Car2/Mesh/RearLightGlass2.obj" id="8_s0gn4"]
+[ext_resource type="Material" uid="uid://bhluycexp2y0d" path="res://World/Vehicle/Shader/VehicleRearLightConeShader.tres" id="10_6v4m3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q32di"]
+shading_mode = 2
+albedo_texture = ExtResource("7_6v4m3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6v4m3"]
+shading_mode = 2
+albedo_texture = ExtResource("7_6v4m3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kp7fh"]
+shading_mode = 2
+albedo_texture = ExtResource("7_6v4m3")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_w5hs3"]
+data = PackedVector3Array(-4.3986, -0.8797, -2.5, -4.3986, -0.7492, -2.5, -5, -0.8797, -2.1993, -5, -0.8797, -2.1993, -4.3986, -0.7492, -2.5, -5, -0.7492, -2.1993, -5, -0.7492, -2.1993, -4.3986, -0.7492, -2.5, -5, 0, -2.1993, -5, 0, -2.1993, -4.3986, -0.7492, -2.5, -5, 0.8797, -2.1993, -5, 0.8797, -2.1993, -4.3986, -0.7492, -2.5, -4.3986, 0.8797, -2.5, -4.3986, 0.8797, -2.5, -4.3986, -0.7492, -2.5, -4.3986, 0, -2.5, -5, -0.7492, -2.0544, -5, -0.8797, -2.0544, -5, 0, -2.0544, -5, 0, -2.0544, -5, -0.8797, -2.0544, -5, 0.8797, -2.0544, -5, 0.8797, -2.0544, -5, -0.8797, -2.0544, -5, 0.8797, -2.1993, -5, 0.8797, -2.1993, -5, -0.8797, -2.0544, -5, 0, -2.1993, -5, 0, -2.1993, -5, -0.8797, -2.0544, -5, -0.7492, -2.1993, -5, -0.7492, -2.1993, -5, -0.8797, -2.0544, -5, -0.8797, -2.1993, -5, -0.7492, -2.0544, -5, -0.8797, 2.0496, -5, -0.8797, -2.0544, -5, -0.7492, 2.0496, -5, -0.8797, 2.0496, -5, -0.7492, -2.0544, -5, -0.7492, 2.0496, -5, 0, 2.1993, -5, -0.8797, 2.0496, -5, -0.8797, 2.0496, -5, 0, 2.1993, -5, -0.8797, 2.1993, -5, -0.8797, 2.1993, -5, 0, 2.1993, -5, -0.7492, 2.1993, -5, 0, 2.0496, -5, 0, 2.1993, -5, -0.7492, 2.0496, -5, 0.8797, 2.0496, -5, 0, 2.1993, -5, 0, 2.0496, -5, 0.8797, 2.1993, -5, 0, 2.1993, -5, 0.8797, 2.0496, -4.3986, -0.8797, 2.5, -4.3986, -1, 2.1993, -5, -0.8797, 2.1993, -4.3986, 1, 2.1993, -4.3986, 0.8797, 2.5, -5, 0.8797, 2.1993, -5, -0.8797, -2.1993, -4.3986, -1, -2.1993, -4.3986, -0.8797, -2.5, -4.3986, 0.8797, -2.5, -4.3986, 1, -2.1993, -5, 0.8797, -2.1993, 5, -0.8797, 2.1993, 4.3986, -1, 2.1993, 4.3986, -0.8797, 2.5, 4.3986, 0.8797, 2.5, 4.3986, 1, 2.1993, 5, 0.8797, 2.1993, 4.3986, -0.8797, -2.5, 4.3986, -1, -2.1993, 5, -0.8797, -2.1993, 5, 0.8797, -2.1993, 4.3986, 1, -2.1993, 4.3986, 0.8797, -2.5, -4.3986, 1, -2.1993, -4.3986, 1, -2.0544, -5, 0.8797, -2.1993, -5, 0.8797, -2.1993, -4.3986, 1, -2.0544, -5, 0.8797, -2.0544, -4.3986, -1, -2.1993, 1.7595, -1, -2.1993, -4.3986, -0.8797, -2.5, -4.3986, -0.8797, -2.5, 1.7595, -1, -2.1993, 1.7595, -0.8797, -2.5, 1.7595, -1, -2.1993, 1.9285, -1, -2.1993, 1.7595, -0.8797, -2.5, 1.7595, -0.8797, -2.5, 1.9285, -1, -2.1993, 1.9285, -0.8797, -2.5, 1.9285, -1, -2.1993, 4.2535, -1, -2.1993, 1.9285, -0.8797, -2.5, 1.9285, -0.8797, -2.5, 4.2535, -1, -2.1993, 4.2535, -0.8797, -2.5, 4.2535, -1, -2.1993, 4.3986, -1, -2.1993, 4.2535, -0.8797, -2.5, 4.2535, -0.8797, -2.5, 4.3986, -1, -2.1993, 4.3986, -0.8797, -2.5, 4.3986, 1, -2.1993, 4.2535, 1, -2.1993, 4.3986, 0.8797, -2.5, 4.3986, 0.8797, -2.5, 4.2535, 1, -2.1993, 4.2535, 0.8797, -2.5, 4.2535, 1, -2.1993, 1.9285, 1, -2.1993, 4.2535, 0.8797, -2.5, 4.2535, 0.8797, -2.5, 1.9285, 1, -2.1993, 1.9285, 0.8797, -2.5, 1.9285, 1, -2.1993, 1.7595, 1, -2.1993, 1.9285, 0.8797, -2.5, 1.9285, 0.8797, -2.5, 1.7595, 1, -2.1993, 1.7595, 0.8797, -2.5, 1.7595, 1, -2.1993, -4.3986, 1, -2.1993, 1.7595, 0.8797, -2.5, 1.7595, 0.8797, -2.5, -4.3986, 1, -2.1993, -4.3986, 0.8797, -2.5, 4.3986, 1, 2.1993, 4.3986, 1, 2.0496, 5, 0.8797, 2.1993, 5, 0.8797, 2.1993, 4.3986, 1, 2.0496, 5, 0.8797, 2.0496, 4.3986, 1, 2.0496, 4.3986, 1, -2.0544, 5, 0.8797, 2.0496, 5, 0.8797, 2.0496, 4.3986, 1, -2.0544, 5, 0.8797, -2.0544, 4.3986, 1, -2.0544, 4.3986, 1, -2.1993, 5, 0.8797, -2.0544, 5, 0.8797, -2.0544, 4.3986, 1, -2.1993, 5, 0.8797, -2.1993, 5, -0.8797, -2.1993, 5, -0.7492, -2.1993, 4.3986, -0.8797, -2.5, 4.3986, -0.8797, -2.5, 5, -0.7492, -2.1993, 4.3986, -0.7492, -2.5, 4.3986, -0.7492, -2.5, 5, -0.7492, -2.1993, 4.3986, 0, -2.5, 4.3986, 0, -2.5, 5, -0.7492, -2.1993, 4.3986, 0.8797, -2.5, 4.3986, 0.8797, -2.5, 5, -0.7492, -2.1993, 5, 0.8797, -2.1993, 5, 0.8797, -2.1993, 5, -0.7492, -2.1993, 5, 0, -2.1993, -4.3986, 1, 2.1993, 1.7595, 1, 2.1993, -4.3986, 0.8797, 2.5, -4.3986, 0.8797, 2.5, 1.7595, 1, 2.1993, 1.7595, 0.8797, 2.5, 1.7595, 1, 2.1993, 1.9285, 1, 2.1993, 1.7595, 0.8797, 2.5, 1.7595, 0.8797, 2.5, 1.9285, 1, 2.1993, 1.9285, 0.8797, 2.5, 1.9285, 1, 2.1993, 4.2535, 1, 2.1993, 1.9285, 0.8797, 2.5, 1.9285, 0.8797, 2.5, 4.2535, 1, 2.1993, 4.2535, 0.8797, 2.5, 4.2535, 1, 2.1993, 4.3986, 1, 2.1993, 4.2535, 0.8797, 2.5, 4.2535, 0.8797, 2.5, 4.3986, 1, 2.1993, 4.3986, 0.8797, 2.5, -4.3986, 0.8797, 2.5, 1.7595, 0.8797, 2.5, -4.3986, 0, 2.5, -4.3986, 0, 2.5, 1.7595, 0.8797, 2.5, -4.3986, -0.7492, 2.5, -4.3986, -0.7492, 2.5, 1.7595, 0.8797, 2.5, -4.3986, -0.8797, 2.5, -4.3986, -0.8797, 2.5, 1.7595, 0.8797, 2.5, 1.7595, -0.8797, 2.5, 1.7595, -0.8797, 2.5, 1.7595, 0.8797, 2.5, 1.9285, -0.8797, 2.5, 1.9285, -0.8797, 2.5, 1.7595, 0.8797, 2.5, 4.2535, -0.8797, 2.5, 4.2535, -0.8797, 2.5, 1.7595, 0.8797, 2.5, 4.3986, -0.8797, 2.5, 4.3986, -0.8797, 2.5, 1.7595, 0.8797, 2.5, 4.3986, -0.7492, 2.5, 4.3986, -0.7492, 2.5, 1.7595, 0.8797, 2.5, 4.3986, 0, 2.5, 4.3986, 0, 2.5, 1.7595, 0.8797, 2.5, 4.3986, 0.8797, 2.5, 4.3986, 0.8797, 2.5, 1.7595, 0.8797, 2.5, 4.2535, 0.8797, 2.5, 4.2535, 0.8797, 2.5, 1.7595, 0.8797, 2.5, 1.9285, 0.8797, 2.5, -4.3986, -0.7492, -2.5, -4.3986, -0.8797, -2.5, -4.3986, 0, -2.5, -4.3986, 0, -2.5, -4.3986, -0.8797, -2.5, -4.3986, 0.8797, -2.5, -4.3986, 0.8797, -2.5, -4.3986, -0.8797, -2.5, 1.7595, 0.8797, -2.5, 1.7595, 0.8797, -2.5, -4.3986, -0.8797, -2.5, 1.9285, 0.8797, -2.5, 1.9285, 0.8797, -2.5, -4.3986, -0.8797, -2.5, 4.2535, 0.8797, -2.5, 4.2535, 0.8797, -2.5, -4.3986, -0.8797, -2.5, 4.3986, 0.8797, -2.5, 4.3986, 0.8797, -2.5, -4.3986, -0.8797, -2.5, 4.3986, 0, -2.5, 4.3986, 0, -2.5, -4.3986, -0.8797, -2.5, 4.3986, -0.7492, -2.5, 4.3986, -0.7492, -2.5, -4.3986, -0.8797, -2.5, 4.3986, -0.8797, -2.5, 4.3986, -0.8797, -2.5, -4.3986, -0.8797, -2.5, 4.2535, -0.8797, -2.5, 4.2535, -0.8797, -2.5, -4.3986, -0.8797, -2.5, 1.9285, -0.8797, -2.5, 1.9285, -0.8797, -2.5, -4.3986, -0.8797, -2.5, 1.7595, -0.8797, -2.5, -4.3986, 0.8797, 2.5, -4.3986, 0, 2.5, -5, 0.8797, 2.1993, -5, 0.8797, 2.1993, -4.3986, 0, 2.5, -5, 0, 2.1993, -5, 0, 2.1993, -4.3986, 0, 2.5, -5, -0.7492, 2.1993, -5, -0.7492, 2.1993, -4.3986, 0, 2.5, -5, -0.8797, 2.1993, -5, -0.8797, 2.1993, -4.3986, 0, 2.5, -4.3986, -0.8797, 2.5, -4.3986, -0.8797, 2.5, -4.3986, 0, 2.5, -4.3986, -0.7492, 2.5, 4.3986, 0, 2.5, 4.3986, 0.8797, 2.5, 4.3986, -0.7492, 2.5, 4.3986, -0.7492, 2.5, 4.3986, 0.8797, 2.5, 4.3986, -0.8797, 2.5, 4.3986, -0.8797, 2.5, 4.3986, 0.8797, 2.5, 5, -0.8797, 2.1993, 5, -0.8797, 2.1993, 4.3986, 0.8797, 2.5, 5, -0.7492, 2.1993, 5, -0.7492, 2.1993, 4.3986, 0.8797, 2.5, 5, 0, 2.1993, 5, 0, 2.1993, 4.3986, 0.8797, 2.5, 5, 0.8797, 2.1993, 4.3986, -1, 2.1993, 4.3986, -1, 2.0496, 4.2535, -1, 2.1993, 4.2535, -1, 2.1993, 4.3986, -1, 2.0496, 1.9285, -1, 2.1993, 1.9285, -1, 2.1993, 4.3986, -1, 2.0496, 1.7595, -1, 2.1993, 1.7595, -1, 2.1993, 4.3986, -1, 2.0496, -4.3986, -1, 2.1993, -4.3986, -1, 2.1993, 4.3986, -1, 2.0496, -4.3986, -1, 2.0496, -4.3986, -1, 2.0496, 4.3986, -1, 2.0496, -4.3986, -1, -2.0544, -4.3986, -1, -2.0544, 4.3986, -1, 2.0496, -4.3986, -1, -2.1993, -4.3986, -1, -2.1993, 4.3986, -1, 2.0496, 1.7595, -1, -2.1993, 1.7595, -1, -2.1993, 4.3986, -1, 2.0496, 1.9285, -1, -2.1993, 1.9285, -1, -2.1993, 4.3986, -1, 2.0496, 4.2535, -1, -2.1993, 4.2535, -1, -2.1993, 4.3986, -1, 2.0496, 4.3986, -1, -2.1993, 4.3986, -1, -2.1993, 4.3986, -1, 2.0496, 4.3986, -1, -2.0544, 4.3986, -1, -2.1993, 4.3986, -1, -2.0544, 5, -0.8797, -2.1993, 5, -0.8797, -2.1993, 4.3986, -1, -2.0544, 5, -0.8797, -2.0544, 5, -0.8797, -2.0544, 4.3986, -1, -2.0544, 5, -0.8797, 2.0496, 5, -0.8797, 2.0496, 4.3986, -1, -2.0544, 5, -0.8797, 2.1993, 5, -0.8797, 2.1993, 4.3986, -1, -2.0544, 4.3986, -1, 2.1993, 4.3986, -1, 2.1993, 4.3986, -1, -2.0544, 4.3986, -1, 2.0496, -4.3986, 1, 2.0496, -4.3986, 1, 2.1993, -5, 0.8797, 2.0496, -5, 0.8797, 2.0496, -4.3986, 1, 2.1993, -5, 0.8797, 2.1993, 5, 0.8797, 2.1993, 5, 0.8797, 2.0496, 5, 0, 2.1993, 5, 0, 2.1993, 5, 0.8797, 2.0496, 5, -0.7492, 2.1993, 5, -0.7492, 2.1993, 5, 0.8797, 2.0496, 5, -0.8797, 2.1993, 5, -0.8797, 2.1993, 5, 0.8797, 2.0496, 5, -0.8797, 2.0496, 5, -0.8797, 2.0496, 5, 0.8797, 2.0496, 5, -0.8797, -2.0544, 5, -0.8797, -2.0544, 5, 0.8797, 2.0496, 5, -0.8797, -2.1993, 5, -0.8797, -2.1993, 5, 0.8797, 2.0496, 5, -0.7492, -2.1993, 5, -0.7492, -2.1993, 5, 0.8797, 2.0496, 5, 0, -2.1993, 5, 0, -2.1993, 5, 0.8797, 2.0496, 5, 0.8797, -2.1993, 5, 0.8797, -2.1993, 5, 0.8797, 2.0496, 5, 0.8797, -2.0544, 1.7595, 1, -2.0544, 2.1494, 2, -1.6645, 1.7595, 1, 2.0496, 1.7595, 1, 2.0496, 2.1494, 2, -1.6645, 2.1494, 2, 1.6597, 4.3986, -1, 2.1993, 4.2535, -1, 2.1993, 4.3986, -0.8797, 2.5, 4.3986, -0.8797, 2.5, 4.2535, -1, 2.1993, 4.2535, -0.8797, 2.5, 4.2535, -0.8797, 2.5, 4.2535, -1, 2.1993, 1.9285, -0.8797, 2.5, 1.9285, -0.8797, 2.5, 4.2535, -1, 2.1993, 1.7595, -0.8797, 2.5, 1.7595, -0.8797, 2.5, 4.2535, -1, 2.1993, -4.3986, -0.8797, 2.5, -4.3986, -0.8797, 2.5, 4.2535, -1, 2.1993, -4.3986, -1, 2.1993, -4.3986, -1, 2.1993, 4.2535, -1, 2.1993, 1.7595, -1, 2.1993, 1.7595, -1, 2.1993, 4.2535, -1, 2.1993, 1.9285, -1, 2.1993, 1.7595, 1, 2.0496, 2.1494, 2, 1.6597, 1.9285, 1, 2.1993, 2.1494, 2, -1.6645, 4.0326, 2, -1.6645, 2.1494, 2, 1.6597, 2.1494, 2, 1.6597, 4.0326, 2, -1.6645, 4.0326, 2, 1.6597, 1.7595, -0.7492, -2.0544, 1.7595, -0.7492, 2.0496, -5, -0.7492, -2.0544, -5, -0.7492, -2.0544, 1.7595, -0.7492, 2.0496, -5, -0.7492, 2.0496, 1.7595, -0.7492, -2.0544, -5, -0.7492, -2.0544, 1.7595, 1, -2.0544, 1.7595, 1, -2.0544, -5, -0.7492, -2.0544, -4.3986, 1, -2.0544, -4.3986, 1, -2.0544, -5, -0.7492, -2.0544, -5, 0.8797, -2.0544, -5, 0.8797, -2.0544, -5, -0.7492, -2.0544, -5, 0, -2.0544, 1.7595, 1, -2.0544, -4.3986, 1, -2.0544, 1.7595, 1, -2.1993, 1.7595, 1, -2.1993, -4.3986, 1, -2.0544, -4.3986, 1, -2.1993, 1.7595, 1, 2.1993, -4.3986, 1, 2.1993, 1.7595, 1, 2.0496, 1.7595, 1, 2.0496, -4.3986, 1, 2.1993, -4.3986, 1, 2.0496, -5, 0, 2.0496, -5, -0.7492, 2.0496, -5, 0.8797, 2.0496, -5, 0.8797, 2.0496, -5, -0.7492, 2.0496, -4.3986, 1, 2.0496, -4.3986, 1, 2.0496, -5, -0.7492, 2.0496, 1.7595, 1, 2.0496, 1.7595, 1, 2.0496, -5, -0.7492, 2.0496, 1.7595, -0.7492, 2.0496, 1.7595, 1, -2.0544, 1.7595, 1, 2.0496, 1.7595, -0.7492, -2.0544, 1.7595, -0.7492, -2.0544, 1.7595, 1, 2.0496, 1.7595, -0.7492, 2.0496, 1.7595, 1, 2.0496, 1.9285, 1, 2.1993, 1.7595, 1, 2.1993, 4.3986, 1, -2.0544, 4.2535, 1, -2.1993, 4.0326, 2, -1.6645, 4.3986, 1, 2.0496, 4.2535, 1, 2.1993, 4.0326, 2, 1.6597, 1.9285, 1, -2.1993, 2.1494, 2, -1.6645, 1.7595, 1, -2.0544, 1.9285, 1, -2.1993, 1.7595, 1, -2.0544, 1.7595, 1, -2.1993, 4.3986, 1, -2.0544, 4.2535, 1, -2.1993, 4.3986, 1, -2.1993, 4.3986, 1, 2.0496, 4.3986, 1, 2.1993, 4.2535, 1, 2.1993, 4.3986, 1, -2.0544, 4.3986, 1, 2.0496, 4.0326, 2, -1.6645, 4.0326, 2, -1.6645, 4.3986, 1, 2.0496, 4.0326, 2, 1.6597, 1.9285, 1, -2.1993, 4.2535, 1, -2.1993, 2.1494, 2, -1.6645, 2.1494, 2, -1.6645, 4.2535, 1, -2.1993, 4.0326, 2, -1.6645, 1.9285, 1, 2.1993, 2.1494, 2, 1.6597, 4.2535, 1, 2.1993, 4.2535, 1, 2.1993, 2.1494, 2, 1.6597, 4.0326, 2, 1.6597, -4.3986, -1, 2.1993, -4.3986, -1, 2.0496, -5, -0.8797, 2.1993, -5, -0.8797, 2.1993, -4.3986, -1, 2.0496, -5, -0.8797, 2.0496, -5, -0.8797, 2.0496, -4.3986, -1, 2.0496, -5, -0.8797, -2.0544, -5, -0.8797, -2.0544, -4.3986, -1, 2.0496, -5, -0.8797, -2.1993, -5, -0.8797, -2.1993, -4.3986, -1, 2.0496, -4.3986, -1, -2.1993, -4.3986, -1, -2.1993, -4.3986, -1, 2.0496, -4.3986, -1, -2.0544)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_j8lrk"]
+top_radius = 2.0
+bottom_radius = 0.18
+height = 5.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6v4m3"]
+top_radius = 0.2
+bottom_radius = 0.07
+height = 1.0
+radial_segments = 4
+
+[node name="Car2" type="PathFollow3D" node_paths=PackedStringArray("meshList", "frontLeftLightMesh", "frontLeftConeMesh", "frontLeftSpotLight", "frontRightLightMesh", "frontRightConeMesh", "frontRightSpotLight", "rearLeftLightMesh", "rearLeftConeMesh", "rearLeftSpotLight", "rearRightLightMesh", "rearRightConeMesh", "rearRightSpotLight")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+script = ExtResource("1_5k4km")
+meshList = []
+frontLightShaderMaterial = ExtResource("2_j8lrk")
+frontConeShaderMaterial = ExtResource("7_k5yfx")
+frontLeftLightMesh = NodePath("FrontLeftLight/FrontLeftLightGlassMesh")
+frontLeftConeMesh = NodePath("FrontLeftLight/FrontLeftLightConeMesh")
+frontLeftSpotLight = NodePath("FrontLeftLight/FrontLeftSpotLight")
+frontRightLightMesh = NodePath("FrontRightLight/FrontRightLightGlassMesh")
+frontRightConeMesh = NodePath("FrontRightLight/FrontRightLightConeMesh")
+frontRightSpotLight = NodePath("FrontRightLight/FrontRightSpotLight")
+RearLightShaderMaterial = ExtResource("8_mvgst")
+RearConeShaderMaterial = ExtResource("10_6v4m3")
+rearLeftLightMesh = NodePath("RearLeftLight/RearLeftLightGlassMesh")
+rearLeftConeMesh = NodePath("RearLeftLight/RearLeftLightConeMesh")
+rearLeftSpotLight = NodePath("RearLeftLight/RearLeftSpotLight")
+rearRightLightMesh = NodePath("RearRightLight/RearRightLightGlassMesh")
+rearRightConeMesh = NodePath("RearRightLight/RearRightLightConeMesh")
+rearRightSpotLight = NodePath("RearRightLight/RearRightSpotLight")
+
+[node name="Body" type="StaticBody3D" parent="."]
+
+[node name="Car2" parent="Body" instance=ExtResource("6_6v4m3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="Cube" parent="Body/Car2" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_q32di")
+
+[node name="RightLightCase" parent="Body/Car2" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_6v4m3")
+
+[node name="LeftLightCase" parent="Body/Car2" index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_kp7fh")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="Body"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_w5hs3")
+
+[node name="Engine1" parent="." instance=ExtResource("2_3e4ec")]
+transform = Transform3D(7.64274e-16, -1.74846e-08, 0.4, -0.4, -1.74846e-08, 8.47033e-23, 1.74846e-08, -0.4, -1.74846e-08, -4.5, 0, 1.96701e-07)
+
+[node name="Engine2" parent="." instance=ExtResource("2_3e4ec")]
+transform = Transform3D(7.64274e-16, -1.74846e-08, 0.4, -0.4, -1.74846e-08, 8.47033e-23, 1.74846e-08, -0.4, -1.74846e-08, 4.5, 0, -1.96701e-07)
+
+[node name="FrontLeftLight" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.6, 0.4, -5)
+
+[node name="FrontLeftLightGlassMesh" type="MeshInstance3D" parent="FrontLeftLight"]
+unique_name_in_owner = true
+material_override = ExtResource("2_j8lrk")
+mesh = ExtResource("5_jm0o8")
+
+[node name="FrontLeftLightConeMesh" type="MeshInstance3D" parent="FrontLeftLight"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 4.23516e-22, 0, 1, 2.5, 0, -1.19209e-07)
+material_override = ExtResource("7_k5yfx")
+mesh = SubResource("CylinderMesh_j8lrk")
+
+[node name="FrontLeftSpotLight" type="SpotLight3D" parent="FrontLeftLight"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+light_color = Color(0.890196, 0.733333, 0.596078, 1)
+light_cull_mask = 4294967293
+spot_angle = 20.0
+
+[node name="FrontRightLight" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.6, 0.4, -5)
+
+[node name="FrontRightLightGlassMesh" type="MeshInstance3D" parent="FrontRightLight"]
+unique_name_in_owner = true
+material_override = ExtResource("2_j8lrk")
+mesh = ExtResource("5_jm0o8")
+
+[node name="FrontRightLightConeMesh" type="MeshInstance3D" parent="FrontRightLight"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 4.23516e-22, 0, 1, 2.5, 0, 0)
+material_override = ExtResource("7_k5yfx")
+mesh = SubResource("CylinderMesh_j8lrk")
+skeleton = NodePath("../../FrontLeftLight")
+
+[node name="FrontRightSpotLight" type="SpotLight3D" parent="FrontRightLight"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+light_color = Color(0.890196, 0.733333, 0.596078, 1)
+light_cull_mask = 4294967293
+spot_angle = 20.0
+
+[node name="RearLeftLight" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.125, 0.8, 5.01)
+
+[node name="RearLeftLightGlassMesh" type="MeshInstance3D" parent="RearLeftLight"]
+unique_name_in_owner = true
+material_override = ExtResource("8_mvgst")
+mesh = ExtResource("8_s0gn4")
+
+[node name="RearLeftLightConeMesh" type="MeshInstance3D" parent="RearLeftLight"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, -1, 3.55271e-15, 0.707107, -3.09086e-08, -0.707107, 0.707107, -3.09086e-08, 0.707107, -0.5, 0, 0)
+material_override = ExtResource("10_6v4m3")
+mesh = SubResource("CylinderMesh_6v4m3")
+
+[node name="RearLeftSpotLight" type="SpotLight3D" parent="RearLeftLight"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+light_color = Color(0.890196, 0.733333, 0.596078, 1)
+light_cull_mask = 4294967293
+spot_range = 1.0
+spot_angle = 10.0
+
+[node name="RearRightLight" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.125, 0.8, 5.01)
+
+[node name="RearRightLightGlassMesh" type="MeshInstance3D" parent="RearRightLight"]
+unique_name_in_owner = true
+material_override = ExtResource("8_mvgst")
+mesh = ExtResource("8_s0gn4")
+
+[node name="RearRightLightConeMesh" type="MeshInstance3D" parent="RearRightLight"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, -1, 3.55271e-15, 0.707107, -3.09086e-08, -0.707107, 0.707107, -3.09086e-08, 0.707107, -0.5, 0, 0)
+material_override = ExtResource("10_6v4m3")
+mesh = SubResource("CylinderMesh_6v4m3")
+
+[node name="RearRightSpotLight" type="SpotLight3D" parent="RearRightLight"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+light_color = Color(0.890196, 0.733333, 0.596078, 1)
+light_cull_mask = 4294967293
+spot_range = 1.0
+spot_angle = 10.0
+
+[editable path="Body/Car2"]

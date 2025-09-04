@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjthobcd2kuvc"]
+
+[ext_resource type="QuadMesh" uid="uid://clrhwqamby7ph" path="res://World/Ocean/Mesh/OceanMesh.tres" id="1_y36xj"]
+
+[node name="Ocean" type="MeshInstance3D"]
+mesh = ExtResource("1_y36xj")

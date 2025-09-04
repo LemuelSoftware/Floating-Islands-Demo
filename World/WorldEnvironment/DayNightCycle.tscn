@@ -1,0 +1,39 @@
+[gd_scene load_steps=11 format=3 uid="uid://d3vqp0k233t0w"]
+
+[ext_resource type="Script" uid="uid://droybq7pfjryr" path="res://World/WorldEnvironment/DayNightCycle.cs" id="1_2paip"]
+[ext_resource type="Gradient" uid="uid://c78qncxtyhn8r" path="res://World/WorldEnvironment/Material/Sun/SunColor.tres" id="2_cqa6c"]
+[ext_resource type="Gradient" uid="uid://dfusey87r08on" path="res://World/WorldEnvironment/Material/Sky/SkyTopColor.tres" id="2_pawrg"]
+[ext_resource type="Gradient" uid="uid://cetsogclrke7q" path="res://World/WorldEnvironment/Material/Sky/SkyHorizonColor.tres" id="3_hoa5f"]
+[ext_resource type="Curve" uid="uid://b6es0deeyux37" path="res://World/WorldEnvironment/Material/Sun/SunIntensity.tres" id="3_pawrg"]
+[ext_resource type="Gradient" uid="uid://cxhmfyo84rui2" path="res://World/WorldEnvironment/Material/Moon/MoonColor.tres" id="4_hoa5f"]
+[ext_resource type="Gradient" uid="uid://bv8086n0wwju7" path="res://World/WorldEnvironment/Material/Ground/GroundBottomColor.tres" id="4_sfqly"]
+[ext_resource type="Gradient" uid="uid://c25x2qit8h25q" path="res://World/WorldEnvironment/Material/Ground/GroundHorizonColor.tres" id="5_1vak5"]
+[ext_resource type="Curve" uid="uid://cpl5re0wp60nt" path="res://World/WorldEnvironment/Material/Moon/MoonIntensity.tres" id="5_183m2"]
+[ext_resource type="Environment" uid="uid://bbd0lnkawsk6o" path="res://World/WorldEnvironment/Material/Environment/Environment.tres" id="10_sfqly"]
+
+[node name="DayNightCycle" type="Node3D"]
+script = ExtResource("1_2paip")
+start = 0.4
+skyTopColor = ExtResource("2_pawrg")
+skyHorizonColor = ExtResource("3_hoa5f")
+groundBottomColor = ExtResource("4_sfqly")
+groundHorizonColor = ExtResource("5_1vak5")
+sunColor = ExtResource("2_cqa6c")
+sunIntensity = ExtResource("3_pawrg")
+moonColor = ExtResource("4_hoa5f")
+moonIntensity = ExtResource("5_183m2")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+unique_name_in_owner = true
+environment = ExtResource("10_sfqly")
+
+[node name="Sun" type="DirectionalLight3D" parent="." groups=["SUN"]]
+unique_name_in_owner = true
+shadow_enabled = true
+directional_shadow_max_distance = 1000.0
+
+[node name="Moon" type="DirectionalLight3D" parent="."]
+unique_name_in_owner = true
+shadow_enabled = true
+directional_shadow_max_distance = 1000.0
+sky_mode = 1

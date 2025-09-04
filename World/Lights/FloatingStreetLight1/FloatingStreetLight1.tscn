@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp63qu44v8be6"]
+
+[ext_resource type="PackedScene" uid="uid://dq7h1xn04whvr" path="res://World/Lights/Light4/Light4.tscn" id="1_al6q3"]
+
+[node name="FloatingStreetLight1" type="PathFollow3D"]
+
+[node name="Light1" parent="." instance=ExtResource("1_al6q3")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 20, 0, 0)
+
+[node name="Light2" parent="." instance=ExtResource("1_al6q3")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -20, 0, 0)

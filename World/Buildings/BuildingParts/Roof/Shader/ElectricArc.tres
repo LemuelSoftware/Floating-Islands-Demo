@@ -1,0 +1,10 @@
+[gd_resource type="SphereMesh" load_steps=2 format=3 uid="uid://5k7v7phc4weg"]
+
+[ext_resource type="Material" uid="uid://vhbyl0nqbt4q" path="res://World/Buildings/BuildingParts/Roof/Shader/ElectricityEffectShaderMaterial1.tres" id="1_dy4sa"]
+
+[resource]
+material = ExtResource("1_dy4sa")
+radius = 4.5
+height = 4.5
+radial_segments = 8
+rings = 8

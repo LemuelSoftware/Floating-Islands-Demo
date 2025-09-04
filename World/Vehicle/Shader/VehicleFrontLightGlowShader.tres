@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://caxdtmcmjy1gk"]
+
+[ext_resource type="Shader" uid="uid://dhjij062wrql5" path="res://World/Lights/Shader/LightShader1.gdshader" id="1_vu3rp"]
+
+[resource]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_vu3rp")
+shader_parameter/glow_color = Color(0.890196, 0.733333, 0.6, 1)
+shader_parameter/glow_power = 0.8

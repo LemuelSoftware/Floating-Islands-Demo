@@ -1,0 +1,10 @@
+[gd_resource type="SphereMesh" load_steps=2 format=3 uid="uid://dhkkwrlcgsyxf"]
+
+[ext_resource type="Material" uid="uid://cv4vlmqtgcb81" path="res://World/Clouds/Shader/CloudMaterial.tres" id="1_1bnh7"]
+
+[resource]
+material = ExtResource("1_1bnh7")
+radius = 160.0
+height = 240.0
+radial_segments = 16
+rings = 16

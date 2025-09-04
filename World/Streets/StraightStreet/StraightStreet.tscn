@@ -1,0 +1,83 @@
+[gd_scene load_steps=14 format=3 uid="uid://v8fpk7he3x3s"]
+
+[ext_resource type="PackedScene" uid="uid://cd06onopqabd0" path="res://World/Streets/StraightStreet/Mesh/StraightStreet.glb" id="1_3n4dj"]
+[ext_resource type="Script" uid="uid://om66r85hgkhr" path="res://World/Streets/StraightStreet/StraightStreet.cs" id="1_jtt43"]
+[ext_resource type="PackedScene" uid="uid://b6iodn6sg6h2g" path="res://World/Lights/Light3/Light3.tscn" id="2_3n4dj"]
+[ext_resource type="Shader" uid="uid://cr6wovrw5bvtv" path="res://World/Shader/FlatShading.gdshader" id="3_3obsq"]
+[ext_resource type="Texture2D" uid="uid://bd1kwapx4re33" path="res://World/Streets/StraightStreet/Mesh/StraightStreet_Normal Map.png" id="4_cles3"]
+[ext_resource type="Texture2D" uid="uid://b2jl6b0m8wq7t" path="res://World/Streets/StraightStreet/Mesh/StraightStreet_Base Color.png" id="5_flwp5"]
+[ext_resource type="Texture2D" uid="uid://ciyiy6jo46e5f" path="res://World/Streets/StraightStreet/Mesh/StraightStreet_Top Normal Map.png" id="6_flwp5"]
+[ext_resource type="Texture2D" uid="uid://biw82udg6cavo" path="res://World/Streets/StraightStreet/Mesh/StraightStreet_Top Base Color.png" id="7_j3ylc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j3ylc"]
+render_priority = 0
+shader = ExtResource("3_3obsq")
+shader_parameter/enable = true
+shader_parameter/tex = ExtResource("5_flwp5")
+shader_parameter/normal_map = ExtResource("4_cles3")
+shader_parameter/normal_depth = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u27ns"]
+render_priority = 0
+shader = ExtResource("3_3obsq")
+shader_parameter/enable = true
+shader_parameter/tex = ExtResource("7_j3ylc")
+shader_parameter/normal_map = ExtResource("6_flwp5")
+shader_parameter/normal_depth = 100.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ao5ju"]
+render_priority = 0
+shader = ExtResource("3_3obsq")
+shader_parameter/enable = true
+shader_parameter/tex = ExtResource("7_j3ylc")
+shader_parameter/normal_map = ExtResource("6_flwp5")
+shader_parameter/normal_depth = 100.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3gyaj"]
+render_priority = 0
+shader = ExtResource("3_3obsq")
+shader_parameter/enable = true
+shader_parameter/tex = ExtResource("7_j3ylc")
+shader_parameter/normal_map = ExtResource("6_flwp5")
+shader_parameter/normal_depth = 100.0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_3n4dj"]
+data = PackedVector3Array(-8, 8, -8, -6.56, 8, -8, -8, 8, 8, -8, 8, 8, -6.56, 8, -8, -6.56, 8, 8, -6.56, 8, 8, -6.56, 7.7999, 8, -8, 8, 8, -8, 8, 8, -6.56, 7.7999, 8, -8, 7.7999, 8, -8, 7.7999, 8, -6.56, 7.7999, 8, -8, 0, 8, -8, 0, 8, -6.56, 7.7999, 8, -6.56, 0, 8, -6.56, 0, 8, -6.56, 7.7999, 8, 6.3999, 0, 8, 6.3999, 0, 8, -6.56, 7.7999, 8, 8, 0, 8, 8, 0, 8, -6.56, 7.7999, 8, 8, 7.7999, 8, 8, 7.7999, 8, -6.56, 7.7999, 8, 6.3999, 7.7999, 8, 6.3999, 8, 8, 8, 7.7999, 8, 6.3999, 7.7999, 8, 8, 8, 8, 8, 7.7999, 8, 6.3999, 8, 8, -8, 8, 8, -8, 7.7999, 8, -8, 8, -8, -8, 8, -8, -8, 7.7999, 8, -8, 7.7999, -8, -8, 7.7999, 8, -8, 0, 8, -8, 7.7999, -8, -8, 7.7999, -8, -8, 0, 8, -8, 0, -8, 8, 8, -8, 8, 7.7999, -8, 8, 8, 8, 8, 8, 8, 8, 7.7999, -8, 8, 7.7999, 8, 8, 7.7999, -8, 8, 0, -8, 8, 7.7999, 8, 8, 7.7999, 8, 8, 0, -8, 8, 0, 8, 6.3999, 8, -8, 6.3999, 7.7999, -8, 8, 8, -8, 8, 8, -8, 6.3999, 7.7999, -8, 8, 7.7999, -8, 8, 7.7999, -8, 6.3999, 7.7999, -8, 8, 0, -8, 8, 0, -8, 6.3999, 7.7999, -8, 6.3999, 0, -8, 6.3999, 0, -8, 6.3999, 7.7999, -8, -6.56, 0, -8, -6.56, 0, -8, 6.3999, 7.7999, -8, -8, 0, -8, -8, 0, -8, 6.3999, 7.7999, -8, -8, 7.7999, -8, -8, 7.7999, -8, 6.3999, 7.7999, -8, -6.56, 7.7999, -8, -6.56, 8, -8, -8, 7.7999, -8, -6.56, 7.7999, -8, -8, 8, -8, -8, 7.7999, -8, -6.56, 8, -8, 8, 0, -8, 6.3999, 0, -8, 8, 0, 8, 8, 0, 8, 6.3999, 0, -8, 6.3999, 0, 8, 6.3999, 0, 8, 6.3999, 0, -8, -6.56, 0, 8, -6.56, 0, 8, 6.3999, 0, -8, -8, 0, 8, -8, 0, 8, 6.3999, 0, -8, -8, 0, -8, -8, 0, -8, 6.3999, 0, -8, -6.56, 0, -8, -6.56, 7.7999, -8, -6.56, 7.7999, 8, -6.56, 8, -8, -6.56, 8, -8, -6.56, 7.7999, 8, -6.56, 8, 8, 6.3999, 8, -8, 8, 8, -8, 6.3999, 8, 8, 6.3999, 8, 8, 8, 8, -8, 8, 8, 8, 6.3999, 7.7999, 8, 6.3999, 7.7999, -8, 6.3999, 8, 8, 6.3999, 8, 8, 6.3999, 7.7999, -8, 6.3999, 8, -8, 6.3999, 7.7999, 8, -6.56, 7.7999, 8, 6.3999, 7.7999, -8, 6.3999, 7.7999, -8, -6.56, 7.7999, 8, -6.56, 7.7999, -8)
+
+[node name="StraightStreet" type="StaticBody3D" node_paths=PackedStringArray("meshList")]
+script = ExtResource("1_jtt43")
+meshList = [NodePath("StraightStreet/Cube"), NodePath("StraightStreet/Cube_001"), NodePath("StraightStreet/Cube_002"), NodePath("StraightStreet/Cube_003"), NodePath("StraightStreet/Cube_004")]
+
+[node name="StraightStreet" parent="." instance=ExtResource("1_3n4dj")]
+
+[node name="Cube" parent="StraightStreet" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_j3ylc")
+
+[node name="Cube_001" parent="StraightStreet" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_u27ns")
+
+[node name="Cube_002" parent="StraightStreet" index="2"]
+surface_material_override/0 = SubResource("ShaderMaterial_u27ns")
+
+[node name="Cube_003" parent="StraightStreet" index="3"]
+surface_material_override/0 = SubResource("ShaderMaterial_ao5ju")
+
+[node name="Cube_004" parent="StraightStreet" index="4"]
+surface_material_override/0 = SubResource("ShaderMaterial_3gyaj")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+shape = SubResource("ConcavePolygonShape3D_3n4dj")
+
+[node name="Light3" parent="." instance=ExtResource("2_3n4dj")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -5.33, 8, 7)
+
+[node name="Light5" parent="." instance=ExtResource("2_3n4dj")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -5.33, 8, -7)
+
+[node name="Light4" parent="." instance=ExtResource("2_3n4dj")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 5.33, 8, 7)
+
+[node name="Light6" parent="." instance=ExtResource("2_3n4dj")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 5.33, 8, -7)
+
+[editable path="StraightStreet"]

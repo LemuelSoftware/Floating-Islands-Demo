@@ -1,0 +1,155 @@
+[gd_scene load_steps=2 format=3 uid="uid://qi0mc4qj8477"]
+
+[ext_resource type="Script" uid="uid://dj20rbplvbyuq" path="res://UI/ControlPanel/ControlPanel.cs" id="1_tcqaq"]
+
+[node name="ControlPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 310.0
+offset_bottom = 521.0
+script = ExtResource("1_tcqaq")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 30
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Background/MarginContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="Background/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="GridContainer" type="VBoxContainer" parent="Background/MarginContainer/ScrollContainer/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="DronesLabel" type="Label" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Drones"
+horizontal_alignment = 1
+
+[node name="DroneOption" type="OptionButton" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Drone Group 1"
+popup/item_0/id = 0
+popup/item_1/text = "Drone Group 2"
+popup/item_1/id = 1
+popup/item_2/text = "Drone Group 3"
+popup/item_2/id = 2
+
+[node name="DroneHContainer" type="HBoxContainer" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="StopDronesButton" type="Button" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer/DroneHContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Stop"
+
+[node name="StartDronesButton" type="Button" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer/DroneHContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Start"
+
+[node name="DayNightLabel" type="Label" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Day and Night"
+horizontal_alignment = 1
+
+[node name="DayNightSlider" type="HSlider" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+value = 0.4
+
+[node name="CarsLabel" type="Label" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Cars"
+horizontal_alignment = 1
+
+[node name="StopCarsToggle" type="CheckButton" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Stop Cars"
+
+[node name="LightsLabel" type="Label" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Lights"
+horizontal_alignment = 1
+
+[node name="StreetLightsToggle" type="CheckButton" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+button_pressed = true
+text = "Street Lights"
+
+[node name="FloatingStreetLightsToggle" type="CheckButton" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+button_pressed = true
+text = "FloatingStreet Lights"
+
+[node name="SearchLightsToggle" type="CheckButton" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+button_pressed = true
+text = "Search Lights"
+
+[node name="BuildingLightsToggle" type="CheckButton" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+button_pressed = true
+text = "Building Lights"
+
+[node name="CarLightsToggle" type="CheckButton" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+button_pressed = true
+text = "Car Lights"
+
+[node name="HologramsLabel" type="Label" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Holograms"
+horizontal_alignment = 1
+
+[node name="HologramsToggle" type="CheckButton" parent="Background/MarginContainer/ScrollContainer/Margin/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+button_pressed = true
+text = "Holograms"

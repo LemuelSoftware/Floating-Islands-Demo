@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxjjp1fumbxr2"]
+
+[ext_resource type="ArrayMesh" uid="uid://eeup5qlrtbtc" path="res://World/Ground/Water/Waterfall1/Mesh/Waterfall1.obj" id="1_0qj32"]
+[ext_resource type="Material" uid="uid://dlb7lsu25tjse" path="res://World/Ground/Water/Waterfall1/Shader/WaterfallShaderMaterial1.tres" id="2_cirtu"]
+
+[node name="Waterfall1" type="MeshInstance3D"]
+material_override = ExtResource("2_cirtu")
+cast_shadow = 0
+mesh = ExtResource("1_0qj32")

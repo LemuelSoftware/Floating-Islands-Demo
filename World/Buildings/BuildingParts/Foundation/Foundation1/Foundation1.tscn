@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://cyq2qcpx6ojm0"]
+
+[ext_resource type="Script" uid="uid://bcopsdgbguiq8" path="res://World/Buildings/BuildingParts/Foundation/Foundation1/Foundation1.cs" id="1_436xn"]
+[ext_resource type="PackedScene" uid="uid://1akspameoblw" path="res://World/Buildings/BuildingParts/Foundation/Foundation1/Mesh/Foundation1.glb" id="1_svo53"]
+[ext_resource type="Shader" uid="uid://cr6wovrw5bvtv" path="res://World/Shader/FlatShading.gdshader" id="2_vvt3p"]
+[ext_resource type="Texture2D" uid="uid://cqaktjkll0643" path="res://World/Buildings/BuildingParts/Foundation/Foundation1/Mesh/Foundation1_Normal Map.png" id="3_436xn"]
+[ext_resource type="Texture2D" uid="uid://cxpc1iby567je" path="res://World/Buildings/BuildingParts/Foundation/Foundation1/Mesh/Foundation1_Base Color.png" id="4_cl0dj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xikqi"]
+render_priority = 0
+shader = ExtResource("2_vvt3p")
+shader_parameter/enable = true
+shader_parameter/tex = ExtResource("4_cl0dj")
+shader_parameter/normal_map = ExtResource("3_436xn")
+shader_parameter/normal_depth = 4.0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_svo53"]
+data = PackedVector3Array(-8, 8, -8, 8, 8, -8, -8, 8, 8, -8, 8, 8, 8, 8, -8, 8, 8, 8, 8, 8, 8, 8, 0, 8, -8, 8, 8, -8, 8, 8, 8, 0, 8, -8, 0, 8, -8, 8, 8, -8, 0, 8, -8, 8, -8, -8, 8, -8, -8, 0, 8, -8, 0, -8, 8, 0, -8, -8, 0, -8, 8, 0, 8, 8, 0, 8, -8, 0, -8, -8, 0, 8, 8, 8, -8, 8, 0, -8, 8, 8, 8, 8, 8, 8, 8, 0, -8, 8, 0, 8, -8, 8, -8, -8, 0, -8, 8, 8, -8, 8, 8, -8, -8, 0, -8, 8, 0, -8)
+
+[node name="Foundation1" type="StaticBody3D" node_paths=PackedStringArray("meshList")]
+script = ExtResource("1_436xn")
+meshList = [NodePath("Foundation1/Cube")]
+
+[node name="Foundation1" parent="." instance=ExtResource("1_svo53")]
+
+[node name="Cube" parent="Foundation1" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_xikqi")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+shape = SubResource("ConcavePolygonShape3D_svo53")
+
+[editable path="Foundation1"]

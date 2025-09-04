@@ -1,0 +1,48 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=9 format=3 uid="uid://b4s47gkdfuuyb"]
+
+[sub_resource type="Curve" id="Curve_tj3cm"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.695266, 0), 0.0, 0.0, 0, 0, Vector2(0.878698, 0.428488), 5.7456, 5.7456, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_okky3"]
+curve = SubResource("Curve_tj3cm")
+
+[sub_resource type="Gradient" id="Gradient_ta6a5"]
+colors = PackedColorArray(1, 1, 1, 1, 0.333333, 0.619608, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xqssn"]
+gradient = SubResource("Gradient_ta6a5")
+
+[sub_resource type="Gradient" id="Gradient_po8x8"]
+colors = PackedColorArray(0.333333, 0.619608, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_w8os1"]
+gradient = SubResource("Gradient_po8x8")
+
+[sub_resource type="Curve" id="Curve_ucnt3"]
+_data = [Vector2(0, 0.199883), 0.0, 0.0, 0, 0, Vector2(1, 0.801876), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_vomtj"]
+curve = SubResource("Curve_ucnt3")
+
+[resource]
+particle_flag_rotate_y = true
+emission_shape = 3
+emission_box_extents = Vector3(4.5, 1, 1.5)
+angle_min = -180.0
+angle_max = 180.0
+direction = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_min = 0.5
+initial_velocity_max = 0.5
+gravity = Vector3(0, 0, 0)
+scale_min = 10.0
+scale_max = 12.0
+scale_curve = SubResource("CurveTexture_vomtj")
+color = Color(0.827451, 0.827451, 0.827451, 1)
+color_ramp = SubResource("GradientTexture1D_w8os1")
+color_initial_ramp = SubResource("GradientTexture1D_xqssn")
+alpha_curve = SubResource("CurveTexture_okky3")
+turbulence_noise_strength = 9.04
+turbulence_noise_scale = 10.0

@@ -1,0 +1,45 @@
+[gd_resource type="ShaderMaterial" load_steps=8 format=3 uid="uid://vhbyl0nqbt4q"]
+
+[ext_resource type="Shader" uid="uid://b1cu3olqhh2s7" path="res://World/Buildings/BuildingParts/Roof/Shader/ElectricityEffect1.gdshader" id="1_gr58n"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_7rkff"]
+noise_type = 2
+seed = 10
+fractal_type = 0
+cellular_distance_function = 1
+cellular_return_type = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_lseln"]
+seamless = true
+noise = SubResource("FastNoiseLite_7rkff")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_mkor3"]
+noise_type = 2
+frequency = 0.04
+fractal_type = 0
+cellular_distance_function = 3
+cellular_return_type = 5
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ay7xe"]
+seamless = true
+noise = SubResource("FastNoiseLite_mkor3")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_lseln"]
+noise_type = 2
+frequency = 0.04
+fractal_type = 0
+cellular_return_type = 0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_mkor3"]
+seamless = true
+noise = SubResource("FastNoiseLite_lseln")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_gr58n")
+shader_parameter/lightning_noise_1 = SubResource("NoiseTexture2D_lseln")
+shader_parameter/lightning_noise_2 = SubResource("NoiseTexture2D_ay7xe")
+shader_parameter/tint = Color(0.372695, 0.712482, 0.848033, 1)
+shader_parameter/distortion_vertex = 0.18
+shader_parameter/speed_vertex = 0.18
+shader_parameter/noise_vertex = SubResource("NoiseTexture2D_mkor3")

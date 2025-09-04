@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ck318wbw1p8mv"]
+
+[ext_resource type="Shader" uid="uid://cp8kdxkv6shf2" path="res://World/Lights/Shader/Cone.gdshader" id="1_t42wd"]
+
+[resource]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_t42wd")
+shader_parameter/invert = false
+shader_parameter/model_height = 2.0
+shader_parameter/dissolve_start = 0.001
+shader_parameter/dissolve_length = 0.8
+shader_parameter/gradient_bias = 0.4
+shader_parameter/color = Color(0.5, 1, 1, 0.313726)

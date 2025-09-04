@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ctedb8b4svkpb"
+path="res://.godot/imported/Sign2.obj-61933d78f3166151facc62730bc2c964.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Sign2.obj-61933d78f3166151facc62730bc2c964.mesh"]
+
+source_file="res://World/Sign/Sign2/Mesh/Sign2.obj"
+dest_files=["res://.godot/imported/Sign2.obj-61933d78f3166151facc62730bc2c964.mesh", "res://.godot/imported/Sign2.obj-61933d78f3166151facc62730bc2c964.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

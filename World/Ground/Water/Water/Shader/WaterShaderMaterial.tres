@@ -1,0 +1,40 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://h64uy4vdm4h5"]
+
+[ext_resource type="Shader" uid="uid://bwh3c8f8i7ov2" path="res://World/Ground/Water/Water/Shader/WaterShader.tres" id="1_j2ekr"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_j2ekr"]
+noise_type = 2
+fractal_type = 0
+cellular_distance_function = 1
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1dw5f"]
+width = 1
+height = 1
+seamless = true
+noise = SubResource("FastNoiseLite_j2ekr")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_1dw5f"]
+noise_type = 2
+seed = 3
+fractal_type = 0
+cellular_distance_function = 1
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_j2ekr"]
+width = 1
+height = 1
+seamless = true
+noise = SubResource("FastNoiseLite_1dw5f")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_j2ekr")
+shader_parameter/WaveHeightRate = Vector2(0.03, 0.03)
+shader_parameter/WaveHeight = 0.4
+shader_parameter/Color = Color(0.333333, 0.619608, 1, 0.972549)
+shader_parameter/WaveSpeed = Vector2(0.1, 0.1)
+shader_parameter/NoiseTexture1 = SubResource("NoiseTexture2D_1dw5f")
+shader_parameter/NoiseTexture2 = SubResource("NoiseTexture2D_j2ekr")
+shader_parameter/ShoreWaveSpeed = 0.5
+shader_parameter/UnderWaterProximityFade = 2.0
+shader_parameter/ShoreWaveCount = 1.0
+shader_parameter/ShoreWaveDropOff = 4.0

@@ -1,0 +1,243 @@
+[gd_scene load_steps=10 format=3 uid="uid://bxokarrmptird"]
+
+[ext_resource type="PackedScene" uid="uid://der3yjw5qswuq" path="res://World/Ground/Trees/Tree3/Mesh/Tree3.glb" id="1_4peho"]
+[ext_resource type="Script" uid="uid://ds1u0s1oab1lo" path="res://World/Ground/Trees/Tree3/Tree3.cs" id="1_5v628"]
+[ext_resource type="Texture2D" uid="uid://dvjfbr30mo11r" path="res://World/Ground/Trees/Tree3/Mesh/Tree3_endesga x64.png" id="2_chb2w"]
+[ext_resource type="PackedScene" uid="uid://dqrfegatg20vn" path="res://World/Ground/Trees/Tree3/Mesh/Leaves/Leaves3.glb" id="2_o3t36"]
+[ext_resource type="Texture2D" uid="uid://bexhadv4toqi3" path="res://World/Ground/Trees/Tree3/Mesh/Leaves/Leaves3_endesga x64.png" id="4_hgv68"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hgv68"]
+shading_mode = 2
+albedo_texture = ExtResource("2_chb2w")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_hgv68"]
+data = PackedVector3Array(0, 12, -0.1322, -0.1631, 8.0172, -1.0217, 0.1144, 12, -0.0661, 0.1144, 12, -0.0661, -0.1631, 8.0172, -1.0217, 0.1319, 8.0172, -0.8514, 0.1144, 12, -0.0661, 0.1319, 8.0172, -0.8514, 0.1144, 12, 0.0661, 0.1144, 12, 0.0661, 0.1319, 8.0172, -0.8514, 0.1319, 8.0172, -0.5107, 0.1144, 12, 0.0661, 0.1319, 8.0172, -0.5107, 0, 12, 0.1321, 0, 12, 0.1321, 0.1319, 8.0172, -0.5107, -0.1631, 8.0172, -0.3404, 0, 12, 0.1321, -0.1631, 8.0172, -0.3404, -0.1145, 12, 0.0661, -0.1145, 12, 0.0661, -0.1631, 8.0172, -0.3404, -0.4581, 8.0172, -0.5107, 0, 12, -0.1322, 0.1144, 12, -0.0661, -0.1145, 12, -0.0661, -0.1145, 12, -0.0661, 0.1144, 12, -0.0661, -0.1145, 12, 0.0661, -0.1145, 12, 0.0661, 0.1144, 12, -0.0661, 0, 12, 0.1321, 0, 12, 0.1321, 0.1144, 12, -0.0661, 0.1144, 12, 0.0661, -0.1145, 12, 0.0661, -0.4581, 8.0172, -0.5107, -0.1145, 12, -0.0661, -0.1145, 12, -0.0661, -0.4581, 8.0172, -0.5107, -0.4581, 8.0172, -0.8514, -0.1145, 12, -0.0661, -0.4581, 8.0172, -0.8514, 0, 12, -0.1322, 0, 12, -0.1322, -0.4581, 8.0172, -0.8514, -0.1631, 8.0172, -1.0217, 0.6959, 0, -0.4018, 0, 0, -0.8036, 0.6959, 0, 0.4017, 0.6959, 0, 0.4017, 0, 0, -0.8036, 0, 0, 0.8035, 0, 0, 0.8035, 0, 0, -0.8036, -0.6959, 0, 0.4017, -0.6959, 0, 0.4017, 0, 0, -0.8036, -0.6959, 0, -0.4018, -0.9784, 3.9998, 0.2877, -0.6959, 0, -0.4018, -0.4719, 3.9998, -0.0047, -0.4719, 3.9998, -0.0047, -0.6959, 0, -0.4018, 0, 0, -0.8036, -0.4581, 8.0172, -0.8514, -0.9784, 3.9998, 0.2877, -0.1631, 8.0172, -1.0217, -0.1631, 8.0172, -1.0217, -0.9784, 3.9998, 0.2877, -0.4719, 3.9998, -0.0047, -0.9784, 3.9998, 0.8726, -0.6959, 0, 0.4017, -0.9784, 3.9998, 0.2877, -0.9784, 3.9998, 0.2877, -0.6959, 0, 0.4017, -0.6959, 0, -0.4018, -0.4581, 8.0172, -0.5107, -0.9784, 3.9998, 0.8726, -0.4581, 8.0172, -0.8514, -0.4581, 8.0172, -0.8514, -0.9784, 3.9998, 0.8726, -0.9784, 3.9998, 0.2877, -0.4719, 3.9998, 1.165, 0, 0, 0.8035, -0.9784, 3.9998, 0.8726, -0.9784, 3.9998, 0.8726, 0, 0, 0.8035, -0.6959, 0, 0.4017, -0.1631, 8.0172, -0.3404, -0.4719, 3.9998, 1.165, -0.4581, 8.0172, -0.5107, -0.4581, 8.0172, -0.5107, -0.4719, 3.9998, 1.165, -0.9784, 3.9998, 0.8726, 0.0346, 3.9998, 0.8726, 0.6959, 0, 0.4017, -0.4719, 3.9998, 1.165, -0.4719, 3.9998, 1.165, 0.6959, 0, 0.4017, 0, 0, 0.8035, 0.1319, 8.0172, -0.5107, 0.0346, 3.9998, 0.8726, -0.1631, 8.0172, -0.3404, -0.1631, 8.0172, -0.3404, 0.0346, 3.9998, 0.8726, -0.4719, 3.9998, 1.165, 0.0346, 3.9998, 0.2877, 0.6959, 0, -0.4018, 0.0346, 3.9998, 0.8726, 0.0346, 3.9998, 0.8726, 0.6959, 0, -0.4018, 0.6959, 0, 0.4017, 0.1319, 8.0172, -0.8514, 0.0346, 3.9998, 0.2877, 0.1319, 8.0172, -0.5107, 0.1319, 8.0172, -0.5107, 0.0346, 3.9998, 0.2877, 0.0346, 3.9998, 0.8726, -0.4719, 3.9998, -0.0047, 0, 0, -0.8036, 0.0346, 3.9998, 0.2877, 0.0346, 3.9998, 0.2877, 0, 0, -0.8036, 0.6959, 0, -0.4018, -0.1631, 8.0172, -1.0217, -0.4719, 3.9998, -0.0047, 0.1319, 8.0172, -0.8514, 0.1319, 8.0172, -0.8514, -0.4719, 3.9998, -0.0047, 0.0346, 3.9998, 0.2877)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5v628"]
+shading_mode = 2
+albedo_texture = ExtResource("4_hgv68")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5cvre"]
+shading_mode = 2
+albedo_texture = ExtResource("4_hgv68")
+
+[node name="Tree3" type="StaticBody3D" node_paths=PackedStringArray("meshList")]
+script = ExtResource("1_5v628")
+meshList = [NodePath("Leaves3/Plane"), NodePath("Leaves3/Plane_001"), NodePath("Leaves3/Plane_002"), NodePath("Leaves3/Plane_003"), NodePath("Leaves3/Plane_004"), NodePath("Leaves3/Plane_005"), NodePath("Leaves3/Plane_006"), NodePath("Leaves3/Plane_007"), NodePath("Leaves3/Plane_008"), NodePath("Leaves3/Plane_009"), NodePath("Leaves3/Plane_010"), NodePath("Leaves3/Plane_011"), NodePath("Leaves3/Plane_012"), NodePath("Leaves3/Plane_013"), NodePath("Leaves3/Plane_014"), NodePath("Leaves3/Plane_015"), NodePath("Leaves3/Plane_016"), NodePath("Leaves3/Plane_017"), NodePath("Leaves3/Plane_018"), NodePath("Leaves3/Plane_019"), NodePath("Leaves3/Plane_020"), NodePath("Leaves3/Plane_021"), NodePath("Leaves3/Plane_022"), NodePath("Leaves3/Plane_023"), NodePath("Leaves3/Plane_024"), NodePath("Leaves3/Plane_025"), NodePath("Leaves3/Plane_026"), NodePath("Leaves3/Plane_027"), NodePath("Leaves3/Plane_028"), NodePath("Leaves3/Plane_029"), NodePath("Leaves3/Plane_030"), NodePath("Leaves3/Plane_031"), NodePath("Leaves3/Plane_032"), NodePath("Leaves3/Plane_033"), NodePath("Leaves3/Plane_034"), NodePath("Leaves3/Plane_035"), NodePath("Leaves3/Plane_036"), NodePath("Leaves3/Plane_037"), NodePath("Leaves3/Plane_038"), NodePath("Leaves3/Plane_039"), NodePath("Leaves3/Plane_040"), NodePath("Leaves3/Plane_041"), NodePath("Leaves3/Plane_042"), NodePath("Leaves3/Plane_043"), NodePath("Leaves3/Plane_044"), NodePath("Leaves3/Plane_045"), NodePath("Leaves3/Plane_046"), NodePath("Leaves3/Plane_047"), NodePath("Leaves3/Plane_048"), NodePath("Leaves3/Plane_049"), NodePath("Leaves3/Plane_050"), NodePath("Leaves3/Plane_051"), NodePath("Leaves3/Plane_052"), NodePath("Leaves3/Plane_053"), NodePath("Leaves3/Plane_054"), NodePath("Leaves3/Plane_055"), NodePath("Leaves3/Plane_056"), NodePath("Leaves3/Plane_057"), NodePath("Leaves3/Plane_058"), NodePath("Leaves3/Plane_059"), NodePath("Leaves3/Plane_060"), NodePath("Leaves3/Plane_061"), NodePath("Leaves3/Plane_062"), NodePath("Leaves3/Plane_063"), NodePath("Leaves3/Plane_064"), NodePath("Leaves3/Plane_065"), NodePath("Leaves3/Plane_066"), NodePath("Leaves3/Plane_067"), NodePath("Tree3/Cylinder")]
+
+[node name="Tree3" parent="." instance=ExtResource("1_4peho")]
+
+[node name="Cylinder" parent="Tree3" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hgv68")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+shape = SubResource("ConcavePolygonShape3D_hgv68")
+
+[node name="Leaves3" parent="." instance=ExtResource("2_o3t36")]
+
+[node name="Plane" parent="Leaves3" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5v628")
+
+[node name="Plane_001" parent="Leaves3" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_002" parent="Leaves3" index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_003" parent="Leaves3" index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_004" parent="Leaves3" index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_005" parent="Leaves3" index="5"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_006" parent="Leaves3" index="6"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_007" parent="Leaves3" index="7"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_008" parent="Leaves3" index="8"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_009" parent="Leaves3" index="9"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_010" parent="Leaves3" index="10"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_011" parent="Leaves3" index="11"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_012" parent="Leaves3" index="12"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_013" parent="Leaves3" index="13"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_014" parent="Leaves3" index="14"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_015" parent="Leaves3" index="15"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_016" parent="Leaves3" index="16"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_017" parent="Leaves3" index="17"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_018" parent="Leaves3" index="18"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_019" parent="Leaves3" index="19"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_020" parent="Leaves3" index="20"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_021" parent="Leaves3" index="21"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_022" parent="Leaves3" index="22"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_023" parent="Leaves3" index="23"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_024" parent="Leaves3" index="24"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_025" parent="Leaves3" index="25"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_026" parent="Leaves3" index="26"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_027" parent="Leaves3" index="27"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_028" parent="Leaves3" index="28"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_029" parent="Leaves3" index="29"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_030" parent="Leaves3" index="30"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_031" parent="Leaves3" index="31"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_032" parent="Leaves3" index="32"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_033" parent="Leaves3" index="33"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_034" parent="Leaves3" index="34"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_035" parent="Leaves3" index="35"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_036" parent="Leaves3" index="36"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_037" parent="Leaves3" index="37"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_038" parent="Leaves3" index="38"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_039" parent="Leaves3" index="39"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_040" parent="Leaves3" index="40"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_041" parent="Leaves3" index="41"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_042" parent="Leaves3" index="42"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_043" parent="Leaves3" index="43"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_044" parent="Leaves3" index="44"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_045" parent="Leaves3" index="45"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_046" parent="Leaves3" index="46"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_047" parent="Leaves3" index="47"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_048" parent="Leaves3" index="48"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_049" parent="Leaves3" index="49"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_050" parent="Leaves3" index="50"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_051" parent="Leaves3" index="51"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_052" parent="Leaves3" index="52"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_053" parent="Leaves3" index="53"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_054" parent="Leaves3" index="54"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_055" parent="Leaves3" index="55"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_056" parent="Leaves3" index="56"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_057" parent="Leaves3" index="57"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_058" parent="Leaves3" index="58"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_059" parent="Leaves3" index="59"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_060" parent="Leaves3" index="60"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_061" parent="Leaves3" index="61"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_062" parent="Leaves3" index="62"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_063" parent="Leaves3" index="63"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_064" parent="Leaves3" index="64"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_065" parent="Leaves3" index="65"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_066" parent="Leaves3" index="66"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[node name="Plane_067" parent="Leaves3" index="67"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvre")
+
+[editable path="Tree3"]
+[editable path="Leaves3"]

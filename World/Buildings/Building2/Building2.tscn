@@ -1,0 +1,130 @@
+[gd_scene load_steps=16 format=3 uid="uid://8d0s1wmhcgb6"]
+
+[ext_resource type="Script" uid="uid://m6r1s4mbm4rp" path="res://World/Buildings/BuildingParts/Building.cs" id="1_0nkp1"]
+[ext_resource type="PackedScene" uid="uid://cvsl3f8fms0j3" path="res://World/Buildings/BuildingParts/Base/Base2/Base2.tscn" id="1_tqbv2"]
+[ext_resource type="PackedScene" uid="uid://ce5gquwemo32c" path="res://World/Lights/Light1/Light1.tscn" id="2_0vot1"]
+[ext_resource type="PackedScene" uid="uid://c6odhukcqd0e0" path="res://World/Buildings/BuildingParts/Floor/Floor2/Floor2.tscn" id="2_ald4b"]
+[ext_resource type="PackedScene" uid="uid://c8flm2kjjbibf" path="res://World/Buildings/BuildingParts/Roof/Roof2/Roof2.tscn" id="3_u2ta8"]
+[ext_resource type="Shader" uid="uid://dhjij062wrql5" path="res://World/Lights/Shader/LightShader1.gdshader" id="4_1pbbc"]
+[ext_resource type="PackedScene" uid="uid://ddy1ca47i78ri" path="res://World/Sign/Sign1/Sign1.tscn" id="4_jw7s3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8q6ph"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_1pbbc")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0ejjg"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_1pbbc")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_24qii"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_1pbbc")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_owmkd"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_1pbbc")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_okoff"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_1pbbc")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hj8up"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_1pbbc")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ip5e5"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_1pbbc")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2eaut"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("4_1pbbc")
+shader_parameter/glow_color = Color(0.5, 1, 1, 1)
+shader_parameter/glow_power = 1.0
+
+[node name="Building2" type="Node3D" node_paths=PackedStringArray("lights")]
+script = ExtResource("1_0nkp1")
+glowColor = Color(0.941176, 0.847059, 0.768627, 1)
+glowPower = 10.0
+lights = []
+
+[node name="Base" parent="." node_paths=PackedStringArray("meshList") instance=ExtResource("1_tqbv2")]
+meshList = []
+
+[node name="Light" parent="Base" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
+material = SubResource("ShaderMaterial_8q6ph")
+shadingMeshList = []
+
+[node name="Floor1" parent="." node_paths=PackedStringArray("meshList") instance=ExtResource("2_ald4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
+meshList = []
+
+[node name="Light" parent="Floor1" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
+material = SubResource("ShaderMaterial_0ejjg")
+shadingMeshList = []
+
+[node name="Floor2" parent="." node_paths=PackedStringArray("meshList") instance=ExtResource("2_ald4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32, 0)
+meshList = []
+
+[node name="Light" parent="Floor2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
+material = SubResource("ShaderMaterial_24qii")
+shadingMeshList = []
+
+[node name="Roof2" parent="." node_paths=PackedStringArray("meshList") instance=ExtResource("3_u2ta8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 48, 0)
+meshList = []
+
+[node name="Light1" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 0)
+material = SubResource("ShaderMaterial_owmkd")
+shadingMeshList = []
+
+[node name="Light2" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9, 24)
+material = SubResource("ShaderMaterial_okoff")
+shadingMeshList = []
+
+[node name="Light3" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9, -24)
+material = SubResource("ShaderMaterial_hj8up")
+shadingMeshList = []
+
+[node name="Light4" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 2.9, 0)
+material = SubResource("ShaderMaterial_ip5e5")
+shadingMeshList = []
+
+[node name="Light5" parent="Roof2" node_paths=PackedStringArray("shadingMeshList") instance=ExtResource("2_0vot1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 2.9, 0)
+material = SubResource("ShaderMaterial_2eaut")
+shadingMeshList = []
+
+[node name="Sign" parent="." instance=ExtResource("4_jw7s3")]
+unique_name_in_owner = true
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 57, 0)

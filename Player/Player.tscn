@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1yudrrkplrr1"]
+
+[ext_resource type="Script" uid="uid://car6uae4s2ruw" path="res://Player/Player.cs" id="1_l8h54"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_3qydi"]
+
+[node name="Player" type="CharacterBody3D"]
+motion_mode = 1
+script = ExtResource("1_l8h54")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_3qydi")

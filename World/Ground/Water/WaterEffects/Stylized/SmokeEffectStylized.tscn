@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cusjxg5suinfs"]
+
+[ext_resource type="ArrayMesh" uid="uid://cewe5tvcerhkk" path="res://World/Ground/Water/WaterEffects/Stylized/Mesh/SmokeEffectStylizedMesh.obj" id="1_5tquu"]
+[ext_resource type="Material" uid="uid://b7thut2uk54ym" path="res://World/Ground/Water/WaterEffects/Stylized/Shader/Materials/WaterfallShaderMaterial.tres" id="1_jb7ts"]
+
+[node name="SmokeEffectStylized" type="GPUParticles3D"]
+layers = 2
+material_override = ExtResource("1_jb7ts")
+amount = 20
+fixed_fps = 60
+draw_pass_1 = ExtResource("1_5tquu")

@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkusskdghhjwj"]
+
+[ext_resource type="PackedScene" uid="uid://8e785bhoeqrx" path="res://World/Sign/SignParts/Base/SignBase.tscn" id="1_5kbgj"]
+[ext_resource type="Script" uid="uid://dq5owqqthxl1w" path="res://World/Sign/Sign.cs" id="1_kjsyo"]
+[ext_resource type="ArrayMesh" uid="uid://mwvfef436g6k" path="res://World/Sign/Sign3/Mesh/Sign3.obj" id="1_oshqm"]
+[ext_resource type="Material" uid="uid://c01x7g2d7ke0w" path="res://World/Sign/Shader/SignShaderMaterial.tres" id="2_akq17"]
+[ext_resource type="Shader" uid="uid://cp8kdxkv6shf2" path="res://World/Lights/Shader/Cone.gdshader" id="5_2jmni"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rm7d1"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("5_2jmni")
+shader_parameter/invert = false
+shader_parameter/model_height = 2.0
+shader_parameter/dissolve_start = 0.001
+shader_parameter/dissolve_length = 0.6
+shader_parameter/gradient_bias = 0.4
+shader_parameter/color = Color(0.5, 1, 1, 0.313726)
+
+[node name="Sign3" type="Node3D" node_paths=PackedStringArray("sign", "signMesh", "signBase")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+script = ExtResource("1_kjsyo")
+material = ExtResource("2_akq17")
+sign = NodePath("Sign")
+signMesh = NodePath("Sign/SignMesh")
+signBase = NodePath("SignBase")
+
+[node name="Sign" type="Node3D" parent="."]
+unique_name_in_owner = true
+
+[node name="SignMesh" type="MeshInstance3D" parent="Sign"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = ExtResource("2_akq17")
+mesh = ExtResource("1_oshqm")
+skeleton = NodePath("../..")
+
+[node name="SignBase" parent="." instance=ExtResource("1_5kbgj")]
+material = SubResource("ShaderMaterial_rm7d1")

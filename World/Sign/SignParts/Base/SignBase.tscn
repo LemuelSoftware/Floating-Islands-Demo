@@ -1,0 +1,45 @@
+[gd_scene load_steps=10 format=3 uid="uid://8e785bhoeqrx"]
+
+[ext_resource type="ArrayMesh" uid="uid://tx8po0qypsta" path="res://World/Sign/SignParts/Base/Mesh/SignBase.obj" id="1_0f4ry"]
+[ext_resource type="Script" uid="uid://cw6n85icbolym" path="res://World/Sign/SignParts/Base/SignBase.cs" id="1_hbk2c"]
+[ext_resource type="Material" uid="uid://ck318wbw1p8mv" path="res://World/Sign/Shader/SignConeShaderMaterial.tres" id="2_lcvpa"]
+[ext_resource type="Shader" uid="uid://cr6wovrw5bvtv" path="res://World/Shader/FlatShading.gdshader" id="4_2na1p"]
+
+[sub_resource type="Gradient" id="Gradient_nag3y"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_dnpw8"]
+gradient = SubResource("Gradient_nag3y")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dwf4p"]
+render_priority = 0
+shader = ExtResource("4_2na1p")
+shader_parameter/enable = true
+shader_parameter/tex = SubResource("GradientTexture1D_dnpw8")
+shader_parameter/normal_depth = 1.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_hbk2c"]
+top_radius = 2.0
+bottom_radius = 0.15
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_qnp1e"]
+data = PackedVector3Array(0.1376, 0.1051, 0.1, 0.0553, 0.0894, 0.1701, 0.0325, 0.1701, 0.1, -0.0526, 0.1051, 0.1618, -0.1447, 0.0894, 0.1051, -0.0851, 0.1701, 0.0618, -0.1701, 0.1051, 0, -0.1447, 0.0894, -0.1051, -0.0851, 0.1701, -0.0618, -0.0526, 0.1051, -0.1618, 0.0553, 0.0894, -0.1701, 0.0325, 0.1701, -0.1, 0.1376, 0.1051, -0.1, 0.1789, 0.0894, 0, 0.1051, 0.1701, 0, 0.0325, 0.1701, -0.1, 0.1051, 0.1701, 0, 0, 0.2, 0, 0.1376, 0.1051, -0.1, 0.1051, 0.1701, 0, 0.0325, 0.1701, -0.1, 0.0553, 0.0894, -0.1701, 0.1376, 0.1051, -0.1, 0.0325, 0.1701, -0.1, -0.0851, 0.1701, -0.0618, 0.0325, 0.1701, -0.1, 0, 0.2, 0, -0.0526, 0.1051, -0.1618, 0.0325, 0.1701, -0.1, -0.0851, 0.1701, -0.0618, -0.1447, 0.0894, -0.1051, -0.0526, 0.1051, -0.1618, -0.0851, 0.1701, -0.0618, -0.0851, 0.1701, 0.0618, -0.0851, 0.1701, -0.0618, 0, 0.2, 0, -0.1701, 0.1051, 0, -0.0851, 0.1701, -0.0618, -0.0851, 0.1701, 0.0618, -0.1447, 0.0894, 0.1051, -0.1701, 0.1051, 0, -0.0851, 0.1701, 0.0618, 0.0325, 0.1701, 0.1, -0.0851, 0.1701, 0.0618, 0, 0.2, 0, -0.0526, 0.1051, 0.1618, -0.0851, 0.1701, 0.0618, 0.0325, 0.1701, 0.1, 0.0553, 0.0894, 0.1701, -0.0526, 0.1051, 0.1618, 0.0325, 0.1701, 0.1, 0.1051, 0.1701, 0, 0.0325, 0.1701, 0.1, 0, 0.2, 0, 0.1376, 0.1051, 0.1, 0.0325, 0.1701, 0.1, 0.1051, 0.1701, 0, 0.1789, 0.0894, 0, 0.1376, 0.1051, 0.1, 0.1051, 0.1701, 0, 0.1376, 0.1051, -0.1, 0.1902, 0, -0.0618, 0.1789, 0.0894, 0, 0.1176, 0, -0.1618, 0.1902, 0, -0.0618, 0.1376, 0.1051, -0.1, 0.0553, 0.0894, -0.1701, 0.1176, 0, -0.1618, 0.1376, 0.1051, -0.1, -0.0526, 0.1051, -0.1618, 0, 0, -0.2, 0.0553, 0.0894, -0.1701, -0.1176, 0, -0.1618, 0, 0, -0.2, -0.0526, 0.1051, -0.1618, -0.1447, 0.0894, -0.1051, -0.1176, 0, -0.1618, -0.0526, 0.1051, -0.1618, -0.1701, 0.1051, 0, -0.1902, 0, -0.0618, -0.1447, 0.0894, -0.1051, -0.1902, 0, 0.0618, -0.1902, 0, -0.0618, -0.1701, 0.1051, 0, -0.1447, 0.0894, 0.1051, -0.1902, 0, 0.0618, -0.1701, 0.1051, 0, -0.0526, 0.1051, 0.1618, -0.1176, 0, 0.1618, -0.1447, 0.0894, 0.1051, 0, 0, 0.2, -0.1176, 0, 0.1618, -0.0526, 0.1051, 0.1618, 0.0553, 0.0894, 0.1701, 0, 0, 0.2, -0.0526, 0.1051, 0.1618, 0.1376, 0.1051, 0.1, 0.1176, 0, 0.1618, 0.0553, 0.0894, 0.1701, 0.1902, 0, 0.0618, 0.1176, 0, 0.1618, 0.1376, 0.1051, 0.1, 0.1789, 0.0894, 0, 0.1902, 0, 0.0618, 0.1376, 0.1051, 0.1, 0, 0, -0.2, 0.1176, 0, -0.1618, 0.0553, 0.0894, -0.1701, -0.1902, 0, -0.0618, -0.1176, 0, -0.1618, -0.1447, 0.0894, -0.1051, -0.1176, 0, 0.1618, -0.1902, 0, 0.0618, -0.1447, 0.0894, 0.1051, 0.1176, 0, 0.1618, 0, 0, 0.2, 0.0553, 0.0894, 0.1701, 0.1902, 0, -0.0618, 0.1902, 0, 0.0618, 0.1789, 0.0894, 0, 0.1902, 0, 0.0618, 0.1902, 0, -0.0618, 0.1176, 0, 0.1618, 0.1176, 0, 0.1618, 0.1902, 0, -0.0618, 0, 0, 0.2, 0, 0, 0.2, 0.1902, 0, -0.0618, -0.1176, 0, 0.1618, -0.1176, 0, 0.1618, 0.1902, 0, -0.0618, -0.1902, 0, 0.0618, -0.1902, 0, 0.0618, 0.1902, 0, -0.0618, -0.1902, 0, -0.0618, -0.1902, 0, -0.0618, 0.1902, 0, -0.0618, -0.1176, 0, -0.1618, -0.1176, 0, -0.1618, 0.1902, 0, -0.0618, 0, 0, -0.2, 0, 0, -0.2, 0.1902, 0, -0.0618, 0.1176, 0, -0.1618)
+
+[node name="SignBase" type="StaticBody3D" node_paths=PackedStringArray("meshList")]
+script = ExtResource("1_hbk2c")
+material = ExtResource("2_lcvpa")
+meshList = [NodePath("Mesh")]
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_0f4ry")
+surface_material_override/0 = SubResource("ShaderMaterial_dwf4p")
+
+[node name="ConeMesh" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+material_override = ExtResource("2_lcvpa")
+mesh = SubResource("CylinderMesh_hbk2c")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+shape = SubResource("ConcavePolygonShape3D_qnp1e")

@@ -1,0 +1,163 @@
+[gd_scene load_steps=2 format=3 uid="uid://c083r2qc15cic"]
+
+[ext_resource type="Script" uid="uid://bv1a8r1yvhvdt" path="res://UI/HelpPanel/HelpPanel.cs" id="1_d26s0"]
+
+[node name="HelpPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d26s0")
+
+[node name="BackgroundColor" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.156863)
+
+[node name="BackgroundButton" type="Button" parent="."]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VContainer" type="VBoxContainer" parent="Background/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="Background/Margin/VContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+scroll_deadzone = 2
+
+[node name="LabelContainer" type="VBoxContainer" parent="Background/Margin/VContainer/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="UILabel" type="Label" parent="Background/Margin/VContainer/Scroll/LabelContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "UI"
+horizontal_alignment = 1
+
+[node name="UI" type="HBoxContainer" parent="Background/Margin/VContainer/Scroll/LabelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="Background/Margin/VContainer/Scroll/LabelContainer/UI"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Show Panels:
+Show Help:
+Show/Hide Mouse:
+Interact:"
+horizontal_alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/Margin/VContainer/Scroll/LabelContainer/UI"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 30
+
+[node name="ButtonsLabel" type="Label" parent="Background/Margin/VContainer/Scroll/LabelContainer/UI/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "F1
+F2
+Right Mouse Button
+Left Mouse Button"
+
+[node name="AltButtonsLabel" type="Label" parent="Background/Margin/VContainer/Scroll/LabelContainer/UI/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "
+
+Esc
+"
+
+[node name="cameraLabel" type="Label" parent="Background/Margin/VContainer/Scroll/LabelContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Camera"
+horizontal_alignment = 1
+
+[node name="Camera" type="HBoxContainer" parent="Background/Margin/VContainer/Scroll/LabelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TitleLabel" type="Label" parent="Background/Margin/VContainer/Scroll/LabelContainer/Camera"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Forwards:
+Backwards:
+Left:
+Right:
+Up:
+Down:
+Zoom In:
+Zoom Out:
+Reset Zoom:"
+horizontal_alignment = 2
+
+[node name="ButtonsLabel" type="Label" parent="Background/Margin/VContainer/Scroll/LabelContainer/Camera"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "W
+S
+A
+D
+Space Bar
+Left Ctrl
+Mouse Scroll Wheel Up
+Mouse Scroll Wheel Down
+Mouse Middle Button"
+
+[node name="CloseButton" type="Button" parent="Background/Margin/VContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Close"

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://d04buu6slcvxu"]
+
+[ext_resource type="Script" uid="uid://rahajfakfdk3" path="res://World/Clouds/Clouds.cs" id="1_0xg8p"]
+[ext_resource type="Material" uid="uid://cv4vlmqtgcb81" path="res://World/Clouds/Shader/CloudMaterial.tres" id="1_11kbm"]
+[ext_resource type="Material" uid="uid://dvhngvchylnl3" path="res://World/Clouds/Shader/CloudParticleMaterial.tres" id="2_856wi"]
+[ext_resource type="ArrayMesh" uid="uid://mv7g02ndmkam" path="res://World/Clouds/Mesh/Cloud1.obj" id="3_l2cdb"]
+
+[node name="Clouds" type="GPUParticles3D"]
+layers = 2
+material_override = ExtResource("1_11kbm")
+cast_shadow = 0
+extra_cull_margin = 5000.0
+amount = 200
+lifetime = 60.0
+randomness = 0.3
+process_material = ExtResource("2_856wi")
+draw_pass_1 = ExtResource("3_l2cdb")
+script = ExtResource("1_0xg8p")
