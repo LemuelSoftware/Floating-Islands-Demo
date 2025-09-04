@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COS3712 Assignment 2", "COS3712 Assignment 2.csproj", "{71821D38-9CD4-4E62-8A4A-F3951517991A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floating-Islands-Demo", "Floating-Islands-Demo.csproj", "{71821D38-9CD4-4E62-8A4A-F3951517991A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

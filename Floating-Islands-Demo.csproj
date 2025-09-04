@@ -2,6 +2,6 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
-    <RootNamespace>COS3712Assignment2</RootNamespace>
+    <RootNamespace>Floating-Islands-Demo</RootNamespace>
   </PropertyGroup>
 </Project>

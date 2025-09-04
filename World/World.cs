@@ -65,21 +65,6 @@ public partial class World : Node3D
 		}
 	}
 
-	public void EnableFlatShading(bool toggled)
-	{
-		Global.Instance.EmitSignal(Global.SignalName.FlatShadingEnabled, toggled);
-	}
-
-	public void EnableGouraudShading(bool toggled)
-	{
-		Global.Instance.EmitSignal(Global.SignalName.GouraudShadingEnabled, toggled);
-	}
-
-	public void EnablePhongShading(bool toggled)
-	{
-		Global.Instance.EmitSignal(Global.SignalName.PhongShadingEnabled, toggled);
-	}
-
 	public void StopCars(bool flag)
 	{
 		foreach (Path3D path in carPaths.GetChildren())

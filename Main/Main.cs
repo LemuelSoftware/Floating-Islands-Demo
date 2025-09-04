@@ -32,10 +32,6 @@ public partial class Main : Node3D
 		panelButton.Pressed += OnPanelButtonPressed;
 		helpButton.Pressed += OnHelpButtonPressed;
 
-		controlPanel.FlatShadingToggled += OnControlPanelFlatShadingToggled;
-		controlPanel.GouraudShadingToggled += OnControlPanelGouraudShadingToggled;
-		controlPanel.PhongShadingToggled += OnControlPanelPhongShadingToggled;
-
 		controlPanel.StopCarsToggled += OnControlPanelStopCarsToggled;
 		controlPanel.StopDronesPressed += OnControlPanelStopDronesPressed;
 		controlPanel.StartDronesPressed += OnControlPanelStartDronesPressed;
@@ -108,21 +104,6 @@ public partial class Main : Node3D
 		ShowHelpPanel();
 	}
 
-	private void OnControlPanelFlatShadingToggled(bool toggled)
-	{
-		world.EnableFlatShading(toggled);
-	}
-
-	private void OnControlPanelGouraudShadingToggled(bool toggled)
-	{
-		world.EnableGouraudShading(toggled);
-	}
-
-	private void OnControlPanelPhongShadingToggled(bool toggled)
-	{
-		world.EnablePhongShading(toggled);
-	}
-
 	private void OnControlPanelStopCarsToggled(bool toggled)
 	{
 		world.StopCars(toggled);
@@ -177,10 +158,6 @@ public partial class Main : Node3D
 	{
 		panelButton.Pressed -= OnPanelButtonPressed;
 		helpButton.Pressed -= OnHelpButtonPressed;
-
-		controlPanel.FlatShadingToggled -= OnControlPanelFlatShadingToggled;
-		controlPanel.GouraudShadingToggled -= OnControlPanelGouraudShadingToggled;
-		controlPanel.PhongShadingToggled -= OnControlPanelPhongShadingToggled;
 
 		controlPanel.StopCarsToggled -= OnControlPanelStopCarsToggled;
 		controlPanel.StopDronesPressed -= OnControlPanelStopDronesPressed;

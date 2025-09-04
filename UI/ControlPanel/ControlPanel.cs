@@ -14,9 +14,6 @@ public partial class ControlPanel : Control
 	[Signal] public delegate void CarLightsToggledEventHandler(bool toggled);
 	[Signal] public delegate void HologramsToggledEventHandler(bool toggled);
 
-	private CheckButton flatShadingToggle;
-	private CheckButton gouraudShadingToggle;
-	private CheckButton phongShadingToggle;
 	private CheckButton stopCarsToggle;
 	private Button stopDronesButton;
 	private Button startDronesButton;
@@ -35,9 +32,6 @@ public partial class ControlPanel : Control
 	{
 		base._Ready();
 
-		flatShadingToggle = GetNode<CheckButton>("%FlatShadingToggle");
-		gouraudShadingToggle = GetNode<CheckButton>("%GouraudShadingToggle");
-		phongShadingToggle = GetNode<CheckButton>("%PhongShadingToggle");
 		stopCarsToggle = GetNode<CheckButton>("%StopCarsToggle");
 		stopDronesButton = GetNode<Button>("%StopDronesButton");
 		startDronesButton = GetNode<Button>("%StartDronesButton");
@@ -62,24 +56,6 @@ public partial class ControlPanel : Control
 		buildingLightsToggle.Toggled += OnBuildingLightsToggled;
 		carLightsToggle.Toggled += OnCarLightsToggled;
 		hologramsToggle.Toggled += OnHologramsToggled;
-	}
-
-	private void OnFlatShadingToggled(bool toggled)
-	{
-		GD.Print("flat shading toggled ", toggled);
-		EmitSignal(SignalName.FlatShadingToggled, toggled);
-	}
-
-	private void OnGouraudShadingToggled(bool toggled)
-	{
-		GD.Print("gouraud shading toggled ", toggled);
-		EmitSignal(SignalName.GouraudShadingToggled, toggled);
-	}
-
-	private void OnPhongShadingToggled(bool toggled)
-	{
-		GD.Print("phong shading toggled ", toggled);
-		EmitSignal(SignalName.PhongShadingToggled, toggled);
 	}
 
 	private void OnStopCarsToggled(bool toggled)
@@ -152,9 +128,6 @@ public partial class ControlPanel : Control
 	{
 		base._ExitTree();
 
-		flatShadingToggle.Toggled -= OnFlatShadingToggled;
-		gouraudShadingToggle.Toggled -= OnGouraudShadingToggled;
-		phongShadingToggle.Toggled -= OnPhongShadingToggled;
 		stopCarsToggle.Toggled -= OnStopCarsToggled;
 		droneOption.ItemSelected -= OnDroneOptionSelected;
 		stopDronesButton.Pressed -= OnStopDronesPressed;
